@@ -1,0 +1,3514 @@
+[
+  {
+    "topic": "word_problems",
+    "subtopic": "multi_step_addition_subtraction",
+    "difficulty": 3,
+    "question": "Jack had 234 candies, while Jill had 85 more candies than Jack. They put all their candies together in a bowl. Then, they gave 96 candies to their classmates. How many candies are left in the bowl?",
+    "answer": "457",
+    "tags": [
+      "year5",
+      "addition",
+      "subtraction",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "An apple costs \\$1.20, while an orange costs 35 cents less than an apple. Snow White bought an apple and an orange. How much did Snow White pay for the apple and the orange?",
+    "answer": "\\$2.05",
+    "tags": [
+      "year5",
+      "money",
+      "subtraction",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "logic",
+    "difficulty": 3,
+    "question": "The passcode to a safe is a three-digit number. The first digit of the passcode is an even number greater than 7. The third digit is the smallest odd number. The middle digit is the difference between the first digit and the third digit. What is the passcode to the safe?",
+    "answer": "871",
+    "tags": [
+      "year5",
+      "logic",
+      "digits"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 2,
+    "question": "Elmo bought a basketball that cost \\$45. He paid the cashier with the exact amount consisting of 5-dollar bills only. How many 5-dollar bills did Elmo use to buy the basketball?",
+    "answer": "9",
+    "tags": [
+      "year5",
+      "money",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "perimeter",
+    "difficulty": 3,
+    "question": "The length of the fence around a rectangular garden is 28 metres. The longer side of the garden is 9 metres long. What is the length of the shorter side of the garden?",
+    "answer": "5 metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplicative_comparison",
+    "difficulty": 2,
+    "question": "Blossom has twice as many stickers as Bubbles, and Bubbles has twice as many stickers as Buttercup. If Buttercup has 3 stickers, how many stickers does Blossom have?",
+    "answer": "12",
+    "tags": [
+      "year5",
+      "multiplication",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 3,
+    "question": "Huey is 10 centimetres taller than Dewey, and Dewey is 20 centimetres shorter than Louie. If Louie is 125 centimetres tall, what is Huey's height?",
+    "answer": "115 centimetres",
+    "tags": [
+      "year5",
+      "measurement",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "inverse_operations",
+    "difficulty": 3,
+    "question": "Cullen had a box of marbles. His mother gave him twice the number of marbles in the box. He now had 30 marbles. How many marbles did he have at the start?",
+    "answer": "10",
+    "tags": [
+      "year5",
+      "multiplication",
+      "division",
+      "inverse"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "Big Bird woke up at 7:00 AM. He spent 35 minutes in the shower, 20 minutes eating breakfast, 10 minutes preparing for school, and 15 minutes walking to the bus stop. What time did he reach the bus stop?",
+    "answer": "8:20 AM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplicative_comparison",
+    "difficulty": 2,
+    "question": "Bart is 7 years old. His mother, Marge, is four times his age, and his father, Homer, is 3 years older than his mother. What is Homer's age?",
+    "answer": "31 years old",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "patterns",
+    "difficulty": 2,
+    "question": "Cinderella spent a week knitting socks. The table shows the number of socks she knitted on different numbers of days. Number of days: 1, 2, 3, 4. Number of socks knitted: 3, 6, 9, 12. If the pattern continued, how many socks had Cinderella knitted after 7 days?",
+    "answer": "21",
+    "tags": [
+      "year5",
+      "patterns",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "algebra",
+    "difficulty": 4,
+    "question": "In the number sentences below, circle and diamond represent different numbers. circle + circle = 10. diamond + circle = 8. What does diamond + diamond equal?",
+    "answer": "6",
+    "tags": [
+      "year5",
+      "algebra",
+      "symbols"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 4,
+    "question": "Grumpy had a jar of tropical fruit juice. He shared some of the juice with Happy and then gave half of the remaining juice to Dopey. If he had 1/4 of a jar of tropical fruit juice left, what fraction of a jar did he give Happy?",
+    "answer": "1/2",
+    "tags": [
+      "year5",
+      "fractions",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "patterns",
+    "difficulty": 3,
+    "question": "The numbers below follow a pattern: 3, 5, 8, 13, 21, 34. What number comes next in the pattern?",
+    "answer": "55",
+    "tags": [
+      "year5",
+      "patterns",
+      "number_patterns"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Cindy bought four boxes of markers for \\$22. If Jamie bought three boxes of the same markers at the same store, how much did Jamie pay for the markers?",
+    "answer": "\\$16.50",
+    "tags": [
+      "year5",
+      "money",
+      "unit_rate"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division",
+    "difficulty": 3,
+    "question": "A baker packs muffins into boxes, and each box holds 6 muffins. The baker bakes 96 muffins in the morning and 48 muffins in the afternoon. How many boxes does the baker need to pack all of the muffins?",
+    "answer": "24",
+    "tags": [
+      "year5",
+      "addition",
+      "division",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Leo buys 3 notebooks that cost \\$4 each and one pen that costs \\$2. He pays the cashier with a \\$20 note. How much change does Leo receive?",
+    "answer": "\\$6",
+    "tags": [
+      "year5",
+      "money",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 3,
+    "question": "A ribbon is 2 metres long. Mia cuts off 75 centimetres to wrap a gift, then cuts off another 45 centimetres. How many centimetres of ribbon are left? (1 metre = 100 centimetres)",
+    "answer": "80 centimetres",
+    "tags": [
+      "year5",
+      "measurement",
+      "conversion",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "A movie starts at 2:45 PM and lasts for 1 hour and 40 minutes. What time does the movie end?",
+    "answer": "4:25 PM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 4,
+    "question": "There are 24 apples in a basket. Noah eats 1/4 of the apples and gives 1/3 of the original 24 apples to his friends. How many apples are left in the basket?",
+    "answer": "10",
+    "tags": [
+      "year5",
+      "fractions",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "perimeter",
+    "difficulty": 3,
+    "question": "A square has a perimeter of 36 centimetres. A rectangle has the same perimeter as the square. If the longer side of the rectangle is 12 centimetres, what is the length of its shorter side?",
+    "answer": "6 centimetres",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "patterns",
+    "difficulty": 2,
+    "question": "Look at the number pattern below: 2, 6, 18, 54, ... Each number is found by multiplying the number before it by the same value. What is the next number in the pattern?",
+    "answer": "162",
+    "tags": [
+      "year5",
+      "patterns",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "algebra",
+    "difficulty": 4,
+    "question": "In the number sentences below, star and circle represent different numbers. star + circle = 12. star + star + circle = 19. What is the value of star?",
+    "answer": "7",
+    "tags": [
+      "year5",
+      "algebra",
+      "symbols"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "data",
+    "difficulty": 3,
+    "question": "Four students recorded how many books they read. Ava read 8 books, Ben read 12 books, Cam read 7 books, and Dan read 13 books. How many more books did the two students who read the most read in total than the two students who read the least?",
+    "answer": "10",
+    "tags": [
+      "year5",
+      "data",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "logic",
+    "difficulty": 3,
+    "question": "I am a three-digit number. My hundreds digit is double my ones digit. My tens digit is the largest one-digit number. My ones digit is 4. What number am I?",
+    "answer": "894",
+    "tags": [
+      "year5",
+      "logic",
+      "digits"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "remainders",
+    "difficulty": 3,
+    "question": "Aria has 50 stickers. She puts them equally into 6 albums and keeps the leftover stickers for herself. How many stickers does Aria keep for herself?",
+    "answer": "2",
+    "tags": [
+      "year5",
+      "division",
+      "remainders"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "patterns",
+    "difficulty": 3,
+    "question": "Sam saves \\$3 in the first week, \\$5 in the second week, and \\$7 in the third week. The amount he saves each week keeps following the same pattern. How much will Sam have saved in total after 5 weeks?",
+    "answer": "\\$35",
+    "tags": [
+      "year5",
+      "money",
+      "patterns",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 3,
+    "question": "A jug holds 2 litres of juice. Ella pours all of the juice equally into 8 cups. How many millilitres of juice are in each cup? (1 litre = 1000 millilitres)",
+    "answer": "250 millilitres",
+    "tags": [
+      "year5",
+      "measurement",
+      "conversion",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "calendar",
+    "difficulty": 3,
+    "question": "A school camp begins on Monday the 8th, which is counted as Day 1, and lasts for 11 days in a row. On what day of the week does the camp end?",
+    "answer": "Thursday",
+    "tags": [
+      "year5",
+      "time",
+      "calendar"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "A garden has 7 rows of flowers, and each row has 8 flowers. A gardener picks 9 of the flowers. How many flowers are left in the garden?",
+    "answer": "47",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "logic",
+    "difficulty": 2,
+    "question": "Zoe is thinking of a number between 20 and 30. The number is even, and the sum of its two digits is 10. What number is Zoe thinking of?",
+    "answer": "28",
+    "tags": [
+      "year5",
+      "logic",
+      "digits"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 2,
+    "question": "A pizza is cut into 8 equal slices. Tom eats 2 slices and Kim eats 3 slices. What fraction of the pizza is left?",
+    "answer": "3/8",
+    "tags": [
+      "year5",
+      "fractions",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry",
+    "difficulty": 2,
+    "question": "A box contains 4 triangles and 3 squares. What is the total number of sides of all the shapes in the box?",
+    "answer": "24",
+    "tags": [
+      "year5",
+      "geometry",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "patterns",
+    "difficulty": 3,
+    "question": "Some dots are arranged into square patterns: 1, 4, 9, 16, ... Each pattern makes a larger square of dots. How many dots are in the 6th pattern?",
+    "answer": "36",
+    "tags": [
+      "year5",
+      "patterns",
+      "square_numbers"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multi_step_subtraction",
+    "difficulty": 3,
+    "question": "Three friends share a bag of 60 marbles. Maya takes 15 marbles, and Raj takes twice as many marbles as Maya. Sara takes all of the marbles that are left. How many marbles does Sara take?",
+    "answer": "15",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 3,
+    "question": "Liam baked 50 cupcakes for the school's bake sale. If he sold 35 of the cupcakes during the sale, what fraction of the cupcakes was not sold?",
+    "answer": "3/10",
+    "tags": [
+      "year5",
+      "fractions",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 3,
+    "question": "Phineas has 20 stickers. If he gave 2/5 of the stickers to Ferb, how many stickers did he have left?",
+    "answer": "12",
+    "tags": [
+      "year5",
+      "fractions",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 3,
+    "question": "If Alicia has 40 pieces of candy and Minerva has 25\\% more pieces than Alicia, how many pieces of candy does Minerva have?",
+    "answer": "50",
+    "tags": [
+      "year5",
+      "percentages",
+      "increase"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 4,
+    "question": "Mickey Mouse has 80 screwdrivers, and Goofy has 25\\% more screwdrivers than Mickey Mouse. If Goofy gives 15\\% of his screwdrivers to Mickey Mouse, how many more screwdrivers will Mickey Mouse have than Goofy?",
+    "answer": "10",
+    "tags": [
+      "year5",
+      "percentages",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 5,
+    "question": "There are 40 students in Steve Xu's selective class. Twenty-five percent of the students were Americans, 15 percent were Asian, and the remaining were Australians. Sixty percent of the students in the class wore reading glasses, and 75 percent of the Australian students wore reading glasses. What percent of the students wearing reading glasses were Australians?",
+    "answer": "75\\%",
+    "tags": [
+      "year5",
+      "percentages",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 4,
+    "question": "Cinderella has \\$24. How much did each chocolate bar cost if she spent 45 percent of her money to buy four chocolate bars?",
+    "answer": "\\$2.70",
+    "tags": [
+      "year5",
+      "money",
+      "percentages",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 3,
+    "question": "In the Drama Club, 80 percent of the members were female, and 40 members were male. How many members does the Drama Club have?",
+    "answer": "200",
+    "tags": [
+      "year5",
+      "percentages",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 3,
+    "question": "What is the difference between 60 percent of 45 and 40 percent of 55?",
+    "answer": "5",
+    "tags": [
+      "year5",
+      "percentages",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "unit_rate",
+    "difficulty": 3,
+    "question": "If 6 kilograms of potatoes cost \\$8, what is the cost of 9 kilograms of potatoes?",
+    "answer": "\\$12",
+    "tags": [
+      "year5",
+      "money",
+      "unit_rate"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "Ruby planted 5 rows of rose bushes in her garden. She planted 8 rose bushes in each row. However, 12 rose bushes died due to pests. How many rose bushes were left?",
+    "answer": "28",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication",
+    "difficulty": 2,
+    "question": "Betty was making beaded bracelets for each of her 12 friends. Each bracelet needed 30 beads to make. How many beads did Betty need in all?",
+    "answer": "360",
+    "tags": [
+      "year5",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "perimeter",
+    "difficulty": 3,
+    "question": "Robert has a rectangular vegetable garden. The total length of the fence around the garden was 28 metres. If the garden was 8 metres in length, what is the width of Robert's vegetable garden?",
+    "answer": "6 metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Jane went to the school supply store and bought 5 notebooks. Each notebook costs \\$3.40. If Jane paid with a twenty-dollar bill for the notebooks, how much change should she get?",
+    "answer": "\\$3.00",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 3,
+    "question": "A jacket costs \\$80. In a sale, the price is reduced by 30\\%. What is the sale price?",
+    "answer": "\\$56",
+    "tags": [
+      "year5",
+      "percentages",
+      "money"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Mia buys 3 pens at \\$2.50 each and a notebook for \\$4.20. How much does she spend in total?",
+    "answer": "\\$11.70",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division",
+    "difficulty": 2,
+    "question": "144 students are divided equally into 6 buses. How many students are on each bus?",
+    "answer": "24",
+    "tags": [
+      "year5",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area",
+    "difficulty": 2,
+    "question": "A rectangular rug is 5 metres long and 3 metres wide. What is its area?",
+    "answer": "15 square metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "area"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 2,
+    "question": "There are 200 books in a library. 35\\% of them are fiction. How many fiction books are there?",
+    "answer": "70",
+    "tags": [
+      "year5",
+      "percentages"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "mean",
+    "difficulty": 2,
+    "question": "The masses of three parcels are 4 kg, 7 kg, and 10 kg. What is their average (mean) mass?",
+    "answer": "7 kg",
+    "tags": [
+      "year5",
+      "data",
+      "mean"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 2,
+    "question": "A class has 24 students. 3/8 of them play soccer. How many students play soccer?",
+    "answer": "9",
+    "tags": [
+      "year5",
+      "fractions"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 2,
+    "question": "Ben has \\$50. He buys a toy for \\$32.75. How much change does he receive?",
+    "answer": "\\$17.25",
+    "tags": [
+      "year5",
+      "money",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "A movie starts at 2:45 pm and lasts 1 hour and 40 minutes. At what time does it end?",
+    "answer": "4:25 pm",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "perimeter",
+    "difficulty": 2,
+    "question": "A square garden has sides of 9 metres. What is its perimeter?",
+    "answer": "36 metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "unit_rate",
+    "difficulty": 2,
+    "question": "If 4 apples cost \\$3, how much do 12 apples cost?",
+    "answer": "\\$9",
+    "tags": [
+      "year5",
+      "money",
+      "unit_rate"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 3,
+    "question": "A plant is 60 cm tall. Over a month it grows by 20\\%. How tall is it now?",
+    "answer": "72 cm",
+    "tags": [
+      "year5",
+      "percentages",
+      "increase"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "patterns",
+    "difficulty": 2,
+    "question": "What is the next number in the pattern: 3, 9, 27, blank?",
+    "answer": "81",
+    "tags": [
+      "year5",
+      "patterns",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 2,
+    "question": "A cinema ticket costs \\$14. How much do 6 tickets cost?",
+    "answer": "\\$84",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 2,
+    "question": "Liam runs 2/5 of a track and then walks another 1/5 of it. What fraction of the track has he covered in total?",
+    "answer": "3/5",
+    "tags": [
+      "year5",
+      "fractions",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division",
+    "difficulty": 2,
+    "question": "A baker makes 96 muffins and packs them into boxes of 8. How many boxes does she fill?",
+    "answer": "12",
+    "tags": [
+      "year5",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 3,
+    "question": "A restaurant bill is \\$40. A tip of 10\\% is added to the bill. What is the total amount paid?",
+    "answer": "\\$44",
+    "tags": [
+      "year5",
+      "percentages",
+      "money"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "mean",
+    "difficulty": 3,
+    "question": "The scores of four students are 12, 15, 18, and a fourth score. If the average score is 15, what is the fourth score?",
+    "answer": "15",
+    "tags": [
+      "year5",
+      "data",
+      "mean"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "rate",
+    "difficulty": 2,
+    "question": "A car travels 60 kilometres in 1 hour. At the same speed, how far does it travel in 3 hours?",
+    "answer": "180 kilometres",
+    "tags": [
+      "year5",
+      "rate",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 4,
+    "question": "On Old MacDonald's farm, there are chickens, ducks, and geese in the ratio 4:3:2. If there are 117 animals in total, and all are either chickens, ducks, or geese, how many geese are there?",
+    "answer": "26",
+    "tags": [
+      "year5",
+      "ratios",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 4,
+    "question": "Elmo has 216 stamps in his collection. The number of stamps from Asia, Europe, and Australia is in the ratio 1:2:5, respectively. How many stamps are from Australia?",
+    "answer": "135",
+    "tags": [
+      "year5",
+      "ratios",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multi_step_addition",
+    "difficulty": 3,
+    "question": "There are 15 rooms at Hotel Transylvania. 5 of the rooms are deluxe rooms, and the rest are standard rooms. Each standard room needs 4 candle holders, and each deluxe room needs 6 candle holders. How many candle holders does the hotel owner need in total?",
+    "answer": "70",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division_remainders",
+    "difficulty": 3,
+    "question": "Bert has 16 baseball cards, Ernie has 4, and Oscar has 10. If they put all their cards together and want to share them equally among the three of them, how many cards will each person get, and how many will be left over?",
+    "answer": "10 cards each, 0 left over",
+    "tags": [
+      "year5",
+      "division",
+      "remainders"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_addition",
+    "difficulty": 2,
+    "question": "Snow White picked 5 apples a day from Monday to Friday. On Saturday and Sunday, she picked twice as many apples each day as she did on a weekday. How many apples did she pick by the end of the week?",
+    "answer": "45",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 2,
+    "question": "Mickey Mouse wants to buy three baseballs, each costing \\$15. If Mickey Mouse has \\$87, how much money will he have left after he buys the baseballs?",
+    "answer": "\\$42",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "inverse_operations",
+    "difficulty": 2,
+    "question": "Donald Duck had some jellybeans. He had 20 jellybeans left after giving Goofy 24 jellybeans and eating 8 jellybeans. How many jellybeans did Donald Duck have at the start?",
+    "answer": "52",
+    "tags": [
+      "year5",
+      "addition",
+      "inverse"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "position",
+    "difficulty": 2,
+    "question": "Jack and Jill are waiting in line to buy Taylor Swift concert tickets. If Jack was the 5th person from the front and Jill was the 42nd person from the front, how many people are between them?",
+    "answer": "36",
+    "tags": [
+      "year5",
+      "subtraction",
+      "position"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "perimeter",
+    "difficulty": 3,
+    "question": "Bugs Bunny has a rectangular carrot garden that is 12 metres long. If the garden has a perimeter of 40 metres, what is the width of the garden?",
+    "answer": "8 metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 3,
+    "question": "Shane drove twice as far as Laurence. If they drove a total of 510 kilometres together, how far did Shane drive?",
+    "answer": "340 kilometres",
+    "tags": [
+      "year5",
+      "ratios",
+      "distance"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 3,
+    "question": "A baker made 24 muffins. In the morning he sold half of them, and in the afternoon he sold a quarter of them. How many muffins were left at the end of the day?",
+    "answer": "6",
+    "tags": [
+      "year5",
+      "fractions",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 2,
+    "question": "Leo buys 3 notebooks that cost \\$4 each, and one pen that costs \\$3. He pays with a \\$20 note. How much change should he get back?",
+    "answer": "\\$5",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division_rounding",
+    "difficulty": 3,
+    "question": "A class of 30 students is going on an excursion. Each car can carry exactly 4 students. What is the smallest number of cars needed so that every student has a seat?",
+    "answer": "8",
+    "tags": [
+      "year5",
+      "division",
+      "rounding"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "A movie starts at 2:45 pm. It runs for 1 hour and 40 minutes. What time does the movie finish?",
+    "answer": "4:25 pm",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "perimeter",
+    "difficulty": 2,
+    "question": "A square vegetable garden has a perimeter of 36 metres. All four sides are the same length. What is the length of one side?",
+    "answer": "9 metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "A classroom has 6 tables, and each table seats 4 students. Today, 3 students are away sick. If every other seat is filled, how many students are in the classroom today?",
+    "answer": "21",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "patterns",
+    "difficulty": 2,
+    "question": "A number pattern starts at 7 and goes up by 5 each time. The pattern begins 7, 12, 17, 22, and so on. What is the 6th number in the pattern?",
+    "answer": "32",
+    "tags": [
+      "year5",
+      "patterns",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 2,
+    "question": "A bag of apples weighs 250 grams, and a bag of oranges weighs 400 grams. Mum buys 2 bags of apples and 1 bag of oranges. What is the total mass of the fruit she buys?",
+    "answer": "900 grams",
+    "tags": [
+      "year5",
+      "measurement",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "inverse_operations",
+    "difficulty": 3,
+    "question": "Priya had a jar of marbles. She gave 15 marbles to her brother, then found 9 more to add to the jar. She now has 40 marbles. How many marbles did Priya have at the start?",
+    "answer": "46",
+    "tags": [
+      "year5",
+      "addition",
+      "subtraction",
+      "inverse"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 3,
+    "question": "A fruit basket holds apples, bananas and pears in the ratio 2:3:4. There are 27 pieces of fruit in total. How many bananas are in the basket?",
+    "answer": "9",
+    "tags": [
+      "year5",
+      "ratios",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 2,
+    "question": "At the zoo, a child ticket costs \\$8 and an adult ticket costs \\$12. A family buys 3 child tickets and 2 adult tickets. How much do they pay altogether?",
+    "answer": "\\$48",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division",
+    "difficulty": 2,
+    "question": "A teacher shares 48 stickers equally among her students. Each student receives exactly 6 stickers, with none left over. How many students are there?",
+    "answer": "8",
+    "tags": [
+      "year5",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_addition",
+    "difficulty": 2,
+    "question": "In a pet shop there are 12 dogs and 8 cats. There are twice as many fish as there are cats. How many animals are there altogether?",
+    "answer": "36",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 3,
+    "question": "There are 20 lollies in a packet. Sam eats one quarter of them, and his sister eats one fifth of them. How many lollies are left?",
+    "answer": "11",
+    "tags": [
+      "year5",
+      "fractions",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 2,
+    "question": "A piece of ribbon is 1 metre long. Mia cuts off 35 centimetres for a bow and 28 centimetres for a card. How many centimetres of ribbon are left?",
+    "answer": "37 centimetres",
+    "tags": [
+      "year5",
+      "measurement",
+      "conversion",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 3,
+    "question": "Tom has 3 times as many trading cards as Ben. Together they have 48 cards. How many cards does Tom have?",
+    "answer": "36",
+    "tags": [
+      "year5",
+      "ratios",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "calendar",
+    "difficulty": 2,
+    "question": "Today is Tuesday. Grandma is coming to visit in exactly 10 days. On what day of the week will she arrive?",
+    "answer": "Friday",
+    "tags": [
+      "year5",
+      "time",
+      "calendar"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 2,
+    "question": "Jack has three \\$2 coins and four 50-cent coins. He has no other money. How much money does Jack have in total?",
+    "answer": "\\$8",
+    "tags": [
+      "year5",
+      "money",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "A chocolate bar is made of small squares arranged in 4 equal rows. Each row has 6 squares. If Lily eats 5 of the squares, how many squares are left?",
+    "answer": "19",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 2,
+    "question": "A library starts the day with 350 books on its shelves. On Monday, 125 books are borrowed and 60 books are returned. How many books are on the shelves at the end of Monday?",
+    "answer": "285",
+    "tags": [
+      "year5",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "remainders",
+    "difficulty": 2,
+    "question": "66 cupcakes are packed into boxes, with 8 cupcakes in each box. Only completely full boxes can be sold. How many cupcakes are left over once as many full boxes as possible have been packed?",
+    "answer": "2",
+    "tags": [
+      "year5",
+      "division",
+      "remainders"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 2,
+    "question": "Soccer practice lasts for 45 minutes. A swimming lesson lasts twice as long as soccer practice. How long does a swimming lesson last?",
+    "answer": "90 minutes",
+    "tags": [
+      "year5",
+      "time",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 2,
+    "question": "A jug holds 2 litres of juice. Each cup holds 250 millilitres of juice. How many full cups can be poured from the jug?",
+    "answer": "8",
+    "tags": [
+      "year5",
+      "measurement",
+      "conversion",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "logic",
+    "difficulty": 2,
+    "question": "I am thinking of a 3-digit number. The hundreds digit is 4, the tens digit is double the hundreds digit, and the ones digit is 3 less than the tens digit. What is the number?",
+    "answer": "485",
+    "tags": [
+      "year5",
+      "logic",
+      "digits"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "A farmer collects 12 eggs each day. Each day he uses 5 of the eggs and sells the rest. How many eggs does he sell in one week of 7 days?",
+    "answer": "49",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "A piggy bank contains twenty 5-cent coins, twelve 10-cent coins, and ten 20-cent coins. After spending \\$1.80 on a toy, how much money is left in the piggy bank?",
+    "answer": "\\$2.40",
+    "tags": [
+      "year5",
+      "money",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "subtraction",
+    "difficulty": 2,
+    "question": "Big Bird bought a book that has 550 pages. He read 74 pages on Friday and 66 pages on Saturday. How many pages does he have left to read?",
+    "answer": "410",
+    "tags": [
+      "year5",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Barbie had \\$80. How much money did she have left if she spent \\$24.20 on a bottle of shampoo and \\$16.85 on a bar of soap?",
+    "answer": "\\$38.95",
+    "tags": [
+      "year5",
+      "money",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "Sabrina works 6 days a week. In 5 weeks, she took 3 days off for holidays. How many days did she actually work?",
+    "answer": "27",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "Gerald played for 45 minutes, took a 15-minute break, then played again for 1 hour. He finished at 4:20 PM. What time did he start?",
+    "answer": "2:20 PM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Alice has \\$410. She buys 10 plates for \\$25 each. If she then buys a matching saucer for the plates for \\$10 with the leftover money, how much money will she have left?",
+    "answer": "\\$150",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 3,
+    "question": "A rectangular garden has a perimeter of 30 metres. If the garden is 7 metres long, what is the area of the garden?",
+    "answer": "56 square metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "area",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 3,
+    "question": "Cookie Monster baked a batch of cookies and ate half of the cookies in this batch. Then, he baked two more batches of cookies. If each batch makes 12 cookies, how many cookies does he have now?",
+    "answer": "30",
+    "tags": [
+      "year5",
+      "fractions",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "comparison",
+    "difficulty": 2,
+    "question": "Blossom has fifteen stickers, Bubbles has four more stickers than Blossom, and Buttercup has eight fewer stickers than Bubbles. How many stickers do the three of them have together?",
+    "answer": "45",
+    "tags": [
+      "year5",
+      "addition",
+      "subtraction",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication",
+    "difficulty": 2,
+    "question": "The town of Bellwood has 15 districts. Each district has 7 post offices. How many post offices are there in Bellwood?",
+    "answer": "105",
+    "tags": [
+      "year5",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "Elmo collected 8 marbles every day for one week. He then gave 14 marbles to his friend Zoe. How many marbles does Elmo have left?",
+    "answer": "42",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "A bookstore had 6 shelves. Each shelf held 9 books. If 17 books were sold, how many books are left in the bookstore?",
+    "answer": "37",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Olivia bought 3 packs of pencils. Each pack costs \\$4.50. If she paid with a \\$20 note, how much change did she receive?",
+    "answer": "\\$6.50",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "A movie started at 2:45 PM and ran for 1 hour and 35 minutes. What time did the movie finish?",
+    "answer": "4:20 PM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 3,
+    "question": "A square playground has a perimeter of 36 metres. What is the area of the playground?",
+    "answer": "81 square metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "area",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Lucas had \\$50. He bought a kite for \\$18.75 and a ball for \\$9.40. How much money does he have left?",
+    "answer": "\\$21.85",
+    "tags": [
+      "year5",
+      "money",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division",
+    "difficulty": 2,
+    "question": "A baker makes 8 trays of muffins. Each tray holds 6 muffins. He packs the muffins into boxes of 4. How many boxes does he fill?",
+    "answer": "12",
+    "tags": [
+      "year5",
+      "multiplication",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication",
+    "difficulty": 2,
+    "question": "Mia reads 25 pages every day. How many pages will she read in 2 weeks?",
+    "answer": "350",
+    "tags": [
+      "year5",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "A farmer has 7 baskets. Each basket contains 15 apples. He sells 38 apples at the market. How many apples does the farmer have left?",
+    "answer": "67",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division",
+    "difficulty": 2,
+    "question": "Noah saves \\$6 each week. After how many weeks will he have saved enough to buy a \\$54 scooter?",
+    "answer": "9",
+    "tags": [
+      "year5",
+      "money",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division_subtraction",
+    "difficulty": 2,
+    "question": "Three friends share 48 lollies equally. If each friend then eats 5 lollies, how many lollies does each friend have left?",
+    "answer": "11",
+    "tags": [
+      "year5",
+      "division",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "perimeter",
+    "difficulty": 2,
+    "question": "A rectangular pool is 9 metres long and 5 metres wide. What is the perimeter of the pool?",
+    "answer": "28 metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 2,
+    "question": "Sophie buys 4 notebooks for \\$3.25 each. How much does she pay in total?",
+    "answer": "\\$13.00",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 2,
+    "question": "A train left the station at 9:50 AM. It arrived at its destination at 11:25 AM. How long was the train journey?",
+    "answer": "1 hour 35 minutes",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "Jack had 5 boxes of crayons. Each box had 12 crayons. He gave away 3 full boxes to his classmates. How many crayons does Jack have left?",
+    "answer": "24",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "A library has 9 boxes of books. Each box holds 20 books. If 45 books are borrowed, how many books remain in the library?",
+    "answer": "135",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 2,
+    "question": "Daniel has 3 coins of 50 cents, 4 coins of 20 cents, and 5 coins of 10 cents. How much money does Daniel have in total?",
+    "answer": "\\$2.80",
+    "tags": [
+      "year5",
+      "money",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area",
+    "difficulty": 2,
+    "question": "A rectangular garden is 8 metres long and 6 metres wide. What is the area of the garden?",
+    "answer": "48 square metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "area"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "Grace started her homework at 4:15 PM. She worked for 40 minutes, took a 20-minute break, then worked for another 30 minutes. What time did Grace finish her homework?",
+    "answer": "5:45 PM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication",
+    "difficulty": 2,
+    "question": "A box contains 9 teacups and four times as many saucers. How many saucers are there in the box?",
+    "answer": "36",
+    "tags": [
+      "year5",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplicative_comparison",
+    "difficulty": 4,
+    "question": "The table shows the number of engineers working on each project. Airport construction: 5, bridge construction: 2, highway construction: 1, housing project: 3. A new dam construction project will require 5 times as many engineers as all the other four projects combined. How many more engineers will the dam construction project have compared to the other four construction projects combined?",
+    "answer": "44",
+    "tags": [
+      "year5",
+      "multiplication",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division_rounding",
+    "difficulty": 3,
+    "question": "Lisa needed exactly 35 paper plates for her art project. However, paper plates are only sold in packs of eight. How many packs of paper plates does Lisa need to buy to have enough paper plates for her art project?",
+    "answer": "5",
+    "tags": [
+      "year5",
+      "division",
+      "rounding"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_division",
+    "difficulty": 3,
+    "question": "Jenny and Marie were baking cookies for the bake sale. Jenny baked three times as many cookies as Marie, and she packed the cookies in boxes of five. If Marie baked a total of 25 cookies, how many boxes of cookies did Jenny have for the bake sale?",
+    "answer": "15",
+    "tags": [
+      "year5",
+      "multiplication",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions_money",
+    "difficulty": 4,
+    "question": "Over the course of one year, Andrew sold a total of 16 birdhouses for \\$8 each. He determined that for each birdhouse he sold, he had spent 1/4 of the sale price on materials. How much money did Andrew spend on materials for all the birdhouses he sold?",
+    "answer": "\\$32",
+    "tags": [
+      "year5",
+      "fractions",
+      "money",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplicative_comparison",
+    "difficulty": 3,
+    "question": "A sports shop sold 7 boxes of tennis balls with 3 tennis balls in each box. It also sold 4 tubes of shuttlecocks with 6 shuttlecocks in each tube. How many more shuttlecocks than tennis balls were sold?",
+    "answer": "3",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "place_value",
+    "difficulty": 3,
+    "question": "A three-digit number is 42 less than 600. Its digits are then written in reverse order. What is the new number?",
+    "answer": "855",
+    "tags": [
+      "year5",
+      "place_value",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "remainders",
+    "difficulty": 2,
+    "question": "A ribbon is 36 cm long. Ella cuts as many 8 cm pieces as possible. How much ribbon is left unused?",
+    "answer": "4 cm",
+    "tags": [
+      "year5",
+      "division",
+      "remainders"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "A lesson ended at 11:12 am. It lasted 1 hour and 45 minutes. What time did the lesson start?",
+    "answer": "9:27 am",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 3,
+    "question": "There are 40 cards in a box. Tom keeps 3/5 of the cards. He then gives half of the cards he kept to Ana. How many cards does Tom still have?",
+    "answer": "12",
+    "tags": [
+      "year5",
+      "fractions",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Mila paid \\$2.35 for the bus to town and \\$2.35 for the bus home. She also paid a \\$1.20 library fine and bought a snack for \\$3.50. If she started with \\$15, how much money did she have left?",
+    "answer": "\\$5.60",
+    "tags": [
+      "year5",
+      "money",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "perimeter",
+    "difficulty": 3,
+    "question": "A rectangle has a perimeter of 74 cm. Its width is 14 cm. How much longer is its length than its width?",
+    "answer": "9 cm",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "inverse_operations",
+    "difficulty": 4,
+    "question": "A chapter book has some pages. Arlo read half of the book on Monday. He read 40 more pages on Tuesday and had 25 pages left. How many pages are in the whole book?",
+    "answer": "130",
+    "tags": [
+      "year5",
+      "fractions",
+      "inverse"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "A hall has 9 rows of seats. Each row has 12 seats. If 97 people sit in the hall, how many seats are empty?",
+    "answer": "11",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "scale",
+    "difficulty": 3,
+    "question": "On a map, 1 cm represents 4 km. A route is made of two straight parts. The first part is 2.5 cm on the map and the second part is 3 cm on the map. What is the real length of the route?",
+    "answer": "22 km",
+    "tags": [
+      "year5",
+      "measurement",
+      "scale"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 4,
+    "question": "Pens and pencils are in the ratio 3 : 4. There are 84 pens and pencils altogether. How many more pencils than pens are there?",
+    "answer": "12",
+    "tags": [
+      "year5",
+      "ratios"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 3,
+    "question": "Three identical bags of flour weigh 2 kg 400 g altogether. What is the mass of one bag?",
+    "answer": "800 g",
+    "tags": [
+      "year5",
+      "measurement",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "number_line",
+    "difficulty": 2,
+    "question": "A frog starts on number 15 on a number line. It makes 4 equal jumps forward and lands on number 39. How many numbers are in each jump?",
+    "answer": "6",
+    "tags": [
+      "year5",
+      "subtraction",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "probability",
+    "difficulty": 2,
+    "question": "A bag has 8 red counters, 4 blue counters, and 5 green counters. Which colour is exactly twice as likely to be picked as blue?",
+    "answer": "red",
+    "tags": [
+      "year5",
+      "probability",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "algebra",
+    "difficulty": 3,
+    "question": "A number is multiplied by 4. Then 9 is added. The result is 65. What is the number?",
+    "answer": "14",
+    "tags": [
+      "year5",
+      "algebra",
+      "inverse"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "calendar",
+    "difficulty": 2,
+    "question": "A sports carnival is 45 days after a Tuesday. What day of the week is the sports carnival?",
+    "answer": "Thursday",
+    "tags": [
+      "year5",
+      "time",
+      "calendar"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 3,
+    "question": "A tank can hold 3 litres of water. It is filled using a 450 mL bottle 5 times. How much more water is needed to fill the tank?",
+    "answer": "750 mL",
+    "tags": [
+      "year5",
+      "measurement",
+      "conversion"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "integers",
+    "difficulty": 3,
+    "question": "In a quiz, each correct answer earns 5 points and each wrong answer loses 2 points. Sam has 12 correct answers and 3 wrong answers. What is his score?",
+    "answer": "54",
+    "tags": [
+      "year5",
+      "integers",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry",
+    "difficulty": 4,
+    "question": "A 5 by 4 rectangle is made from small square tiles. Only the outside border tiles are painted. How many tiles are painted?",
+    "answer": "14",
+    "tags": [
+      "year5",
+      "geometry",
+      "arrays"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 3,
+    "question": "A jacket costs \\$80. It is reduced by 25 percent. If Noah pays with \\$100, how much change does he get?",
+    "answer": "\\$40",
+    "tags": [
+      "year5",
+      "percentages",
+      "money"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 3,
+    "question": "A strip is divided into 12 equal parts. Five parts are shaded. How many more parts must be shaded so that 3/4 of the strip is shaded?",
+    "answer": "4",
+    "tags": [
+      "year5",
+      "fractions"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division",
+    "difficulty": 2,
+    "question": "There are 54 lollies. First, 6 lollies are kept aside. The rest are shared equally among 8 children. How many lollies does each child get?",
+    "answer": "6",
+    "tags": [
+      "year5",
+      "division",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "comparison",
+    "difficulty": 3,
+    "question": "Mia has 28 shells and Jay has 44 shells. Jay gives Mia some shells so that they have the same number of shells. How many shells does Jay give Mia?",
+    "answer": "8",
+    "tags": [
+      "year5",
+      "comparison",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry",
+    "difficulty": 3,
+    "question": "Which solid has 6 faces, 8 vertices, and 12 edges, with opposite rectangular faces equal and not all faces the same size?",
+    "answer": "rectangular prism",
+    "tags": [
+      "year5",
+      "geometry",
+      "3d_shapes"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division_rounding",
+    "difficulty": 3,
+    "question": "A class needs to hang 74 small flags. Each string can hold 9 flags. How many strings are needed to hang all the flags?",
+    "answer": "9",
+    "tags": [
+      "year5",
+      "division",
+      "rounding"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "patterns",
+    "difficulty": 4,
+    "question": "A pattern of counters is shown in the table. Day 1: 3 counters. Day 2: 7 counters. Day 3: 13 counters. Day 4: 21 counters. If the pattern continues, how many counters are there on Day 5?",
+    "answer": "31",
+    "tags": [
+      "year5",
+      "patterns"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "rounding",
+    "difficulty": 4,
+    "question": "A number has 6 hundreds. When it is rounded to the nearest hundred, the answer is 700. What is the smallest possible number?",
+    "answer": "650",
+    "tags": [
+      "year5",
+      "rounding",
+      "place_value"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "A train leaves at 8:18 am and the trip takes 47 minutes. After arriving, Ella waits 16 minutes before starting her walk. What time does Ella start walking?",
+    "answer": "9:21 am",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "perimeter",
+    "difficulty": 4,
+    "question": "A 6 cm by 6 cm square is joined to an 8 cm by 6 cm rectangle along a full 6 cm side. What is the perimeter of the joined shape?",
+    "answer": "28 cm",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "combinatorics",
+    "difficulty": 4,
+    "question": "How many different 2-digit odd numbers can be made from the digits 1, 2, 3, and 4 if no digit is repeated?",
+    "answer": "6",
+    "tags": [
+      "year5",
+      "combinatorics",
+      "digits"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "temperature",
+    "difficulty": 2,
+    "question": "The temperature was 7 degrees Celsius in the morning. At noon, it was 6 degrees Celsius warmer. At night, it was 9 degrees Celsius cooler than at noon. What was the temperature at night?",
+    "answer": "4 degrees Celsius",
+    "tags": [
+      "year5",
+      "integers",
+      "temperature"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 2,
+    "question": "Mara collected 248 shells on Monday and 176 shells on Tuesday. She gave 95 shells to her cousin. How many shells does Mara have left?",
+    "answer": "329",
+    "tags": [
+      "year5",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "A storybook costs \\$6.80. A bookmark costs \\$2.35 less than the storybook. Ella buys one storybook and one bookmark. How much does she pay altogether?",
+    "answer": "\\$11.25",
+    "tags": [
+      "year5",
+      "money",
+      "subtraction",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "logic",
+    "difficulty": 3,
+    "question": "A treasure box uses a three-digit code. The first digit is the smallest odd digit greater than 4. The third digit is 2 more than the first digit. The middle digit is the sum of the first and third digits minus 7. What is the code?",
+    "answer": "557",
+    "tags": [
+      "year5",
+      "logic",
+      "digits"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division",
+    "difficulty": 2,
+    "question": "A box of crayons costs \\$72. Nina pays using 9-dollar notes only and gives the exact amount. How many 9-dollar notes does she use?",
+    "answer": "8",
+    "tags": [
+      "year5",
+      "money",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 3,
+    "question": "The fence around a rectangular garden is 52 metres long. The longer side is 18 metres long. What is the area of the garden?",
+    "answer": "144 square metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "area",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplicative_comparison",
+    "difficulty": 3,
+    "question": "Tia has 5 ribbons. Uma has four times as many ribbons as Tia. Vera has 6 more ribbons than Uma. How many ribbons do the three girls have altogether?",
+    "answer": "51",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 3,
+    "question": "Joel is 11 centimetres taller than Ken. Ken is 7 centimetres shorter than Luis. If Luis is 145 centimetres tall, how tall is Joel?",
+    "answer": "149 centimetres",
+    "tags": [
+      "year5",
+      "measurement",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "inverse_operations",
+    "difficulty": 3,
+    "question": "A jar contains some marbles. Mia adds twice as many marbles as were already in the jar. There are then 72 marbles in the jar. How many marbles were in the jar at the start?",
+    "answer": "24",
+    "tags": [
+      "year5",
+      "multiplication",
+      "division",
+      "inverse"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "Noah started getting ready at 6:20 AM. He spent 18 minutes brushing up, 27 minutes eating breakfast, 15 minutes packing his bag, and 20 minutes walking to school. What time did Noah arrive at school?",
+    "answer": "7:40 AM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplicative_comparison",
+    "difficulty": 3,
+    "question": "Aisha is 9 years old. Her mother is 4 times Aisha's age. Her father is 5 years older than her mother. What is the total age of Aisha's mother and father?",
+    "answer": "77 years",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "patterns",
+    "difficulty": 3,
+    "question": "The table shows a pattern of blocks built over several days. Day 1: 7 blocks. Day 2: 12 blocks. Day 3: 17 blocks. Day 4: 22 blocks. If the pattern continues, how many blocks will there be on Day 8?",
+    "answer": "42",
+    "tags": [
+      "year5",
+      "patterns"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "algebra",
+    "difficulty": 4,
+    "question": "In the number puzzle, each shape stands for a different number. Square + 9 = 21. Circle = Square - 4. Triangle = Circle + 7. What number does Triangle stand for?",
+    "answer": "15",
+    "tags": [
+      "year5",
+      "algebra",
+      "symbols"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 4,
+    "question": "A full jug of juice was shared. First, 1/3 of the juice was poured into one bottle. Then half of the remaining juice was poured into another bottle. What fraction of the full jug was poured into the second bottle?",
+    "answer": "1/3",
+    "tags": [
+      "year5",
+      "fractions",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 4,
+    "question": "Ravi has 60 cards. Sonia has 20 percent more cards than Ravi. Sonia gives 12 cards to Ravi. How many more cards does Ravi have than Sonia after that?",
+    "answer": "24",
+    "tags": [
+      "year5",
+      "percentages",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "A purse contains twelve 10-cent coins, six 20-cent coins, and four 50-cent coins. After spending \\$2.10, how much money is left?",
+    "answer": "\\$2.30",
+    "tags": [
+      "year5",
+      "money",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "subtraction",
+    "difficulty": 2,
+    "question": "A chapter book has 520 pages. Rene read 96 pages on Friday, 104 pages on Saturday, and 88 pages on Sunday. How many pages does Rene still need to read?",
+    "answer": "232",
+    "tags": [
+      "year5",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "Chloe works 4 days each week. In 9 weeks, she missed 3 workdays because she was sick. How many days did Chloe actually work?",
+    "answer": "33",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "Ben practised the violin for 25 minutes, took a 15-minute break, and then practised again for 1 hour and 10 minutes. He finished at 4:40 PM. What time did Ben start?",
+    "answer": "2:50 PM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Kara has \\$650. She buys 14 notebooks for \\$27 each and 14 pens for \\$8 each. How much money does she have left?",
+    "answer": "\\$160",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 3,
+    "question": "A rectangular playground has a perimeter of 60 metres. Its length is 19 metres. What is the area of the playground?",
+    "answer": "209 square metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "area",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 3,
+    "question": "One tray holds 24 cupcakes. A baker sold 1/4 of the cupcakes on the first tray and then baked two more full trays. How many cupcakes does the baker have now?",
+    "answer": "66",
+    "tags": [
+      "year5",
+      "fractions",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "A town has 16 neighbourhoods. Each neighbourhood has 7 street lamps. Later, 13 street lamps stopped working. How many street lamps are still working?",
+    "answer": "99",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 4,
+    "question": "In a pet park, the ratio of rabbits to turtles to parrots is 4 : 3 : 2. If there are 180 animals in all, how many parrots are there?",
+    "answer": "40",
+    "tags": [
+      "year5",
+      "ratios"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 4,
+    "question": "A stamp album has stickers from three places in the ratio 5 : 4 : 3. If there are 240 stickers in all, how many stickers belong to the second place?",
+    "answer": "80",
+    "tags": [
+      "year5",
+      "ratios"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_addition",
+    "difficulty": 3,
+    "question": "A hotel has 28 rooms. 9 are family rooms and the rest are standard rooms. Each standard room needs 4 pillows, and each family room needs 6 pillows. How many pillows are needed in total?",
+    "answer": "130",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division_remainders",
+    "difficulty": 3,
+    "question": "Liam has 19 candies, Nora has 14 candies, and Owen has 21 candies. They put all their candies together and share them equally among 5 children. How many candies does each child get, and how many are left over?",
+    "answer": "10 candies each, 4 left over",
+    "tags": [
+      "year5",
+      "division",
+      "remainders"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_addition",
+    "difficulty": 2,
+    "question": "Zoe picked 8 oranges each day from Monday to Friday. On Saturday and Sunday, she picked twice as many oranges each day as on a weekday. How many oranges did she pick in the whole week?",
+    "answer": "72",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "inverse_operations",
+    "difficulty": 2,
+    "question": "Ethan had some toy cars. He gave 16 toy cars to his brother and used 9 in a display. He then had 35 toy cars left. How many toy cars did Ethan have at the start?",
+    "answer": "60",
+    "tags": [
+      "year5",
+      "addition",
+      "inverse"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "position",
+    "difficulty": 2,
+    "question": "Lea is the 12th person from the front of a line. Max is the 41st person from the front. How many people are between Lea and Max?",
+    "answer": "28",
+    "tags": [
+      "year5",
+      "subtraction",
+      "position"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 4,
+    "question": "In a park, the ratio of mango trees to acacia trees is 3 : 5. If there are 95 acacia trees, how many mango trees are there?",
+    "answer": "57",
+    "tags": [
+      "year5",
+      "ratios"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_addition",
+    "difficulty": 2,
+    "question": "A florist made 9 bouquets. Each bouquet used 14 flowers. She then used 11 more flowers to make a table display. How many flowers did she use altogether?",
+    "answer": "137",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "There are 15 juice boxes in each carton. A shop has 7 cartons. After selling 18 juice boxes, how many juice boxes are left?",
+    "answer": "87",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 3,
+    "question": "A square tile has a perimeter of 44 centimetres. What is the area of the tile?",
+    "answer": "121 square centimetres",
+    "tags": [
+      "year5",
+      "geometry",
+      "area",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 3,
+    "question": "The ratio of red beads to blue beads is 2 : 5. If there are 35 blue beads, how many red beads are there?",
+    "answer": "14",
+    "tags": [
+      "year5",
+      "ratios"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 3,
+    "question": "Isla collected 314 feathers on Saturday. Noah collected 128 fewer feathers than Isla. They put their feathers together, then donated 95 feathers to a craft stall. How many feathers did they have left?",
+    "answer": "405",
+    "tags": [
+      "year5",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "A sketchpad costs \\$4.85. A pack of stickers costs \\$1.70 less than the sketchpad. Lena buys one sketchpad and one pack of stickers. She pays with a \\$10 note. How much change should she get?",
+    "answer": "\\$2.00",
+    "tags": [
+      "year5",
+      "money",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "logic",
+    "difficulty": 3,
+    "question": "The passcode to a treasure drawer is a three-digit number. The first digit is the smallest even digit greater than 3. The third digit is 3 more than the first digit. The middle digit is 2 less than the third digit. What is the passcode?",
+    "answer": "457",
+    "tags": [
+      "year5",
+      "logic",
+      "digits"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division",
+    "difficulty": 2,
+    "question": "A theatre ticket costs \\$63. Ari pays the exact amount using \\$7 notes only. How many \\$7 notes does Ari use?",
+    "answer": "9",
+    "tags": [
+      "year5",
+      "money",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 3,
+    "question": "The fence around a rectangular vegetable patch is 58 metres long. The longer side of the patch is 19 metres long. What is the area of the vegetable patch?",
+    "answer": "190 square metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "area",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplicative_comparison",
+    "difficulty": 2,
+    "question": "Lina has 6 shells. Omar has twice as many shells as Lina. Pia has 5 more shells than Omar. How many shells do Lina, Omar, and Pia have altogether?",
+    "answer": "35",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 3,
+    "question": "Ava is 14 centimetres shorter than Bruno. Bruno is 8 centimetres taller than Chen. If Chen is 139 centimetres tall, how tall is Ava?",
+    "answer": "133 centimetres",
+    "tags": [
+      "year5",
+      "measurement",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "inverse_operations",
+    "difficulty": 4,
+    "question": "A jar had some buttons in it. Sarah added twice as many buttons as were already in the jar. Then she took out 9 buttons. There were 48 buttons left in the jar. How many buttons were in the jar at the start?",
+    "answer": "19",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction",
+      "inverse"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "Lucas started getting ready at 7:18 AM. He spent 22 minutes eating breakfast, 16 minutes packing his bag, 35 minutes on the bus, and 9 minutes walking from the bus stop to school. What time did Lucas arrive at school?",
+    "answer": "8:40 AM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplicative_comparison",
+    "difficulty": 3,
+    "question": "Zoe is 7 years old. Her mother is five times Zoe's age. Her father is 4 years older than her mother. What is the total age of Zoe's mother and father?",
+    "answer": "74 years",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "patterns",
+    "difficulty": 3,
+    "question": "The table shows a pattern of paper cranes made over several days. Day 1: 6 cranes. Day 2: 11 cranes. Day 3: 16 cranes. Day 4: 21 cranes. If the pattern continues, how many paper cranes will there be on Day 9?",
+    "answer": "46",
+    "tags": [
+      "year5",
+      "patterns"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "algebra",
+    "difficulty": 4,
+    "question": "In the number puzzle, each shape stands for a number. Square + Square = 24. Triangle + Square = 19. Circle = Triangle + 8. What number does Circle stand for?",
+    "answer": "15",
+    "tags": [
+      "year5",
+      "algebra",
+      "symbols"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 4,
+    "question": "A full basket of cherries was shared. First, 1/5 of the basket was given to May. Then half of the remaining cherries were given to Jed. What fraction of the full basket was given to Jed?",
+    "answer": "2/5",
+    "tags": [
+      "year5",
+      "fractions",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "percentages",
+    "difficulty": 4,
+    "question": "Nina has 80 trading cards. Liam has 25 percent more trading cards than Nina. Liam then gives 10 percent of his cards to Nina. After this, how many more cards does Nina have than Liam?",
+    "answer": "0",
+    "tags": [
+      "year5",
+      "percentages",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "A purse contains sixteen 5-cent coins, eleven 10-cent coins, and four 50-cent coins. After spending \\$2.35 on a drink bottle, how much money is left in the purse?",
+    "answer": "\\$1.55",
+    "tags": [
+      "year5",
+      "money",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "subtraction",
+    "difficulty": 2,
+    "question": "A book has 720 pages. Amira read 118 pages on Friday, 157 pages on Saturday, and 96 pages on Sunday. How many pages does Amira still need to read?",
+    "answer": "349",
+    "tags": [
+      "year5",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "Sam trains 6 days each week. In 7 weeks, he missed 5 training days. How many days did Sam actually train?",
+    "answer": "37",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "Maya practised guitar for 45 minutes, took a 20-minute break, then practised again for 1 hour and 25 minutes. She finished at 6:10 PM. What time did Maya start?",
+    "answer": "4:00 PM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Theo has \\$730. He buys 15 paint markers for \\$18 each and 15 sketchbooks for \\$11 each. How much money does Theo have left?",
+    "answer": "\\$295",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 3,
+    "question": "A rectangular field has a perimeter of 74 metres. Its length is 23 metres. What is the area of the field?",
+    "answer": "322 square metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "area",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 3,
+    "question": "One tray holds 30 biscuits. A baker sold 2/5 of the biscuits on the first tray, then baked two more full trays. How many biscuits does the baker have now?",
+    "answer": "78",
+    "tags": [
+      "year5",
+      "fractions",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 2,
+    "question": "A town has 14 streets. Each street has 8 street signs. Later, 17 street signs were removed. How many street signs were left?",
+    "answer": "95",
+    "tags": [
+      "year5",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 4,
+    "question": "In an aviary, the ratio of parrots to finches to doves is 4 : 7 : 3. There are 168 birds in all. How many doves are there?",
+    "answer": "36",
+    "tags": [
+      "year5",
+      "ratios"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 4,
+    "question": "A sticker album has stickers from Asia, Europe, and Africa in the ratio 3 : 5 : 4. There are 300 stickers in all. How many stickers are from Europe?",
+    "answer": "125",
+    "tags": [
+      "year5",
+      "ratios"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_addition",
+    "difficulty": 3,
+    "question": "A hotel has 30 rooms. Eight of the rooms are family rooms, and the rest are standard rooms. Each standard room needs 4 pillows. Each family room needs 7 pillows. How many pillows are needed in total?",
+    "answer": "144",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division_remainders",
+    "difficulty": 3,
+    "question": "Eli has 27 lollies, Freya has 16 lollies, and Grace has 14 lollies. They put all their lollies together and share them equally among 5 children. How many lollies will each child get, and how many will be left over?",
+    "answer": "11 lollies each, 2 left over",
+    "tags": [
+      "year5",
+      "division",
+      "remainders"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_addition",
+    "difficulty": 2,
+    "question": "Ava picked 9 limes each day from Monday to Friday. On Saturday and Sunday, she picked twice as many limes each day as she did on a weekday. How many limes did Ava pick in the whole week?",
+    "answer": "81",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "inverse_operations",
+    "difficulty": 2,
+    "question": "Caleb had some trading cards. He gave 23 cards to his cousin and used 12 cards in a display. He then had 46 cards left. How many trading cards did Caleb have at the start?",
+    "answer": "81",
+    "tags": [
+      "year5",
+      "addition",
+      "inverse"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "position",
+    "difficulty": 2,
+    "question": "Liam is the 15th person from the front of a line. Nora is the 43rd person from the front of the same line. How many people are between Liam and Nora?",
+    "answer": "27",
+    "tags": [
+      "year5",
+      "subtraction",
+      "position"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 2,
+    "question": "A bag has 4 red counters, 3 yellow counters, and 5 blue counters. What fraction of the counters are yellow?",
+    "answer": "1/4",
+    "tags": [
+      "year5",
+      "fractions",
+      "probability"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "rounding",
+    "difficulty": 5,
+    "question": "Which number rounds to 6 000 to the nearest thousand and to 6 080 to the nearest 10?",
+    "answer": "6080",
+    "tags": [
+      "year5",
+      "rounding",
+      "place_value"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 4,
+    "question": "Use this timetable. Maple to Lake bus B departs at 8:30 AM and arrives at 9:05 AM. Lake to Ridge buses depart at 8:50 AM, 9:10 AM, and 9:35 AM, arriving at 9:25 AM, 9:42 AM, and 10:08 AM. Nina catches bus B from Maple to Lake, then the next bus from Lake to Ridge. What time does Nina arrive at Ridge?",
+    "answer": "9:42 AM",
+    "tags": [
+      "year5",
+      "time",
+      "timetable"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "scale",
+    "difficulty": 3,
+    "question": "On a map, two cabins are 8.75 centimetres apart. The scale is 1 centimetre : 4 kilometres. What is the real distance between the two cabins?",
+    "answer": "35 kilometres",
+    "tags": [
+      "year5",
+      "measurement",
+      "scale"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "data",
+    "difficulty": 5,
+    "question": "This picture graph shows muffins sold. A half-circle means half as many as a full circle. Thursday: 3 full circles. Friday: 2 full circles and 1 half-circle. Saturday: 4 full circles. Altogether, 76 muffins were sold. What does one full circle stand for?",
+    "answer": "8 muffins",
+    "tags": [
+      "year5",
+      "data",
+      "picture_graph"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "divisibility",
+    "difficulty": 4,
+    "question": "The number is 4 872. Claims: I. It is divisible by 3. II. It is divisible by 4. III. It is divisible by 8. Which claims are correct?",
+    "answer": "I, II, and III",
+    "tags": [
+      "year5",
+      "divisibility",
+      "number"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication",
+    "difficulty": 2,
+    "question": "If a bakery sells 124 cupcakes every week, how many cupcakes will the bakery sell in six weeks?",
+    "answer": "744",
+    "tags": [
+      "year5",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 4,
+    "question": "A box has 24 tokens. 3/4 of them are either black or red. If 1/3 of those are red, how many tokens are not black?",
+    "answer": "12",
+    "tags": [
+      "year5",
+      "fractions",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "subtraction",
+    "difficulty": 2,
+    "question": "Last month, Taylor Swift downloaded 886 songs. If 350 of the songs were pop songs, how many of the songs were not pop songs?",
+    "answer": "536",
+    "tags": [
+      "year5",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 3,
+    "question": "A square garden has a perimeter of 32 metres. What is the area of the garden?",
+    "answer": "64 square metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "area",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "If 8 notepads cost \\$40 and each pen costs \\$3, how much would 5 notepads and 4 pens cost in total?",
+    "answer": "\\$37",
+    "tags": [
+      "year5",
+      "money",
+      "unit_rate"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "inequalities",
+    "difficulty": 4,
+    "question": "Harry's high score was 60. In a new game, he earns 10 points per level for the first 3 levels, then only 7 points per level after that. What is the least number of levels he must finish to beat his old high score?",
+    "answer": "8",
+    "tags": [
+      "year5",
+      "patterns",
+      "inequalities"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "comparison",
+    "difficulty": 2,
+    "question": "Bert has 32 baseball cards, and Ernie has 14 more baseball cards than Bert. How many baseball cards do they have together?",
+    "answer": "78",
+    "tags": [
+      "year5",
+      "addition",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "rate",
+    "difficulty": 2,
+    "question": "Jake can type 22 words per minute. At this rate, how many words can Jake type in half an hour?",
+    "answer": "660",
+    "tags": [
+      "year5",
+      "rate",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division_rounding",
+    "difficulty": 2,
+    "question": "Rupert wants to buy a video game that costs \\$40. If he had already saved \\$20 and could save \\$4 each week, how many weeks would it take him to save enough money for the video game?",
+    "answer": "5",
+    "tags": [
+      "year5",
+      "money",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division_rounding",
+    "difficulty": 2,
+    "question": "Herbert's doctor prescribed him to take two pills daily, one in the morning and one in the evening, for 30 days. If each bottle contains 15 pills, how many bottles does he need to buy?",
+    "answer": "4",
+    "tags": [
+      "year5",
+      "division",
+      "rounding"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "data",
+    "difficulty": 4,
+    "question": "This picture graph shows the number of stars made by three groups. A half-circle means half as many as a full circle. Group A: 3 full circles. Group B: 1 full circle and 1 half-circle. Group C: 2 full circles and 1 half-circle. Altogether, the three groups made 63 stars. What does one full circle stand for?",
+    "answer": "9 stars",
+    "tags": [
+      "year5",
+      "data",
+      "picture_graph"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "scale",
+    "difficulty": 3,
+    "question": "On a map, 1 cm represents 6 km. A walking track is 4.5 cm long on the map. Mia walks the track and then walks back the same way. How far does she walk altogether?",
+    "answer": "54 km",
+    "tags": [
+      "year5",
+      "measurement",
+      "scale"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "rounding",
+    "difficulty": 5,
+    "question": "Which number has 7 hundreds, has a tens digit that is double its ones digit, and rounds to 760 to the nearest ten?",
+    "answer": "764",
+    "tags": [
+      "year5",
+      "rounding",
+      "digits"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "probability",
+    "difficulty": 2,
+    "question": "A bag contains 4 red buttons, 5 blue buttons, and 3 yellow buttons. What is the probability of picking a button that is not red?",
+    "answer": "2/3",
+    "tags": [
+      "year5",
+      "probability",
+      "fractions"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "integers",
+    "difficulty": 2,
+    "question": "A lift starts on floor 4. It goes up 7 floors, down 3 floors, up 9 floors, and down 5 floors. Which floor is the lift on now?",
+    "answer": "12",
+    "tags": [
+      "year5",
+      "integers",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 4,
+    "question": "Markers cost \\$1.50 each or 5 markers for \\$6.80. Emma buys exactly 13 markers as cheaply as possible. How much does she pay?",
+    "answer": "\\$18.10",
+    "tags": [
+      "year5",
+      "money",
+      "optimization"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 3,
+    "question": "A train had 38 passengers. At the first stop, 12 passengers got off and 25 passengers got on. At the second stop, 9 passengers got off and 7 passengers got on. How many passengers were on the train after the second stop?",
+    "answer": "49",
+    "tags": [
+      "year5",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area",
+    "difficulty": 3,
+    "question": "A rectangular garden is 10 metres long and 6 metres wide. A rectangular pond that is 4 metres long and 3 metres wide is inside the garden. The rest of the garden is used for planting. What is the planting area?",
+    "answer": "48 square metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "area"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "patterns",
+    "difficulty": 4,
+    "question": "What is the next number in the pattern? 5, 9, 18, 22, 44, ...",
+    "answer": "48",
+    "tags": [
+      "year5",
+      "patterns"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "comparison",
+    "difficulty": 4,
+    "question": "Two ropes have a total length of 85 cm. The red rope is 17 cm longer than the blue rope. How long is the blue rope?",
+    "answer": "34 cm",
+    "tags": [
+      "year5",
+      "comparison",
+      "measurement"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "A vending machine accepts only 50-cent coins and 10-cent coins. A snack costs \\$2.30. What is the least number of coins needed to pay exactly \\$2.30?",
+    "answer": "7",
+    "tags": [
+      "year5",
+      "money",
+      "optimization"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "logic",
+    "difficulty": 4,
+    "question": "Three buses carry students. Bus A has 18 students, Bus B has 23 students, and Bus C has 19 students. Then 5 students move from Bus B to Bus C. Claims: I. The total number of students stays the same. II. Bus C now has more students than Bus A. III. Bus B now has the same number of students as Bus A. Which claims are correct?",
+    "answer": "I, II, and III",
+    "tags": [
+      "year5",
+      "logic",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "mean",
+    "difficulty": 2,
+    "question": "Which number is exactly halfway between 68 and 124?",
+    "answer": "96",
+    "tags": [
+      "year5",
+      "mean",
+      "number"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "number_chart",
+    "difficulty": 2,
+    "question": "On a hundred chart, moving down one square adds 10, moving up one square subtracts 10, moving right one square adds 1, and moving left one square subtracts 1. A robot starts on 27. It moves down, down, right, up, right. What number does it land on?",
+    "answer": "39",
+    "tags": [
+      "year5",
+      "place_value",
+      "number_chart"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "combinatorics",
+    "difficulty": 3,
+    "question": "At a lunch stall, there are 3 sandwich choices, 2 drink choices, and 2 fruit choices. A student chooses one sandwich and then chooses either one drink or one fruit. How many different lunches can be made?",
+    "answer": "12",
+    "tags": [
+      "year5",
+      "combinatorics",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "remainders",
+    "difficulty": 2,
+    "question": "A number is divided by 7. The answer is 8 remainder 3. What is the number?",
+    "answer": "59",
+    "tags": [
+      "year5",
+      "division",
+      "remainders"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "mean",
+    "difficulty": 3,
+    "question": "Four test scores have an average of 15. Three of the scores are 12, 16, and 18. What is the fourth score?",
+    "answer": "14",
+    "tags": [
+      "year5",
+      "data",
+      "mean"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 4,
+    "question": "Use this timetable. Bus B leaves Home at 8:18 am and arrives at Park at 8:47 am. The next bus from Park to Pool leaves at 8:50 am. How long does Mira wait at Park?",
+    "answer": "3 minutes",
+    "tags": [
+      "year5",
+      "time",
+      "timetable"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 4,
+    "question": "Red and blue beads are in the ratio 2 : 3. There are 45 beads altogether. Then 6 red beads are added. What is the new ratio of red beads to blue beads?",
+    "answer": "8 : 9",
+    "tags": [
+      "year5",
+      "ratios"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division",
+    "difficulty": 4,
+    "question": "Every small box has 6 cards and every large box has 9 cards. Ava packs the same number of small boxes and large boxes. Altogether, the boxes contain 75 cards. How many boxes does Ava use altogether?",
+    "answer": "10",
+    "tags": [
+      "year5",
+      "division",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 4,
+    "question": "A school needs 118 badges. Badges are sold only in packs of 9. Each pack costs \\$4. How much must the school pay to have enough badges?",
+    "answer": "\\$56",
+    "tags": [
+      "year5",
+      "money",
+      "division_rounding"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "algebra",
+    "difficulty": 4,
+    "question": "In a number puzzle, triangle, square, and circle stand for numbers. Square is 3 more than triangle. Triangle + Square = 17. Circle = Square - Triangle. What number does circle stand for?",
+    "answer": "3",
+    "tags": [
+      "year5",
+      "algebra",
+      "symbols"
+    ],
+    "source": "imported"
+  }
+]

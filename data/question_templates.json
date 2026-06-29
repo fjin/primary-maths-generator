@@ -1,0 +1,21 @@
+[
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 3,
+    "question": "A library starts the day with {start} books on its shelves. On Monday, {borrowed} books are borrowed and {returned} books are returned. How many books are on the shelves at the end of Monday?",
+    "answer_formula": "start - borrowed + returned",
+    "answer_format": "{answer}",
+    "variables": {
+      "start": { "min": 250, "max": 800, "step": 10 },
+      "borrowed": { "min": 50, "max": 300, "step": 5 },
+      "returned": { "min": 20, "max": 150, "step": 5 }
+    },
+    "constraints": [
+      "borrowed < start",
+      "start - borrowed + returned > 0"
+    ],
+    "tags": ["year5", "addition", "subtraction", "template"],
+    "source": "template"
+  }
+]
