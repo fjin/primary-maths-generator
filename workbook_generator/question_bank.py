@@ -31,19 +31,12 @@ class QuestionBank:
     def generate_one(
         self,
         topic: str,
-        max_difficulty: int,
+        difficulty: int,
         rng: random.Random,
     ) -> Question | None:
-        entries: list[Question | dict[str, Any]] = [
-            question
-            for question in self._questions
-            if question.topic == topic and question.difficulty <= max_difficulty
-        ]
-        entries.extend(
-            template
-            for template in self._templates
-            if template["topic"] == topic and int(template.get("difficulty", 3)) <= max_difficulty
-        )
+        entries = self._entries_for(topic, difficulty)
+        if not entries and difficulty > 1:
+            entries = self._entries_up_to(topic, difficulty)
         if not entries:
             return None
 
@@ -51,6 +44,32 @@ class QuestionBank:
         if isinstance(selected, Question):
             return selected
         return self._instantiate_template(selected, rng)
+
+    def _entries_for(self, topic: str, difficulty: int) -> list[Question | dict[str, Any]]:
+        entries: list[Question | dict[str, Any]] = [
+            question
+            for question in self._questions
+            if question.topic == topic and question.difficulty == difficulty
+        ]
+        entries.extend(
+            template
+            for template in self._templates
+            if template["topic"] == topic and int(template.get("difficulty", 3)) == difficulty
+        )
+        return entries
+
+    def _entries_up_to(self, topic: str, difficulty: int) -> list[Question | dict[str, Any]]:
+        entries: list[Question | dict[str, Any]] = [
+            question
+            for question in self._questions
+            if question.topic == topic and question.difficulty <= difficulty
+        ]
+        entries.extend(
+            template
+            for template in self._templates
+            if template["topic"] == topic and int(template.get("difficulty", 3)) <= difficulty
+        )
+        return entries
 
     def _load(self) -> list[Question]:
         if not self.path.exists():

@@ -93,7 +93,7 @@ Add curated questions to `data/question_bank.json`:
 }
 ```
 
-The word-problem generator uses bank questions that match the selected difficulty. For example, `--difficulty year5` uses questions with difficulty `1`, `2`, or `3`.
+The word-problem generator prefers questions that exactly match the selected difficulty. For example, `--difficulty year6` prefers questions with difficulty `4`. If there are no matching questions, it falls back to easier questions.
 
 ## Adding Randomised Questions
 

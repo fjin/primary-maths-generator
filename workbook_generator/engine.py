@@ -60,10 +60,13 @@ class WorksheetBuilder:
         difficulty = DIFFICULTY_LEVELS.get(recipe.difficulty.lower(), 3)
         topics = self._expand_topics(recipe)
         questions: list[Question] = []
+        used_prompts: set[str] = set()
 
         for index in range(recipe.questions):
             generator = self.registry.resolve(topics[index % len(topics)])
-            questions.append(generator.generate_one(rng, difficulty))
+            question = self._generate_unique_question(generator, rng, difficulty, used_prompts)
+            questions.append(question)
+            used_prompts.add(question.prompt)
 
         rng.shuffle(questions)
         return Worksheet(
@@ -99,3 +102,16 @@ class WorksheetBuilder:
     def _slugify(value: str) -> str:
         return re.sub(r"[^a-z0-9]+", "_", value.lower()).strip("_")
 
+    @staticmethod
+    def _generate_unique_question(
+        generator: BaseGenerator,
+        rng: random.Random,
+        difficulty: int,
+        used_prompts: set[str],
+    ) -> Question:
+        question = generator.generate_one(rng, difficulty)
+        for _ in range(50):
+            if question.prompt not in used_prompts:
+                return question
+            question = generator.generate_one(rng, difficulty)
+        return question
