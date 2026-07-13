@@ -118,6 +118,25 @@ Add templates to `data/question_templates.json` when you want the numbers and an
 }
 ```
 
+Templates can also calculate several derived values, which is useful for ratios:
+
+```json
+{
+  "question": "{person_a} and {person_b} share {total} candies in the ratio {ratio_a}:{ratio_b}. How many candies does each person get?",
+  "answer_format": "{person_a}: {share_a}, {person_b}: {share_b}",
+  "variables": {
+    "ratio_a": { "choices": [2, 3, 4, 5, 6] },
+    "ratio_b": { "choices": [1, 2, 3, 4, 5] },
+    "unit": { "min": 2, "max": 12 }
+  },
+  "derived": {
+    "total": "unit * (ratio_a + ratio_b)",
+    "share_a": "unit * ratio_a",
+    "share_b": "unit * ratio_b"
+  }
+}
+```
+
 ## Tests
 
 ```bash

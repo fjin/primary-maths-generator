@@ -96,6 +96,96 @@ class EngineTests(unittest.TestCase):
         self.assertEqual(question.prompt, "350 books, 200 borrowed, 100 returned.")
         self.assertEqual(question.answer, "250")
 
+    def test_ratio_template_uses_derived_values(self) -> None:
+        template_path = Path(__file__).parent / "tmp_ratio_templates.json"
+        template_path.write_text(
+            json.dumps(
+                [
+                    {
+                        "topic": "word_problems",
+                        "subtopic": "ratios",
+                        "difficulty": 3,
+                        "question": "{person_a} and {person_b} share {total} candies in the ratio {ratio_a}:{ratio_b}.",
+                        "answer_format": "{person_a}: {share_a}, {person_b}: {share_b}",
+                        "variables": {
+                            "person_a": {"choices": ["Tom"]},
+                            "person_b": {"choices": ["you"]},
+                            "ratio_a": {"choices": [6]},
+                            "ratio_b": {"choices": [4]},
+                            "unit": {"choices": [1]},
+                        },
+                        "derived": {
+                            "total": "unit * (ratio_a + ratio_b)",
+                            "share_a": "unit * ratio_a",
+                            "share_b": "unit * ratio_b",
+                        },
+                        "source": "template",
+                    }
+                ]
+            )
+        )
+        try:
+            bank = QuestionBank(
+                path=Path(__file__).parent / "missing_question_bank.json",
+                template_path=template_path,
+            )
+            question = bank.generate_one("word_problems", 3, __import__("random").Random(1))
+        finally:
+            template_path.unlink()
+
+        self.assertIsNotNone(question)
+        assert question is not None
+        self.assertEqual(
+            question.prompt,
+            "Tom and you share 10 candies in the ratio 6:4.",
+        )
+        self.assertEqual(question.answer, "Tom: 6, you: 4")
+
+    def test_ratio_template_can_find_total_from_one_share(self) -> None:
+        template_path = Path(__file__).parent / "tmp_ratio_total_templates.json"
+        template_path.write_text(
+            json.dumps(
+                [
+                    {
+                        "topic": "word_problems",
+                        "subtopic": "ratios",
+                        "difficulty": 3,
+                        "question": "{person_a} and {person_b} have candies in the ratio {ratio_a}:{ratio_b}. {person_a} has {share_a} candies. How many candies do they have altogether?",
+                        "answer_format": "{total}",
+                        "variables": {
+                            "person_a": {"choices": ["Tom"]},
+                            "person_b": {"choices": ["you"]},
+                            "ratio_a": {"choices": [1]},
+                            "ratio_b": {"choices": [3]},
+                            "unit": {"choices": [5]},
+                        },
+                        "derived": {
+                            "share_a": "unit * ratio_a",
+                            "share_b": "unit * ratio_b",
+                            "total": "share_a + share_b",
+                        },
+                        "source": "template",
+                    }
+                ]
+            )
+        )
+        try:
+            bank = QuestionBank(
+                path=Path(__file__).parent / "missing_question_bank.json",
+                template_path=template_path,
+            )
+            question = bank.generate_one("word_problems", 3, __import__("random").Random(1))
+        finally:
+            template_path.unlink()
+
+        self.assertIsNotNone(question)
+        assert question is not None
+        self.assertEqual(
+            question.prompt,
+            "Tom and you have candies in the ratio 1:3. Tom has 5 candies. How many candies do they have altogether?",
+        )
+        self.assertEqual(question.answer, "20")
+
     def test_question_bank_prefers_exact_difficulty(self) -> None:
         bank_path = Path(__file__).parent / "tmp_question_bank.json"
         bank_path.write_text(

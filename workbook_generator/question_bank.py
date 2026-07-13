@@ -100,8 +100,12 @@ class QuestionBank:
         rng: random.Random,
     ) -> Question:
         values = self._generate_values(template, rng)
-        answer = _safe_eval(str(template["answer_formula"]), values)
-        values["answer"] = _format_number(answer)
+        for name, formula in template.get("derived", {}).items():
+            values[name] = _safe_eval(str(formula), values)
+
+        if "answer_formula" in template:
+            answer = _safe_eval(str(template["answer_formula"]), values)
+            values["answer"] = _format_number(answer)
 
         return Question(
             prompt=template["question"].format(**values),

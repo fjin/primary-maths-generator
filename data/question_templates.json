@@ -17,5 +17,83 @@
     ],
     "tags": ["year5", "addition", "subtraction", "template"],
     "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 3,
+    "question": "{person_a} and {person_b} share {total} {items} in the ratio {ratio_a}:{ratio_b}. How many {items} does each person get?",
+    "answer_format": "{person_a}: {share_a}, {person_b}: {share_b}",
+    "variables": {
+      "person_a": { "choices": ["Tom", "Mia", "Leo", "Ava", "Noah", "Sophie"] },
+      "person_b": { "choices": ["you", "Ben", "Ella", "Sam", "Ruby", "Jack"] },
+      "items": { "choices": ["candies", "stickers", "marbles", "cards", "pencils"] },
+      "ratio_a": { "choices": [2, 3, 4, 5, 6] },
+      "ratio_b": { "choices": [1, 2, 3, 4, 5] },
+      "unit": { "min": 2, "max": 12, "step": 1 }
+    },
+    "derived": {
+      "total": "unit * (ratio_a + ratio_b)",
+      "share_a": "unit * ratio_a",
+      "share_b": "unit * ratio_b"
+    },
+    "constraints": [
+      "ratio_a != ratio_b",
+      "unit * (ratio_a + ratio_b) <= 120"
+    ],
+    "tags": ["year5", "ratios", "division", "template"],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 3,
+    "question": "{person_a} and {person_b} have {items} in the ratio {ratio_a}:{ratio_b}. {person_a} has {share_a} {items}. How many {items} do they have altogether?",
+    "answer_format": "{total}",
+    "variables": {
+      "person_a": { "choices": ["Tom", "Mia", "Leo", "Ava", "Noah", "Sophie"] },
+      "person_b": { "choices": ["you", "Ben", "Ella", "Sam", "Ruby", "Jack"] },
+      "items": { "choices": ["candies", "stickers", "marbles", "cards", "pencils"] },
+      "ratio_a": { "choices": [1, 2, 3, 4, 5, 6] },
+      "ratio_b": { "choices": [1, 2, 3, 4, 5] },
+      "unit": { "min": 2, "max": 12, "step": 1 }
+    },
+    "derived": {
+      "share_a": "unit * ratio_a",
+      "share_b": "unit * ratio_b",
+      "total": "share_a + share_b"
+    },
+    "constraints": [
+      "ratio_a != ratio_b",
+      "unit * (ratio_a + ratio_b) <= 120"
+    ],
+    "tags": ["year5", "ratios", "total_from_part", "template"],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 3,
+    "question": "{person_a} and {person_b} share some {items} in the ratio {ratio_a}:{ratio_b}. {person_b} gets {share_b} {items}. How many {items} does {person_a} get?",
+    "answer_format": "{share_a}",
+    "variables": {
+      "person_a": { "choices": ["Tom", "Mia", "Leo", "Ava", "Noah", "Sophie"] },
+      "person_b": { "choices": ["you", "Ben", "Ella", "Sam", "Ruby", "Jack"] },
+      "items": { "choices": ["candies", "stickers", "marbles", "cards", "pencils"] },
+      "ratio_a": { "choices": [1, 2, 3, 4, 5, 6] },
+      "ratio_b": { "choices": [1, 2, 3, 4, 5] },
+      "unit": { "min": 2, "max": 12, "step": 1 }
+    },
+    "derived": {
+      "share_a": "unit * ratio_a",
+      "share_b": "unit * ratio_b",
+      "total": "share_a + share_b"
+    },
+    "constraints": [
+      "ratio_a != ratio_b",
+      "unit * (ratio_a + ratio_b) <= 120"
+    ],
+    "tags": ["year5", "ratios", "missing_part", "template"],
+    "source": "template"
   }
 ]
