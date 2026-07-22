@@ -127,6 +127,8 @@ class QuestionBank:
 
         for _ in range(100):
             values: dict[str, int | float | str] = {}
+            if "choice_sets" in template:
+                values.update(rng.choice(template["choice_sets"]))
             for name, config in variables.items():
                 values[name] = _random_value(config, rng)
             if all(bool(_safe_eval(constraint, values)) for constraint in constraints):

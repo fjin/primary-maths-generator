@@ -792,5 +792,968 @@
       "template"
     ],
     "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_area",
+    "difficulty": 1,
+    "question": "A rectangular {place} is {length} metres long and {width} metres wide. What is its area?",
+    "answer_format": "{area} square metres",
+    "variables": {
+      "place": {
+        "choices": [
+          "garden",
+          "stage",
+          "playground",
+          "carpet",
+          "field"
+        ]
+      },
+      "length": {
+        "min": 5,
+        "max": 15,
+        "step": 1
+      },
+      "width": {
+        "min": 3,
+        "max": 10,
+        "step": 1
+      }
+    },
+    "derived": {
+      "area": "length * width"
+    },
+    "constraints": [
+      "length > width"
+    ],
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_perimeter",
+    "difficulty": 1,
+    "question": "A rectangular {place} is {length} metres long and {width} metres wide. What is its perimeter?",
+    "answer_format": "{perimeter} metres",
+    "variables": {
+      "place": {
+        "choices": [
+          "garden",
+          "yard",
+          "pool",
+          "playground",
+          "field"
+        ]
+      },
+      "length": {
+        "min": 5,
+        "max": 18,
+        "step": 1
+      },
+      "width": {
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    },
+    "derived": {
+      "perimeter": "2 * (length + width)"
+    },
+    "constraints": [
+      "length > width"
+    ],
+    "tags": [
+      "year3",
+      "geometry",
+      "perimeter",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_square",
+    "difficulty": 1,
+    "question": "A square {place} has sides of {side} metres. What is its perimeter?",
+    "answer_format": "{perimeter} metres",
+    "variables": {
+      "place": {
+        "choices": [
+          "yard",
+          "garden",
+          "portrait",
+          "stage",
+          "battlefield"
+        ]
+      },
+      "side": {
+        "min": 4,
+        "max": 15,
+        "step": 1
+      }
+    },
+    "derived": {
+      "perimeter": "4 * side"
+    },
+    "tags": [
+      "year3",
+      "geometry",
+      "square",
+      "perimeter",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_square",
+    "difficulty": 1,
+    "question": "A square {place} has sides of {side} metres. What is its area?",
+    "answer_format": "{area} square metres",
+    "variables": {
+      "place": {
+        "choices": [
+          "yard",
+          "garden",
+          "portrait",
+          "stage",
+          "battlefield"
+        ]
+      },
+      "side": {
+        "min": 4,
+        "max": 15,
+        "step": 1
+      }
+    },
+    "derived": {
+      "area": "side * side"
+    },
+    "tags": [
+      "year3",
+      "geometry",
+      "square",
+      "area",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_missing_side",
+    "difficulty": 2,
+    "question": "A rectangle has an area of {area} square centimetres. One side is {length} centimetres. What is the other side?",
+    "answer_format": "{width} centimetres",
+    "variables": {
+      "length": {
+        "min": 5,
+        "max": 15,
+        "step": 1
+      },
+      "width": {
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    },
+    "derived": {
+      "area": "length * width"
+    },
+    "constraints": [
+      "length > width"
+    ],
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "missing_side",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_missing_side",
+    "difficulty": 2,
+    "question": "A rectangle has a perimeter of {perimeter} metres. The longer side is {length} metres. What is the shorter side?",
+    "answer_format": "{width} metres",
+    "variables": {
+      "length": {
+        "min": 6,
+        "max": 18,
+        "step": 1
+      },
+      "width": {
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    },
+    "derived": {
+      "perimeter": "2 * (length + width)"
+    },
+    "constraints": [
+      "length > width"
+    ],
+    "tags": [
+      "year3",
+      "geometry",
+      "perimeter",
+      "missing_side",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_triangle",
+    "difficulty": 1,
+    "question": "An equilateral triangle has a perimeter of {perimeter} centimetres. What is the length of one side?",
+    "answer_format": "{side} centimetres",
+    "variables": {
+      "side": {
+        "min": 3,
+        "max": 15,
+        "step": 1
+      }
+    },
+    "derived": {
+      "perimeter": "3 * side"
+    },
+    "tags": [
+      "year3",
+      "geometry",
+      "triangle",
+      "perimeter",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_painting",
+    "difficulty": 2,
+    "question": "A wall is {length} metres wide and {height} metres tall. One can of paint covers {coverage} square metres. How many cans of paint are needed?",
+    "answer_format": "{cans}",
+    "variables": {
+      "length": {
+        "min": 4,
+        "max": 12,
+        "step": 1
+      },
+      "height": {
+        "min": 3,
+        "max": 8,
+        "step": 1
+      },
+      "coverage": {
+        "choices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    "derived": {
+      "area": "length * height",
+      "cans": "area // coverage"
+    },
+    "constraints": [
+      "length * height % coverage == 0"
+    ],
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "division",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios_free_items",
+    "difficulty": 1,
+    "question": "A shop gives {free} free {free_item} for every {buy} {bought_item} bought. If {person} buys {bought} {bought_item}, how many free {bought_item} does {person} get?",
+    "answer_format": "{free_total}",
+    "variables": {
+      "person": {
+        "choices": [
+          "Tom",
+          "Mia",
+          "Leo",
+          "Ava",
+          "Noah",
+          "Sophie"
+        ]
+      },
+      "buy": {
+        "choices": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "free": {
+        "choices": [
+          1
+        ]
+      },
+      "groups": {
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    },
+    "derived": {
+      "bought": "buy * groups",
+      "free_total": "free * groups"
+    },
+    "tags": [
+      "year3",
+      "ratios",
+      "unit_rate",
+      "template"
+    ],
+    "source": "template",
+    "choice_sets": [
+      {
+        "item": "lollipop",
+        "free_item": "lollipop",
+        "bought_item": "lollipops"
+      },
+      {
+        "item": "sticker",
+        "free_item": "sticker",
+        "bought_item": "stickers"
+      },
+      {
+        "item": "card",
+        "free_item": "card",
+        "bought_item": "cards"
+      },
+      {
+        "item": "pencil",
+        "free_item": "pencil",
+        "bought_item": "pencils"
+      }
+    ]
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios_total_split",
+    "difficulty": 1,
+    "question": "There are {total} {items}. The ratio of {group_a} to {group_b} is {ratio_a}:{ratio_b}. How many {group_b} are there?",
+    "answer_format": "{share_b}",
+    "choice_sets": [
+      {
+        "items": "students",
+        "group_a": "boys",
+        "group_b": "girls",
+        "ratio_a": 1,
+        "ratio_b": 2
+      },
+      {
+        "items": "students",
+        "group_a": "boys",
+        "group_b": "girls",
+        "ratio_a": 3,
+        "ratio_b": 4
+      },
+      {
+        "items": "marbles",
+        "group_a": "black marbles",
+        "group_b": "white marbles",
+        "ratio_a": 5,
+        "ratio_b": 7
+      },
+      {
+        "items": "animals",
+        "group_a": "chickens",
+        "group_b": "geese",
+        "ratio_a": 4,
+        "ratio_b": 2
+      },
+      {
+        "items": "stickers",
+        "group_a": "blue stickers",
+        "group_b": "green stickers",
+        "ratio_a": 2,
+        "ratio_b": 3
+      }
+    ],
+    "variables": {
+      "unit": {
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    },
+    "derived": {
+      "total": "unit * (ratio_a + ratio_b)",
+      "share_a": "unit * ratio_a",
+      "share_b": "unit * ratio_b"
+    },
+    "tags": [
+      "year3",
+      "ratios",
+      "total_split",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios_known_part",
+    "difficulty": 1,
+    "question": "The ratio of {group_a} to {group_b} is {ratio_a}:{ratio_b}. There are {share_b} {group_b}. How many are there altogether?",
+    "answer_format": "{total}",
+    "choice_sets": [
+      {
+        "group_a": "hens",
+        "group_b": "roosters",
+        "ratio_a": 4,
+        "ratio_b": 3
+      },
+      {
+        "group_a": "red counters",
+        "group_b": "blue counters",
+        "ratio_a": 2,
+        "ratio_b": 3
+      },
+      {
+        "group_a": "raisin cookies",
+        "group_b": "oatmeal cookies",
+        "ratio_a": 3,
+        "ratio_b": 4
+      },
+      {
+        "group_a": "salmon",
+        "group_b": "trout",
+        "ratio_a": 7,
+        "ratio_b": 4
+      }
+    ],
+    "variables": {
+      "unit": {
+        "min": 3,
+        "max": 12,
+        "step": 1
+      }
+    },
+    "derived": {
+      "share_a": "unit * ratio_a",
+      "share_b": "unit * ratio_b",
+      "total": "share_a + share_b"
+    },
+    "tags": [
+      "year3",
+      "ratios",
+      "known_part",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "rates",
+    "difficulty": 1,
+    "question": "{person} earns \\${total_pay} for {hours} hours of work. How much does {person} earn per hour?",
+    "answer_format": "\\${rate} per hour",
+    "variables": {
+      "person": {
+        "choices": [
+          "Veronica",
+          "Liam",
+          "Mia",
+          "Noah",
+          "Ava"
+        ]
+      },
+      "hours": {
+        "min": 4,
+        "max": 10,
+        "step": 1
+      },
+      "rate": {
+        "min": 5,
+        "max": 15,
+        "step": 1
+      }
+    },
+    "derived": {
+      "total_pay": "hours * rate"
+    },
+    "tags": [
+      "year3",
+      "rates",
+      "division",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "rates",
+    "difficulty": 2,
+    "question": "A vehicle travels {distance} kilometres in {minutes} minutes. At the same rate, how far can it travel in {target_minutes} minutes?",
+    "answer_format": "{target_distance} kilometres",
+    "variables": {
+      "rate": {
+        "choices": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "minutes": {
+        "choices": [
+          30,
+          40,
+          45,
+          60
+        ]
+      },
+      "target_minutes": {
+        "choices": [
+          60,
+          90,
+          120
+        ]
+      }
+    },
+    "derived": {
+      "distance": "rate * minutes",
+      "target_distance": "rate * target_minutes"
+    },
+    "tags": [
+      "year3",
+      "rates",
+      "multiplication",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios_fractional_rate",
+    "difficulty": 2,
+    "question": "A recipe uses {butter} bars of butter for every {chips} cups of chocolate chips. If {person} uses {used_butter} bars of butter, how many cups of chocolate chips are needed?",
+    "answer_format": "{needed_chips} cups",
+    "variables": {
+      "person": {
+        "choices": [
+          "Mia",
+          "Leo",
+          "Ava",
+          "Noah",
+          "Sophie"
+        ]
+      },
+      "butter": {
+        "choices": [
+          1,
+          2
+        ]
+      },
+      "chips": {
+        "choices": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "multiplier": {
+        "min": 2,
+        "max": 8,
+        "step": 1
+      }
+    },
+    "derived": {
+      "used_butter": "butter * multiplier",
+      "needed_chips": "chips * multiplier"
+    },
+    "tags": [
+      "year3",
+      "ratios",
+      "recipes",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "one_unknown_equations",
+    "difficulty": 3,
+    "question": "Solve for a: {constant} + {coefficient}a = {total}.",
+    "answer_format": "a = {unknown}",
+    "variables": {
+      "unknown": {
+        "min": 2,
+        "max": 18,
+        "step": 1
+      },
+      "coefficient": {
+        "choices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          10
+        ]
+      },
+      "constant": {
+        "min": 5,
+        "max": 60,
+        "step": 5
+      }
+    },
+    "derived": {
+      "total": "constant + coefficient * unknown"
+    },
+    "tags": [
+      "year5",
+      "algebra",
+      "one_unknown",
+      "equations",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "one_unknown_equations",
+    "difficulty": 3,
+    "question": "A number is multiplied by {coefficient}, then {constant} is added. The result is {total}. What is the number?",
+    "answer_format": "{unknown}",
+    "variables": {
+      "unknown": {
+        "min": 2,
+        "max": 18,
+        "step": 1
+      },
+      "coefficient": {
+        "choices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          10
+        ]
+      },
+      "constant": {
+        "min": 5,
+        "max": 60,
+        "step": 5
+      }
+    },
+    "derived": {
+      "total": "coefficient * unknown + constant"
+    },
+    "tags": [
+      "year5",
+      "algebra",
+      "one_unknown",
+      "inverse_operations",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "one_unknown_equations",
+    "difficulty": 3,
+    "question": "Solve for n: {coefficient}n - {subtract} = {result}.",
+    "answer_format": "n = {unknown}",
+    "variables": {
+      "unknown": {
+        "min": 3,
+        "max": 20,
+        "step": 1
+      },
+      "coefficient": {
+        "choices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "subtract": {
+        "min": 4,
+        "max": 50,
+        "step": 2
+      }
+    },
+    "derived": {
+      "result": "coefficient * unknown - subtract"
+    },
+    "constraints": [
+      "coefficient * unknown > subtract"
+    ],
+    "tags": [
+      "year5",
+      "algebra",
+      "one_unknown",
+      "equations",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "two_unknowns",
+    "difficulty": 3,
+    "question": "Two numbers, a and b, satisfy \\(\\dfrac{{a}}{{b}} = \\dfrac{{{ratio_a}}}{{{ratio_b}}}\\). Their sum is {total}. What are a and b?",
+    "answer_format": "a = {a_value}, b = {b_value}",
+    "variables": {
+      "unit": {
+        "min": 2,
+        "max": 15,
+        "step": 1
+      }
+    },
+    "derived": {
+      "a_value": "unit * ratio_a",
+      "b_value": "unit * ratio_b",
+      "total": "a_value + b_value"
+    },
+    "constraints": [
+      "ratio_a != ratio_b",
+      "unit * (ratio_a + ratio_b) <= 120"
+    ],
+    "tags": [
+      "year5",
+      "algebra",
+      "two_unknowns",
+      "ratios",
+      "template"
+    ],
+    "source": "template",
+    "choice_sets": [
+      {
+        "ratio_a": 1,
+        "ratio_b": 2
+      },
+      {
+        "ratio_a": 1,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 2,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 3,
+        "ratio_b": 4
+      },
+      {
+        "ratio_a": 4,
+        "ratio_b": 5
+      },
+      {
+        "ratio_a": 5,
+        "ratio_b": 6
+      },
+      {
+        "ratio_a": 3,
+        "ratio_b": 5
+      }
+    ]
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "two_unknowns",
+    "difficulty": 3,
+    "question": "Given \\(\\dfrac{{a}}{{b}} = \\dfrac{{{ratio_a}}}{{{ratio_b}}}\\) and \\(a + b = {total}\\), find a and b.",
+    "answer_format": "a = {a_value}, b = {b_value}",
+    "variables": {
+      "unit": {
+        "min": 2,
+        "max": 15,
+        "step": 1
+      }
+    },
+    "derived": {
+      "a_value": "unit * ratio_a",
+      "b_value": "unit * ratio_b",
+      "total": "a_value + b_value"
+    },
+    "constraints": [
+      "ratio_a != ratio_b",
+      "unit * (ratio_a + ratio_b) <= 120"
+    ],
+    "tags": [
+      "year5",
+      "algebra",
+      "two_unknowns",
+      "ratios",
+      "template"
+    ],
+    "source": "template",
+    "choice_sets": [
+      {
+        "ratio_a": 1,
+        "ratio_b": 2
+      },
+      {
+        "ratio_a": 1,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 2,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 3,
+        "ratio_b": 4
+      },
+      {
+        "ratio_a": 4,
+        "ratio_b": 5
+      },
+      {
+        "ratio_a": 5,
+        "ratio_b": 6
+      },
+      {
+        "ratio_a": 3,
+        "ratio_b": 5
+      }
+    ]
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "two_unknowns",
+    "difficulty": 4,
+    "question": "Two numbers, a and b, satisfy \\(\\dfrac{{a}}{{b}} = \\dfrac{{{ratio_a}}}{{{ratio_b}}}\\). The difference between them is {difference}. What are a and b?",
+    "answer_format": "a = {a_value}, b = {b_value}",
+    "variables": {
+      "unit": {
+        "min": 2,
+        "max": 12,
+        "step": 1
+      }
+    },
+    "derived": {
+      "a_value": "unit * ratio_a",
+      "b_value": "unit * ratio_b",
+      "difference": "a_value - b_value"
+    },
+    "constraints": [
+      "ratio_a > ratio_b",
+      "unit * (ratio_a + ratio_b) <= 120"
+    ],
+    "tags": [
+      "year6",
+      "algebra",
+      "two_unknowns",
+      "ratios",
+      "difference",
+      "template"
+    ],
+    "source": "template",
+    "choice_sets": [
+      {
+        "ratio_a": 5,
+        "ratio_b": 2
+      },
+      {
+        "ratio_a": 5,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 7,
+        "ratio_b": 2
+      },
+      {
+        "ratio_a": 7,
+        "ratio_b": 4
+      },
+      {
+        "ratio_a": 8,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 8,
+        "ratio_b": 5
+      }
+    ]
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "two_unknowns",
+    "difficulty": 4,
+    "question": "Given \\(\\dfrac{{a}}{{b}} = \\dfrac{{{ratio_a}}}{{{ratio_b}}}\\) and \\(a - b = {difference}\\), find a and b.",
+    "answer_format": "a = {a_value}, b = {b_value}",
+    "variables": {
+      "unit": {
+        "min": 2,
+        "max": 12,
+        "step": 1
+      }
+    },
+    "derived": {
+      "a_value": "unit * ratio_a",
+      "b_value": "unit * ratio_b",
+      "difference": "a_value - b_value"
+    },
+    "constraints": [
+      "ratio_a > ratio_b",
+      "unit * (ratio_a + ratio_b) <= 120"
+    ],
+    "tags": [
+      "year6",
+      "algebra",
+      "two_unknowns",
+      "ratios",
+      "difference",
+      "template"
+    ],
+    "source": "template",
+    "choice_sets": [
+      {
+        "ratio_a": 5,
+        "ratio_b": 2
+      },
+      {
+        "ratio_a": 5,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 7,
+        "ratio_b": 2
+      },
+      {
+        "ratio_a": 7,
+        "ratio_b": 4
+      },
+      {
+        "ratio_a": 8,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 8,
+        "ratio_b": 5
+      }
+    ]
   }
 ]

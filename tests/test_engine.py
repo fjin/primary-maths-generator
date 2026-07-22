@@ -186,6 +186,115 @@ class EngineTests(unittest.TestCase):
         )
         self.assertEqual(question.answer, "20")
 
+    def test_template_choice_sets_supply_matched_values(self) -> None:
+        template_path = Path(__file__).parent / "tmp_choice_set_templates.json"
+        template_path.write_text(
+            json.dumps(
+                [
+                    {
+                        "topic": "word_problems",
+                        "subtopic": "ratios",
+                        "difficulty": 1,
+                        "question": "The ratio is {ratio_a}:{ratio_b}.",
+                        "answer_format": "{ratio_a} to {ratio_b}",
+                        "choice_sets": [
+                            {"ratio_a": 3, "ratio_b": 4},
+                        ],
+                        "source": "template",
+                    }
+                ]
+            )
+        )
+        try:
+            bank = QuestionBank(
+                path=Path(__file__).parent / "missing_question_bank.json",
+                template_path=template_path,
+            )
+            question = bank.generate_one("word_problems", 1, __import__("random").Random(1))
+        finally:
+            template_path.unlink()
+
+        self.assertIsNotNone(question)
+        assert question is not None
+        self.assertEqual(question.prompt, "The ratio is 3:4.")
+        self.assertEqual(question.answer, "3 to 4")
+
+    def test_one_unknown_template_solves_equation(self) -> None:
+        template_path = Path(__file__).parent / "tmp_one_unknown_templates.json"
+        template_path.write_text(
+            json.dumps(
+                [
+                    {
+                        "topic": "word_problems",
+                        "subtopic": "one_unknown_equations",
+                        "difficulty": 3,
+                        "question": "Solve for a: {constant} + {coefficient}a = {total}.",
+                        "answer_format": "a = {unknown}",
+                        "variables": {
+                            "unknown": {"choices": [16]},
+                            "coefficient": {"choices": [5]},
+                            "constant": {"choices": [20]},
+                        },
+                        "derived": {"total": "constant + coefficient * unknown"},
+                        "source": "template",
+                    }
+                ]
+            )
+        )
+        try:
+            bank = QuestionBank(
+                path=Path(__file__).parent / "missing_question_bank.json",
+                template_path=template_path,
+            )
+            question = bank.generate_one("word_problems", 3, __import__("random").Random(1))
+        finally:
+            template_path.unlink()
+
+        self.assertIsNotNone(question)
+        assert question is not None
+        self.assertEqual(question.prompt, "Solve for a: 20 + 5a = 100.")
+        self.assertEqual(question.answer, "a = 16")
+
+    def test_two_unknown_template_solves_ratio_sum(self) -> None:
+        template_path = Path(__file__).parent / "tmp_two_unknown_templates.json"
+        template_path.write_text(
+            json.dumps(
+                [
+                    {
+                        "topic": "word_problems",
+                        "subtopic": "two_unknowns",
+                        "difficulty": 3,
+                        "question": "The ratio of a to b is {ratio_a}:{ratio_b}. If a + b = {total}, find a and b.",
+                        "answer_format": "a = {a_value}, b = {b_value}",
+                        "variables": {
+                            "ratio_a": {"choices": [2]},
+                            "ratio_b": {"choices": [3]},
+                            "unit": {"choices": [2]},
+                        },
+                        "derived": {
+                            "a_value": "unit * ratio_a",
+                            "b_value": "unit * ratio_b",
+                            "total": "a_value + b_value",
+                        },
+                        "source": "template",
+                    }
+                ]
+            )
+        )
+        try:
+            bank = QuestionBank(
+                path=Path(__file__).parent / "missing_question_bank.json",
+                template_path=template_path,
+            )
+            question = bank.generate_one("word_problems", 3, __import__("random").Random(1))
+        finally:
+            template_path.unlink()
+
+        self.assertIsNotNone(question)
+        assert question is not None
+        self.assertEqual(question.prompt, "The ratio of a to b is 2:3. If a + b = 10, find a and b.")
+        self.assertEqual(question.answer, "a = 4, b = 6")
+
     def test_question_bank_prefers_exact_difficulty(self) -> None:
         bank_path = Path(__file__).parent / "tmp_question_bank.json"
         bank_path.write_text(
