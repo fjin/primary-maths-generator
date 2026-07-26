@@ -1755,5 +1755,255 @@
         "ratio_b": 5
       }
     ]
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fraction_comparison",
+    "difficulty": 3,
+    "question": "Five fraction cards show \\(\\dfrac{{{numerator}}}{{{d1}}}\\), \\(\\dfrac{{{numerator}}}{{{d2}}}\\), \\(\\dfrac{{{numerator}}}{{{d3}}}\\), \\(\\dfrac{{{numerator}}}{{{d4}}}\\), and \\(\\dfrac{{{numerator}}}{{{d5}}}\\). Which fraction is the greatest?",
+    "answer_format": "\\(\\dfrac{{{numerator}}}{{{greatest_denominator}}}\\)",
+    "choice_sets": [
+      {
+        "d1": 3,
+        "d2": 5,
+        "d3": 7,
+        "d4": 9,
+        "d5": 11,
+        "greatest_denominator": 3,
+        "smallest_denominator": 11
+      },
+      {
+        "d1": 4,
+        "d2": 6,
+        "d3": 8,
+        "d4": 10,
+        "d5": 12,
+        "greatest_denominator": 4,
+        "smallest_denominator": 12
+      },
+      {
+        "d1": 5,
+        "d2": 6,
+        "d3": 9,
+        "d4": 10,
+        "d5": 15,
+        "greatest_denominator": 5,
+        "smallest_denominator": 15
+      },
+      {
+        "d1": 2,
+        "d2": 3,
+        "d3": 4,
+        "d4": 6,
+        "d5": 8,
+        "greatest_denominator": 2,
+        "smallest_denominator": 8
+      }
+    ],
+    "variables": {
+      "numerator": {
+        "choices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    "constraints": [
+      "numerator < d1"
+    ],
+    "tags": [
+      "year5",
+      "fractions",
+      "comparison",
+      "greatest",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fraction_comparison",
+    "difficulty": 3,
+    "question": "Five fraction cards show \\(\\dfrac{{{numerator}}}{{{d1}}}\\), \\(\\dfrac{{{numerator}}}{{{d2}}}\\), \\(\\dfrac{{{numerator}}}{{{d3}}}\\), \\(\\dfrac{{{numerator}}}{{{d4}}}\\), and \\(\\dfrac{{{numerator}}}{{{d5}}}\\). Which fraction is the smallest?",
+    "answer_format": "\\(\\dfrac{{{numerator}}}{{{smallest_denominator}}}\\)",
+    "choice_sets": [
+      {
+        "d1": 3,
+        "d2": 5,
+        "d3": 7,
+        "d4": 9,
+        "d5": 11,
+        "greatest_denominator": 3,
+        "smallest_denominator": 11
+      },
+      {
+        "d1": 4,
+        "d2": 6,
+        "d3": 8,
+        "d4": 10,
+        "d5": 12,
+        "greatest_denominator": 4,
+        "smallest_denominator": 12
+      },
+      {
+        "d1": 5,
+        "d2": 6,
+        "d3": 9,
+        "d4": 10,
+        "d5": 15,
+        "greatest_denominator": 5,
+        "smallest_denominator": 15
+      },
+      {
+        "d1": 2,
+        "d2": 3,
+        "d3": 4,
+        "d4": 6,
+        "d5": 8,
+        "greatest_denominator": 2,
+        "smallest_denominator": 8
+      }
+    ],
+    "variables": {
+      "numerator": {
+        "choices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    "constraints": [
+      "numerator < d1"
+    ],
+    "tags": [
+      "year5",
+      "fractions",
+      "comparison",
+      "smallest",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fraction_comparison",
+    "difficulty": 3,
+    "question": "Five fraction cards show \\(\\dfrac{{{n1}}}{{{denominator}}}\\), \\(\\dfrac{{{n2}}}{{{denominator}}}\\), \\(\\dfrac{{{n3}}}{{{denominator}}}\\), \\(\\dfrac{{{n4}}}{{{denominator}}}\\), and \\(\\dfrac{{{n5}}}{{{denominator}}}\\). Which fraction is the greatest?",
+    "answer_format": "\\(\\dfrac{{{greatest_numerator}}}{{{denominator}}}\\)",
+    "choice_sets": [
+      {
+        "n1": 1,
+        "n2": 2,
+        "n3": 3,
+        "n4": 4,
+        "n5": 5,
+        "greatest_numerator": 5,
+        "smallest_numerator": 1
+      },
+      {
+        "n1": 2,
+        "n2": 3,
+        "n3": 5,
+        "n4": 6,
+        "n5": 7,
+        "greatest_numerator": 7,
+        "smallest_numerator": 2
+      },
+      {
+        "n1": 1,
+        "n2": 3,
+        "n3": 4,
+        "n4": 5,
+        "n5": 7,
+        "greatest_numerator": 7,
+        "smallest_numerator": 1
+      }
+    ],
+    "variables": {
+      "denominator": {
+        "choices": [
+          8,
+          9,
+          10,
+          12,
+          15
+        ]
+      }
+    },
+    "constraints": [
+      "greatest_numerator < denominator"
+    ],
+    "tags": [
+      "year5",
+      "fractions",
+      "comparison",
+      "greatest",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fraction_comparison",
+    "difficulty": 3,
+    "question": "Five fraction cards show \\(\\dfrac{{{n1}}}{{{denominator}}}\\), \\(\\dfrac{{{n2}}}{{{denominator}}}\\), \\(\\dfrac{{{n3}}}{{{denominator}}}\\), \\(\\dfrac{{{n4}}}{{{denominator}}}\\), and \\(\\dfrac{{{n5}}}{{{denominator}}}\\). Which fraction is the smallest?",
+    "answer_format": "\\(\\dfrac{{{smallest_numerator}}}{{{denominator}}}\\)",
+    "choice_sets": [
+      {
+        "n1": 1,
+        "n2": 2,
+        "n3": 3,
+        "n4": 4,
+        "n5": 5,
+        "greatest_numerator": 5,
+        "smallest_numerator": 1
+      },
+      {
+        "n1": 2,
+        "n2": 3,
+        "n3": 5,
+        "n4": 6,
+        "n5": 7,
+        "greatest_numerator": 7,
+        "smallest_numerator": 2
+      },
+      {
+        "n1": 1,
+        "n2": 3,
+        "n3": 4,
+        "n4": 5,
+        "n5": 7,
+        "greatest_numerator": 7,
+        "smallest_numerator": 1
+      }
+    ],
+    "variables": {
+      "denominator": {
+        "choices": [
+          8,
+          9,
+          10,
+          12,
+          15
+        ]
+      }
+    },
+    "constraints": [
+      "greatest_numerator < denominator"
+    ],
+    "tags": [
+      "year5",
+      "fractions",
+      "comparison",
+      "smallest",
+      "template"
+    ],
+    "source": "template"
   }
 ]

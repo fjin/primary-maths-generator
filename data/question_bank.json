@@ -3510,5 +3510,446 @@
       "symbols"
     ],
     "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division_rounding",
+    "difficulty": 3,
+    "question": "Four teachers and 20 students are going on a trip to Sydney Harbour. Each van can carry at most 6 of the teachers and students. How many vans are needed to take everyone to Sydney Harbour?",
+    "answer": "4 vans",
+    "tags": [
+      "year5",
+      "division",
+      "rounding"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "decimals",
+    "difficulty": 3,
+    "question": "Big Bird's gymnastics team scored 56.2 points on the bar routine, 72.8 points on the floor routine, and 64.8 points on the balance beam. However, the judges deducted 16.5 points for penalties. What was Big Bird's team's final score after the penalty was deducted?",
+    "answer": "177.3 points",
+    "tags": [
+      "year5",
+      "decimals",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "A group of eight friends went on vacation at Ocean Park Adventures. They each purchased a ticket for \\$16 to enter the park. They also booked a villa for \\$320. How much did their vacation cost in all?",
+    "answer": "\\$448",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication",
+      "addition"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "perimeter",
+    "difficulty": 3,
+    "question": "Bugs Bunny has a rectangular carrot garden that is 12 metres long and has a perimeter of 36 metres. What is the width of the garden?",
+    "answer": "6 metres",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 3,
+    "question": "The ratio of the number of red apples to the number of green apples in Snow White's basket is 5 to 8. If there are 26 apples in the basket, how many red apples are there?",
+    "answer": "10 red apples",
+    "tags": [
+      "year5",
+      "ratios",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 3,
+    "question": "Allison has a piece of ribbon 270 centimetres long. She cuts a piece 1.35 metres long from the ribbon for an art project. How much ribbon does she have left, in metres?",
+    "answer": "1.35 metres",
+    "tags": [
+      "year5",
+      "measurement",
+      "conversion",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "Elmo woke up at exactly 6:30 AM. He spent a quarter of an hour taking a bath, one hour preparing and eating breakfast, and 10 minutes preparing for school. What time did he finish preparing for school?",
+    "answer": "7:55 AM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Betty wants to buy a notepad for \\$12, a pencil case for \\$16, and a box of crayons for \\$10. She has already saved \\$22. How much more money does she need to save to buy all three items?",
+    "answer": "\\$16",
+    "tags": [
+      "year5",
+      "money",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money_geometry",
+    "difficulty": 4,
+    "question": "Donald Duck wants to put a fence around his rectangular yard 16 metres long and 10 metres wide. If fencing materials cost \\$8 per metre, how much does it cost to fence his yard?",
+    "answer": "\\$416",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter",
+      "money",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_division",
+    "difficulty": 3,
+    "question": "Cookie Monster ordered two boxes of donuts for his birthday party. Each box contains 14 donuts. If he shares the donuts equally among 4 plates, how many donuts will be on each plate?",
+    "answer": "7 donuts",
+    "tags": [
+      "year5",
+      "multiplication",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "linear_expression",
+    "difficulty": 3,
+    "question": "On any single day, Veronica earns a fixed pay of \\$60 plus a \\$1 tip for every cup of coffee she serves. Yesterday, she served a total of 16 cups of coffee. How much did Veronica earn in total yesterday?",
+    "answer": "\\$76",
+    "tags": [
+      "year5",
+      "algebra",
+      "money",
+      "linear_expression"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 3,
+    "question": "There are three red marbles for every five blue marbles in the box. The box contains 20 blue marbles. How many red marbles are in the box?",
+    "answer": "12 red marbles",
+    "tags": [
+      "year5",
+      "ratios",
+      "known_part"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication",
+    "difficulty": 2,
+    "question": "Bill and Ted are having a party. They arranged 30 tables and placed 12 chairs at each table. How many guests can be seated at the tables?",
+    "answer": "360 guests",
+    "tags": [
+      "year5",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "comparison",
+    "difficulty": 2,
+    "question": "Bert has 47 baseball cards, and Ernie has 15 more baseball cards than Bert. How many baseball cards do the two of them have together?",
+    "answer": "109 baseball cards",
+    "tags": [
+      "year5",
+      "addition",
+      "comparison"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money_division",
+    "difficulty": 3,
+    "question": "Maria wants to buy a scooter that costs \\$95. She has already saved \\$23. She plans to save \\$9 each week from her pocket money. How many weeks will it take Maria to save exactly enough to buy the scooter?",
+    "answer": "8 weeks",
+    "tags": [
+      "year5",
+      "money",
+      "division"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "multiplication_subtraction",
+    "difficulty": 3,
+    "question": "A baker puts 6 muffins on each tray. He bakes 7 full trays in the morning and 5 full trays in the afternoon. In the evening, he sells 20 of the muffins. How many muffins does the baker have left?",
+    "answer": "52 muffins",
+    "tags": [
+      "year5",
+      "multiplication",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "perimeter",
+    "difficulty": 3,
+    "question": "A rectangle has a perimeter of 30 centimetres. Its longer side is 9 centimetres long. What is the length of its shorter side?",
+    "answer": "6 centimetres",
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "A movie starts at 2:45 PM. The movie runs for 1 hour and 40 minutes. Straight after the movie, there is a 15-minute talk. What time does the talk finish?",
+    "answer": "4:40 PM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "ratios",
+    "difficulty": 3,
+    "question": "In a fruit bowl, the ratio of oranges to bananas is 4 to 3. There are 12 oranges in the bowl. How many bananas are in the bowl?",
+    "answer": "9 bananas",
+    "tags": [
+      "year5",
+      "ratios",
+      "known_part"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "division_rounding",
+    "difficulty": 3,
+    "question": "There are 50 children going on an excursion. Each minibus has 8 seats for children. What is the smallest number of minibuses needed so that every child has a seat?",
+    "answer": "7 minibuses",
+    "tags": [
+      "year5",
+      "division",
+      "rounding"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "measurement",
+    "difficulty": 3,
+    "question": "A ribbon is 3 metres long. Lily cuts off two pieces, each 80 centimetres long. How much ribbon is left, in centimetres?",
+    "answer": "140 centimetres",
+    "tags": [
+      "year5",
+      "measurement",
+      "conversion",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 3,
+    "question": "A box holds 24 crayons. One third of the crayons are red, and one quarter of the crayons are blue. The rest of the crayons are green. How many green crayons are in the box?",
+    "answer": "10 green crayons",
+    "tags": [
+      "year5",
+      "fractions",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "one_unknown_equations",
+    "difficulty": 3,
+    "question": "Ben thought of a number. He added 15 to his number, then doubled the result. His final answer was 50. What number did Ben first think of?",
+    "answer": "10",
+    "tags": [
+      "year5",
+      "algebra",
+      "one_unknown",
+      "inverse_operations"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "money",
+    "difficulty": 3,
+    "question": "Sophie buys 3 books that cost \\$8 each and one bookmark that costs \\$4. She pays with a \\$50 note. How much change should Sophie receive?",
+    "answer": "\\$22",
+    "tags": [
+      "year5",
+      "money",
+      "multiplication",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 2,
+    "question": "Class A collected 128 cans for recycling and Class B collected 89 cans. Together, the two classes want to reach a total of 300 cans. How many more cans do they still need to collect?",
+    "answer": "83 cans",
+    "tags": [
+      "year5",
+      "addition",
+      "subtraction"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "rates",
+    "difficulty": 3,
+    "question": "A recipe for 2 people needs 6 eggs. Grandma wants to make the same recipe for 8 people. How many eggs does Grandma need?",
+    "answer": "24 eggs",
+    "tags": [
+      "year5",
+      "rates",
+      "multiplication"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "time",
+    "difficulty": 3,
+    "question": "Ken needs to arrive at soccer practice at exactly 4:15 PM. It takes him 25 minutes to walk there. Before he leaves home, he needs 20 minutes to get changed. What is the latest time Ken should start getting changed?",
+    "answer": "3:30 PM",
+    "tags": [
+      "year5",
+      "time",
+      "elapsed_time"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "remainders",
+    "difficulty": 2,
+    "question": "Eggs are packed into cartons that hold 6 eggs each. A farmer has 100 eggs and fills as many full cartons as he can. How many eggs are left over that do not fill a carton?",
+    "answer": "4 eggs",
+    "tags": [
+      "year5",
+      "division",
+      "remainders"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "coin_algebra",
+    "difficulty": 4,
+    "question": "Liam has only 20-cent coins and 50-cent coins in his money box. He has 12 coins in total, and together they are worth \\$3.90. How many 50-cent coins does Liam have?",
+    "answer": "5 coins",
+    "tags": [
+      "year5",
+      "money",
+      "algebra",
+      "two_unknowns"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "age_problem",
+    "difficulty": 3,
+    "question": "Three years ago, Sam was 6 years old. Two years from now, Sam's sister will be twice as old as Sam is today. How old is Sam's sister now?",
+    "answer": "16 years old",
+    "tags": [
+      "year5",
+      "age",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "function_machine",
+    "difficulty": 4,
+    "question": "A number machine doubles a number and then adds 5. Sam puts in a secret number. The answer that comes out is then put straight back into the machine. After this second time, the final answer is 35. What was Sam's secret number?",
+    "answer": "5",
+    "tags": [
+      "year5",
+      "algebra",
+      "function_machine",
+      "inverse_operations"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "fractions",
+    "difficulty": 4,
+    "question": "In a car park, one third of the cars are white and one half of the cars are black. The remaining 6 cars are neither white nor black. How many cars are in the car park altogether?",
+    "answer": "36 cars",
+    "tags": [
+      "year5",
+      "fractions",
+      "multi_step"
+    ],
+    "source": "imported"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "logic",
+    "difficulty": 4,
+    "question": "Tom is thinking of a two-digit number. The two digits of his number add up to 11. When Tom subtracts 9 from his number, he gets a new number with the same digits in reverse order. What is Tom's number?",
+    "answer": "65",
+    "tags": [
+      "year5",
+      "logic",
+      "digits"
+    ],
+    "source": "imported"
   }
 ]
