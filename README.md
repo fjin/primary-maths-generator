@@ -1,6 +1,6 @@
-# Year 5 Workbook Generator
+# Primary Maths Generator
 
-A small, extensible Python project for generating printable mathematics worksheets with answer keys. It writes LaTeX and can compile a PDF when `pdflatex` is installed.
+A small, extensible Python project for generating printable primary-school mathematics worksheets with answer keys. It supports fixed question banks, randomised question templates, LaTeX output, and PDF compilation when `pdflatex` is installed.
 
 ## Quick Start
 
