@@ -24,7 +24,37 @@ Outputs are written to `output/`.
 ```bash
 python generate.py --topic fractions --questions 200
 python generate.py --topic mixed --questions 250 --difficulty year5 --seed 2026
+python generate.py --topic word_problems --questions 40 --difficulty year5 --columns 2 --answer-columns 3
 python generate.py --topic money --questions 50 --no-pdf
+```
+
+## CLI Options
+
+```text
+python generate.py [recipe] [options]
+```
+
+- `recipe`: optional YAML recipe file.
+- `--topic`: topic to generate, or `mixed`.
+- `--questions`: number of questions.
+- `--difficulty`: level to generate, such as `year3`, `year4`, `year5`, `year6`, `naplan`, `selective`, `oc`, or `icas`.
+- `--seed`: random seed. Same seed gives the same worksheet again.
+- `--title`: custom worksheet title.
+- `--columns`: number of columns for the question pages. Allowed values: `1`, `2`, `3`.
+- `--answer-columns`: number of columns for the answer key. Allowed values: `1`, `2`, `3`, `4`. Default is `3`.
+- `--output-dir`: folder for generated `.tex` and `.pdf` files. Default is `output`.
+- `--no-pdf`: write only `.tex` and skip PDF compilation.
+
+Example with compact answer key:
+
+```bash
+python generate.py --topic word_problems --questions 80 --difficulty year5 --columns 2 --answer-columns 3
+```
+
+Example with more compact answers:
+
+```bash
+python generate.py --topic word_problems --questions 80 --difficulty year5 --answer-columns 4
 ```
 
 Supported topics:
@@ -94,6 +124,21 @@ Add curated questions to `data/question_bank.json`:
 ```
 
 The word-problem generator prefers questions that exactly match the selected difficulty. For example, `--difficulty year6` prefers questions with difficulty `4`. If there are no matching questions, it falls back to easier questions.
+
+Difficulty mapping:
+
+```text
+year3      difficulty 1
+year4      difficulty 2
+year5      difficulty 3
+year6      difficulty 4
+naplan     difficulty 4
+oc         difficulty 4
+selective  difficulty 5
+icas       difficulty 5
+```
+
+`data/question_bank.json` stores fixed questions and fixed answers. `data/question_templates.json` stores reusable question forms with random numbers and calculated answers. The word-problem generator uses both.
 
 ## Adding Randomised Questions
 

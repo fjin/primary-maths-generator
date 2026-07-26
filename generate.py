@@ -28,6 +28,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--seed", type=int, default=42, help="Deterministic random seed.")
     parser.add_argument("--title", default=None, help="Worksheet title.")
     parser.add_argument("--columns", type=int, default=2, choices=[1, 2, 3])
+    parser.add_argument(
+        "--answer-columns",
+        type=int,
+        default=3,
+        choices=[1, 2, 3, 4],
+        help="Number of columns to use on the answer key page.",
+    )
     parser.add_argument("--output-dir", default="output")
     parser.add_argument(
         "--no-pdf",
@@ -83,7 +90,7 @@ def main() -> int:
 
     registry = GeneratorRegistry.default()
     worksheet = WorksheetBuilder(registry).build(recipe)
-    tex = LatexRenderer(columns=recipe.columns).render(worksheet)
+    tex = LatexRenderer(columns=recipe.columns, answer_columns=args.answer_columns).render(worksheet)
 
     recipe.output_dir.mkdir(parents=True, exist_ok=True)
     tex_path = recipe.output_dir / f"{worksheet.slug}.tex"

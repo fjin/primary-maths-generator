@@ -6,8 +6,9 @@ from workbook_generator.models import Worksheet
 
 
 class LatexRenderer:
-    def __init__(self, columns: int = 2) -> None:
+    def __init__(self, columns: int = 2, answer_columns: int = 3) -> None:
         self.columns = columns
+        self.answer_columns = answer_columns
 
     def render(self, worksheet: Worksheet) -> str:
         question_rows = "\n".join(
@@ -45,7 +46,7 @@ class LatexRenderer:
             {{\Large \textbf{{Answer Key}}}}
             \end{{center}}
 
-            \begin{{multicols}}{{{self.columns}}}
+            \begin{{multicols}}{{{self.answer_columns}}}
             \begin{{enumerate}}
 {answer_rows}
             \end{{enumerate}}
