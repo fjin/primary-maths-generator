@@ -10,7 +10,12 @@ from workbook_generator.models import Question
 class DecimalGenerator(BaseGenerator):
     topic = "decimals"
 
-    def generate_one(self, rng: random.Random, difficulty: int) -> Question:
+    def generate_one(
+        self,
+        rng: random.Random,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> Question:
         scale = 10 if difficulty <= 3 else 100
         a = Decimal(rng.randint(10, 900)) / scale
         b = Decimal(rng.randint(10, 500)) / scale

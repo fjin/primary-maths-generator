@@ -9,7 +9,12 @@ from workbook_generator.models import Question, dollars
 class MoneyGenerator(BaseGenerator):
     topic = "money"
 
-    def generate_one(self, rng: random.Random, difficulty: int) -> Question:
+    def generate_one(
+        self,
+        rng: random.Random,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> Question:
         price = rng.randint(150, 2500)
         paid = ((price // 500) + rng.randint(1, 4)) * 500
         change = paid - price
@@ -21,4 +26,3 @@ class MoneyGenerator(BaseGenerator):
             difficulty=difficulty,
             tags=("money",),
         )
-

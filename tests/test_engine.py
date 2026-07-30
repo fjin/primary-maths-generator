@@ -1,5 +1,7 @@
 from workbook_generator.engine import GeneratorRegistry, WorksheetBuilder
+from workbook_generator.generators.base import BaseGenerator
 from workbook_generator.generators.word_problems import WordProblemGenerator
+from workbook_generator.models import Question
 from workbook_generator.question_bank import QuestionBank
 from workbook_generator.recipe import Recipe
 from pathlib import Path
@@ -41,6 +43,25 @@ class EngineTests(unittest.TestCase):
 
         self.assertGreater(len({question.topic for question in worksheet.questions}), 3)
 
+    def test_word_problem_subtopic_filter_generates_only_matching_questions(self) -> None:
+        recipe = Recipe(
+            title="Year 5 Ratios",
+            questions=20,
+            difficulty="year5",
+            seed=91,
+            columns=2,
+            topics=["word_problems"],
+            subtopics=["ratios"],
+        )
+        worksheet = WorksheetBuilder(GeneratorRegistry.default()).build(recipe)
+
+        self.assertEqual(len(worksheet.questions), 20)
+        for question in worksheet.questions:
+            self.assertTrue(
+                question.subtopic.startswith("ratios") or "ratios" in question.tags,
+                question.prompt,
+            )
+
     def test_worksheet_builder_avoids_duplicate_prompts(self) -> None:
         recipe = Recipe(
             title="Year 6 Word Problems",
@@ -54,6 +75,24 @@ class EngineTests(unittest.TestCase):
         prompts = [question.prompt for question in worksheet.questions]
 
         self.assertEqual(len(prompts), len(set(prompts)))
+
+    def test_worksheet_builder_raises_when_unique_questions_run_out(self) -> None:
+        recipe = Recipe(
+            title="Tiny Pool",
+            questions=2,
+            difficulty="year5",
+            seed=1,
+            columns=2,
+            topics=["tiny"],
+        )
+        builder = WorksheetBuilder(GeneratorRegistry([StaticQuestionGenerator()]))
+        original_retries = WorksheetBuilder.max_duplicate_retries
+        WorksheetBuilder.max_duplicate_retries = 3
+        try:
+            with self.assertRaisesRegex(ValueError, "unique questions"):
+                builder.build(recipe)
+        finally:
+            WorksheetBuilder.max_duplicate_retries = original_retries
 
     def test_word_problem_generator_uses_question_bank(self) -> None:
         question = WordProblemGenerator().generate_one(__import__("random").Random(1), 3)
@@ -219,6 +258,79 @@ class EngineTests(unittest.TestCase):
         self.assertEqual(question.prompt, "The ratio is 3:4.")
         self.assertEqual(question.answer, "3 to 4")
 
+    def test_subtopic_filter_matches_template_tags(self) -> None:
+        template_path = Path(__file__).parent / "tmp_tagged_ratio_templates.json"
+        template_path.write_text(
+            json.dumps(
+                [
+                    {
+                        "topic": "word_problems",
+                        "subtopic": "two_unknowns",
+                        "difficulty": 3,
+                        "question": "The ratio question uses {value}.",
+                        "answer_format": "{value}",
+                        "variables": {"value": {"choices": [12]}},
+                        "tags": ["ratios"],
+                        "source": "template",
+                    },
+                    {
+                        "topic": "word_problems",
+                        "subtopic": "money",
+                        "difficulty": 3,
+                        "question": "The money question uses {value}.",
+                        "answer_format": "{value}",
+                        "variables": {"value": {"choices": [12]}},
+                        "tags": ["money"],
+                        "source": "template",
+                    },
+                ]
+            )
+        )
+        try:
+            bank = QuestionBank(
+                path=Path(__file__).parent / "missing_question_bank.json",
+                template_path=template_path,
+            )
+            question = bank.generate_one(
+                "word_problems",
+                3,
+                __import__("random").Random(1),
+                subtopics=["ratio"],
+            )
+        finally:
+            template_path.unlink()
+
+        self.assertIsNotNone(question)
+        assert question is not None
+        self.assertEqual(question.prompt, "The ratio question uses 12.")
+
+    def test_two_unknown_linear_ratio_is_specific_subtopic(self) -> None:
+        question = QuestionBank().generate_one(
+            "word_problems",
+            3,
+            __import__("random").Random(11),
+            subtopics=["two_unknown_linear_ratio"],
+        )
+
+        self.assertIsNotNone(question)
+        assert question is not None
+        self.assertEqual(question.subtopic, "two_unknown_linear_ratio")
+        self.assertIn(r"\dfrac", question.prompt)
+        self.assertIn("linear_ratio", question.tags)
+
+    def test_two_unknown_linear_ratio_includes_subtraction_forms(self) -> None:
+        questions = [
+            QuestionBank().generate_one(
+                "word_problems",
+                3,
+                __import__("random").Random(seed),
+                subtopics=["two_unknown_linear_ratio"],
+            )
+            for seed in range(30)
+        ]
+
+        self.assertTrue(any(question and " - " in question.prompt for question in questions))
+
     def test_one_unknown_template_solves_equation(self) -> None:
         template_path = Path(__file__).parent / "tmp_one_unknown_templates.json"
         template_path.write_text(
@@ -331,3 +443,21 @@ class EngineTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class StaticQuestionGenerator(BaseGenerator):
+    topic = "tiny"
+
+    def generate_one(
+        self,
+        rng,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> Question:
+        return Question(
+            prompt="Same question",
+            answer="1",
+            topic=self.topic,
+            subtopic="static",
+            difficulty=difficulty,
+        )

@@ -9,7 +9,12 @@ from workbook_generator.models import Question
 class TimeGenerator(BaseGenerator):
     topic = "time"
 
-    def generate_one(self, rng: random.Random, difficulty: int) -> Question:
+    def generate_one(
+        self,
+        rng: random.Random,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> Question:
         start_hour = rng.randint(7, 18)
         start_minute = rng.choice([0, 5, 10, 15, 20, 30, 45])
         duration = rng.choice([25, 35, 45, 50, 65, 75, 90, 105])
@@ -25,4 +30,3 @@ class TimeGenerator(BaseGenerator):
             difficulty=difficulty,
             tags=("time",),
         )
-

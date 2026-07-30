@@ -9,7 +9,12 @@ from workbook_generator.models import Question
 class PercentageGenerator(BaseGenerator):
     topic = "percentages"
 
-    def generate_one(self, rng: random.Random, difficulty: int) -> Question:
+    def generate_one(
+        self,
+        rng: random.Random,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> Question:
         percent = rng.choice([5, 10, 15, 20, 25, 30, 40, 50, 75])
         base = rng.choice([40, 60, 80, 100, 120, 160, 200, 240, 320])
         answer = base * percent // 100
@@ -21,4 +26,3 @@ class PercentageGenerator(BaseGenerator):
             difficulty=difficulty,
             tags=("percentage",),
         )
-

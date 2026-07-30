@@ -13,10 +13,23 @@ class WordProblemGenerator(BaseGenerator):
     def __init__(self, question_bank: QuestionBank | None = None) -> None:
         self.question_bank = question_bank or QuestionBank()
 
-    def generate_one(self, rng: random.Random, difficulty: int) -> Question:
-        bank_question = self.question_bank.generate_one(self.topic, difficulty, rng)
+    def generate_one(
+        self,
+        rng: random.Random,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> Question:
+        bank_question = self.question_bank.generate_one(
+            self.topic,
+            difficulty,
+            rng,
+            subtopics=subtopics,
+        )
         if bank_question:
             return bank_question
+        if subtopics:
+            requested = ", ".join(subtopics)
+            raise ValueError(f"No word-problem questions found for subtopic: {requested}")
 
         boxes = rng.randint(3, 12)
         per_box = rng.randint(8, 24)

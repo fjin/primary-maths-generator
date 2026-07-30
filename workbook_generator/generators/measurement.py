@@ -9,7 +9,12 @@ from workbook_generator.models import Question
 class MeasurementGenerator(BaseGenerator):
     topic = "measurement"
 
-    def generate_one(self, rng: random.Random, difficulty: int) -> Question:
+    def generate_one(
+        self,
+        rng: random.Random,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> Question:
         metres = rng.randint(1, 12)
         centimetres = rng.choice([5, 10, 15, 20, 25, 50, 75])
         total = metres * 100 + centimetres
@@ -21,4 +26,3 @@ class MeasurementGenerator(BaseGenerator):
             difficulty=difficulty,
             tags=("measurement", "conversion"),
         )
-

@@ -33,10 +33,11 @@ class QuestionBank:
         topic: str,
         difficulty: int,
         rng: random.Random,
+        subtopics: list[str] | None = None,
     ) -> Question | None:
-        entries = self._entries_for(topic, difficulty)
+        entries = self._entries_for(topic, difficulty, subtopics)
         if not entries and difficulty > 1:
-            entries = self._entries_up_to(topic, difficulty)
+            entries = self._entries_up_to(topic, difficulty, subtopics)
         if not entries:
             return None
 
@@ -45,29 +46,47 @@ class QuestionBank:
             return selected
         return self._instantiate_template(selected, rng)
 
-    def _entries_for(self, topic: str, difficulty: int) -> list[Question | dict[str, Any]]:
+    def _entries_for(
+        self,
+        topic: str,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> list[Question | dict[str, Any]]:
         entries: list[Question | dict[str, Any]] = [
             question
             for question in self._questions
-            if question.topic == topic and question.difficulty == difficulty
+            if question.topic == topic
+            and question.difficulty == difficulty
+            and _matches_subtopics(question, subtopics)
         ]
         entries.extend(
             template
             for template in self._templates
-            if template["topic"] == topic and int(template.get("difficulty", 3)) == difficulty
+            if template["topic"] == topic
+            and int(template.get("difficulty", 3)) == difficulty
+            and _matches_subtopics(template, subtopics)
         )
         return entries
 
-    def _entries_up_to(self, topic: str, difficulty: int) -> list[Question | dict[str, Any]]:
+    def _entries_up_to(
+        self,
+        topic: str,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> list[Question | dict[str, Any]]:
         entries: list[Question | dict[str, Any]] = [
             question
             for question in self._questions
-            if question.topic == topic and question.difficulty <= difficulty
+            if question.topic == topic
+            and question.difficulty <= difficulty
+            and _matches_subtopics(question, subtopics)
         ]
         entries.extend(
             template
             for template in self._templates
-            if template["topic"] == topic and int(template.get("difficulty", 3)) <= difficulty
+            if template["topic"] == topic
+            and int(template.get("difficulty", 3)) <= difficulty
+            and _matches_subtopics(template, subtopics)
         )
         return entries
 
@@ -145,6 +164,41 @@ def _random_value(config: dict[str, Any], rng: random.Random) -> int | float | s
     maximum = int(config["max"])
     step = int(config.get("step", 1))
     return rng.randrange(minimum, maximum + 1, step)
+
+
+def _matches_subtopics(
+    entry: Question | dict[str, Any],
+    requested: list[str] | None,
+) -> bool:
+    if not requested:
+        return True
+
+    if isinstance(entry, Question):
+        subtopic = entry.subtopic
+        tags = entry.tags
+    else:
+        subtopic = str(entry.get("subtopic", "general"))
+        tags = tuple(str(tag) for tag in entry.get("tags", []))
+
+    candidates = {_normalize_filter(subtopic), *(_normalize_filter(tag) for tag in tags)}
+    for value in requested:
+        normalized = _normalize_filter(value)
+        aliases = {normalized, _singular(normalized), f"{_singular(normalized)}s"}
+        if any(_matches_filter(alias, candidate) for alias in aliases for candidate in candidates):
+            return True
+    return False
+
+
+def _matches_filter(requested: str, candidate: str) -> bool:
+    return candidate == requested or candidate.startswith(f"{requested}_")
+
+
+def _normalize_filter(value: str) -> str:
+    return value.strip().lower().replace("-", "_").replace(" ", "_")
+
+
+def _singular(value: str) -> str:
+    return value[:-1] if value.endswith("s") else value
 
 
 def _format_number(value: int | float | bool) -> str:

@@ -25,6 +25,8 @@ Outputs are written to `output/`.
 python generate.py --topic fractions --questions 200
 python generate.py --topic mixed --questions 250 --difficulty year5 --seed 2026
 python generate.py --topic word_problems --questions 40 --difficulty year5 --columns 2 --answer-columns 3
+python generate.py --topic word_problems --subtopic ratios --questions 100 --difficulty year5
+python generate.py --topic word_problems --subtopic two_unknown_linear_ratio --questions 100 --difficulty year5
 python generate.py --topic money --questions 50 --no-pdf
 ```
 
@@ -36,6 +38,7 @@ python generate.py [recipe] [options]
 
 - `recipe`: optional YAML recipe file.
 - `--topic`: topic to generate, or `mixed`.
+- `--subtopic`: optional word-problem filter, such as `ratios`, `money`, `fractions`, `two_unknowns`, or `fraction_comparison`.
 - `--questions`: number of questions.
 - `--difficulty`: level to generate, such as `year3`, `year4`, `year5`, `year6`, `naplan`, `selective`, `oc`, or `icas`.
 - `--seed`: random seed. Same seed gives the same worksheet again.
@@ -49,6 +52,18 @@ Example with compact answer key:
 
 ```bash
 python generate.py --topic word_problems --questions 80 --difficulty year5 --columns 2 --answer-columns 3
+```
+
+Example with ratio questions only:
+
+```bash
+python generate.py --topic word_problems --subtopic ratios --questions 100 --difficulty year5
+```
+
+Example with two-unknown linear ratio questions only:
+
+```bash
+python generate.py --topic word_problems --subtopic two_unknown_linear_ratio --questions 100 --difficulty year5
 ```
 
 Example with more compact answers:
@@ -81,6 +96,20 @@ layout:
   columns: 2
 topics:
   - fractions
+```
+
+Subtopic filters are supported for word problems:
+
+```yaml
+title: Year 5 Ratios
+questions: 100
+difficulty: year5
+seed: 777
+layout:
+  columns: 2
+topics:
+  - word_problems
+subtopic: ratios
 ```
 
 Weighted mixes are also supported:

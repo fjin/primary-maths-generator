@@ -1643,7 +1643,7 @@
   {
     "topic": "word_problems",
     "subtopic": "two_unknowns",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Two numbers, a and b, satisfy \\(\\dfrac{{a}}{{b}} = \\dfrac{{{ratio_a}}}{{{ratio_b}}}\\). The difference between them is {difference}. What are a and b?",
     "answer_format": "a = {a_value}, b = {b_value}",
     "variables": {
@@ -1663,7 +1663,7 @@
       "unit * (ratio_a + ratio_b) <= 120"
     ],
     "tags": [
-      "year6",
+      "year5",
       "algebra",
       "two_unknowns",
       "ratios",
@@ -1701,7 +1701,7 @@
   {
     "topic": "word_problems",
     "subtopic": "two_unknowns",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Given \\(\\dfrac{{a}}{{b}} = \\dfrac{{{ratio_a}}}{{{ratio_b}}}\\) and \\(a - b = {difference}\\), find a and b.",
     "answer_format": "a = {a_value}, b = {b_value}",
     "variables": {
@@ -1721,7 +1721,7 @@
       "unit * (ratio_a + ratio_b) <= 120"
     ],
     "tags": [
-      "year6",
+      "year5",
       "algebra",
       "two_unknowns",
       "ratios",
@@ -2002,6 +2002,436 @@
       "fractions",
       "comparison",
       "smallest",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "two_unknown_linear_ratio",
+    "difficulty": 3,
+    "question": "Two numbers, a and b, satisfy \\({coef_a}a + {coef_b}b = {total}\\) and \\(\\dfrac{{a}}{{b}} = \\dfrac{{{ratio_a}}}{{{ratio_b}}}\\). Find a and b.",
+    "answer_format": "a = {a_value}, b = {b_value}",
+    "choice_sets": [
+      {
+        "ratio_a": 1,
+        "ratio_b": 2
+      },
+      {
+        "ratio_a": 1,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 1,
+        "ratio_b": 4
+      },
+      {
+        "ratio_a": 2,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 2,
+        "ratio_b": 5
+      },
+      {
+        "ratio_a": 3,
+        "ratio_b": 4
+      },
+      {
+        "ratio_a": 3,
+        "ratio_b": 5
+      },
+      {
+        "ratio_a": 4,
+        "ratio_b": 5
+      }
+    ],
+    "variables": {
+      "coef_a": {
+        "choices": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "coef_b": {
+        "choices": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "unit": {
+        "min": 2,
+        "max": 12
+      }
+    },
+    "derived": {
+      "a_value": "unit * ratio_a",
+      "b_value": "unit * ratio_b",
+      "total": "coef_a * a_value + coef_b * b_value"
+    },
+    "tags": [
+      "year5",
+      "algebra",
+      "two_unknowns",
+      "linear_ratio",
+      "ratios",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "two_unknown_linear_ratio",
+    "difficulty": 3,
+    "question": "Given \\({coef_a}x + {coef_b}y = {total}\\) and \\(\\dfrac{{x}}{{y}} = \\dfrac{{{ratio_a}}}{{{ratio_b}}}\\), work out x and y.",
+    "answer_format": "x = {x_value}, y = {y_value}",
+    "choice_sets": [
+      {
+        "ratio_a": 1,
+        "ratio_b": 2
+      },
+      {
+        "ratio_a": 1,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 1,
+        "ratio_b": 5
+      },
+      {
+        "ratio_a": 2,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 2,
+        "ratio_b": 5
+      },
+      {
+        "ratio_a": 3,
+        "ratio_b": 4
+      },
+      {
+        "ratio_a": 3,
+        "ratio_b": 5
+      },
+      {
+        "ratio_a": 5,
+        "ratio_b": 6
+      }
+    ],
+    "variables": {
+      "coef_a": {
+        "choices": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "coef_b": {
+        "choices": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "unit": {
+        "min": 2,
+        "max": 10
+      }
+    },
+    "derived": {
+      "x_value": "unit * ratio_a",
+      "y_value": "unit * ratio_b",
+      "total": "coef_a * x_value + coef_b * y_value"
+    },
+    "tags": [
+      "year5",
+      "algebra",
+      "two_unknowns",
+      "linear_ratio",
+      "ratios",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "two_unknown_linear_ratio",
+    "difficulty": 3,
+    "question": "The fraction \\(\\dfrac{{p}}{{q}}\\) is \\(\\dfrac{{{ratio_a}}}{{{ratio_b}}}\\). If \\({coef_a}p + {coef_b}q = {total}\\), what are p and q?",
+    "answer_format": "p = {p_value}, q = {q_value}",
+    "choice_sets": [
+      {
+        "ratio_a": 1,
+        "ratio_b": 2
+      },
+      {
+        "ratio_a": 1,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 1,
+        "ratio_b": 4
+      },
+      {
+        "ratio_a": 2,
+        "ratio_b": 3
+      },
+      {
+        "ratio_a": 2,
+        "ratio_b": 5
+      },
+      {
+        "ratio_a": 3,
+        "ratio_b": 4
+      },
+      {
+        "ratio_a": 3,
+        "ratio_b": 5
+      },
+      {
+        "ratio_a": 4,
+        "ratio_b": 5
+      }
+    ],
+    "variables": {
+      "coef_a": {
+        "choices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "coef_b": {
+        "choices": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "unit": {
+        "min": 2,
+        "max": 12
+      }
+    },
+    "derived": {
+      "p_value": "unit * ratio_a",
+      "q_value": "unit * ratio_b",
+      "total": "coef_a * p_value + coef_b * q_value"
+    },
+    "tags": [
+      "year5",
+      "algebra",
+      "two_unknowns",
+      "linear_ratio",
+      "ratios",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "two_unknown_linear_ratio",
+    "difficulty": 3,
+    "question": "Two numbers, a and b, satisfy \\({coef_a}a - {coef_b}b = {total}\\) and \\(\\dfrac{{a}}{{b}} = \\dfrac{{{ratio_a}}}{{{ratio_b}}}\\). Find a and b.",
+    "answer_format": "a = {a_value}, b = {b_value}",
+    "choice_sets": [
+      {
+        "ratio_a": 3,
+        "ratio_b": 1,
+        "coef_a": 2,
+        "coef_b": 3
+      },
+      {
+        "ratio_a": 4,
+        "ratio_b": 1,
+        "coef_a": 2,
+        "coef_b": 5
+      },
+      {
+        "ratio_a": 5,
+        "ratio_b": 2,
+        "coef_a": 3,
+        "coef_b": 4
+      },
+      {
+        "ratio_a": 5,
+        "ratio_b": 3,
+        "coef_a": 4,
+        "coef_b": 5
+      },
+      {
+        "ratio_a": 7,
+        "ratio_b": 2,
+        "coef_a": 2,
+        "coef_b": 5
+      },
+      {
+        "ratio_a": 7,
+        "ratio_b": 3,
+        "coef_a": 3,
+        "coef_b": 4
+      }
+    ],
+    "variables": {
+      "unit": {
+        "min": 2,
+        "max": 12
+      }
+    },
+    "derived": {
+      "a_value": "unit * ratio_a",
+      "b_value": "unit * ratio_b",
+      "total": "coef_a * a_value - coef_b * b_value"
+    },
+    "tags": [
+      "year5",
+      "algebra",
+      "two_unknowns",
+      "linear_ratio",
+      "subtraction",
+      "ratios",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "two_unknown_linear_ratio",
+    "difficulty": 3,
+    "question": "Given \\({coef_a}x - {coef_b}y = {total}\\) and \\(\\dfrac{{x}}{{y}} = \\dfrac{{{ratio_a}}}{{{ratio_b}}}\\), work out x and y.",
+    "answer_format": "x = {x_value}, y = {y_value}",
+    "choice_sets": [
+      {
+        "ratio_a": 3,
+        "ratio_b": 1,
+        "coef_a": 2,
+        "coef_b": 4
+      },
+      {
+        "ratio_a": 4,
+        "ratio_b": 1,
+        "coef_a": 3,
+        "coef_b": 5
+      },
+      {
+        "ratio_a": 5,
+        "ratio_b": 2,
+        "coef_a": 3,
+        "coef_b": 4
+      },
+      {
+        "ratio_a": 5,
+        "ratio_b": 3,
+        "coef_a": 5,
+        "coef_b": 6
+      },
+      {
+        "ratio_a": 7,
+        "ratio_b": 2,
+        "coef_a": 2,
+        "coef_b": 5
+      },
+      {
+        "ratio_a": 8,
+        "ratio_b": 3,
+        "coef_a": 3,
+        "coef_b": 5
+      }
+    ],
+    "variables": {
+      "unit": {
+        "min": 2,
+        "max": 10
+      }
+    },
+    "derived": {
+      "x_value": "unit * ratio_a",
+      "y_value": "unit * ratio_b",
+      "total": "coef_a * x_value - coef_b * y_value"
+    },
+    "tags": [
+      "year5",
+      "algebra",
+      "two_unknowns",
+      "linear_ratio",
+      "subtraction",
+      "ratios",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "two_unknown_linear_ratio",
+    "difficulty": 3,
+    "question": "The fraction \\(\\dfrac{{p}}{{q}}\\) is \\(\\dfrac{{{ratio_a}}}{{{ratio_b}}}\\). If \\({coef_a}p - {coef_b}q = {total}\\), what are p and q?",
+    "answer_format": "p = {p_value}, q = {q_value}",
+    "choice_sets": [
+      {
+        "ratio_a": 3,
+        "ratio_b": 1,
+        "coef_a": 2,
+        "coef_b": 5
+      },
+      {
+        "ratio_a": 4,
+        "ratio_b": 1,
+        "coef_a": 3,
+        "coef_b": 4
+      },
+      {
+        "ratio_a": 5,
+        "ratio_b": 2,
+        "coef_a": 2,
+        "coef_b": 3
+      },
+      {
+        "ratio_a": 5,
+        "ratio_b": 3,
+        "coef_a": 4,
+        "coef_b": 5
+      },
+      {
+        "ratio_a": 7,
+        "ratio_b": 2,
+        "coef_a": 3,
+        "coef_b": 6
+      },
+      {
+        "ratio_a": 8,
+        "ratio_b": 3,
+        "coef_a": 3,
+        "coef_b": 5
+      }
+    ],
+    "variables": {
+      "unit": {
+        "min": 2,
+        "max": 12
+      }
+    },
+    "derived": {
+      "p_value": "unit * ratio_a",
+      "q_value": "unit * ratio_b",
+      "total": "coef_a * p_value - coef_b * q_value"
+    },
+    "tags": [
+      "year5",
+      "algebra",
+      "two_unknowns",
+      "linear_ratio",
+      "subtraction",
+      "ratios",
       "template"
     ],
     "source": "template"

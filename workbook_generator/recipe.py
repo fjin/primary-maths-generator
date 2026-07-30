@@ -20,6 +20,7 @@ class Recipe:
     topics: list[str]
     output_dir: Path = Path("output")
     mix: dict[str, int] | None = None
+    subtopics: list[str] | None = None
 
 
 def load_recipe(path: Path) -> Recipe:
@@ -32,9 +33,12 @@ def load_recipe(path: Path) -> Recipe:
     layout = data.get("layout", {})
     topics = data.get("topics", ["mixed"])
     mix = data.get("mix")
+    subtopics = data.get("subtopics", data.get("subtopic"))
 
     if isinstance(topics, str):
         topics = [topics]
+    if isinstance(subtopics, str):
+        subtopics = [subtopics]
 
     return Recipe(
         title=data.get("title", path.stem.replace("-", " ").title()),
@@ -45,4 +49,5 @@ def load_recipe(path: Path) -> Recipe:
         topics=list(topics),
         output_dir=Path(data.get("output_dir", "output")),
         mix=mix,
+        subtopics=list(subtopics) if subtopics else None,
     )

@@ -23,6 +23,11 @@ def parse_args() -> argparse.Namespace:
         help="Optional YAML recipe file. When supplied it overrides CLI worksheet settings.",
     )
     parser.add_argument("--topic", default="mixed", help="Topic to generate, or 'mixed'.")
+    parser.add_argument(
+        "--subtopic",
+        default=None,
+        help="Optional word-problem subtopic filter, e.g. ratios or money.",
+    )
     parser.add_argument("--questions", type=int, default=50, help="Number of questions.")
     parser.add_argument("--difficulty", default="year5", help="Difficulty level.")
     parser.add_argument("--seed", type=int, default=42, help="Deterministic random seed.")
@@ -75,7 +80,14 @@ def recipe_from_args(args: argparse.Namespace) -> Recipe:
         columns=args.columns,
         topics=[args.topic],
         output_dir=Path(args.output_dir),
+        subtopics=split_csv(args.subtopic),
     )
+
+
+def split_csv(value: str | None) -> list[str] | None:
+    if not value:
+        return None
+    return [item.strip() for item in value.split(",") if item.strip()]
 
 
 def format_difficulty(value: str) -> str:

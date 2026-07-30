@@ -9,7 +9,12 @@ from workbook_generator.models import Question
 class GeometryGenerator(BaseGenerator):
     topic = "geometry"
 
-    def generate_one(self, rng: random.Random, difficulty: int) -> Question:
+    def generate_one(
+        self,
+        rng: random.Random,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> Question:
         shape = rng.choice(["rectangle", "triangle"])
         if shape == "rectangle":
             length = rng.randint(4, 20)
@@ -29,4 +34,3 @@ class GeometryGenerator(BaseGenerator):
             difficulty=difficulty,
             tags=("geometry", "area"),
         )
-

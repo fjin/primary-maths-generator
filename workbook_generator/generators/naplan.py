@@ -9,7 +9,12 @@ from workbook_generator.models import Question
 class NaplanGenerator(BaseGenerator):
     topic = "naplan"
 
-    def generate_one(self, rng: random.Random, difficulty: int) -> Question:
+    def generate_one(
+        self,
+        rng: random.Random,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> Question:
         number = rng.randint(2000, 99999)
         place = rng.choice([10, 100, 1000])
         rounded = ((number + place // 2) // place) * place

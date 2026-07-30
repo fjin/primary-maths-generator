@@ -10,7 +10,12 @@ from workbook_generator.models import Question, latex_fraction
 class FractionGenerator(BaseGenerator):
     topic = "fractions"
 
-    def generate_one(self, rng: random.Random, difficulty: int) -> Question:
+    def generate_one(
+        self,
+        rng: random.Random,
+        difficulty: int,
+        subtopics: list[str] | None = None,
+    ) -> Question:
         denominators = [2, 3, 4, 5, 6, 8, 10, 12]
         denominator_a = rng.choice(denominators[: 4 + difficulty])
         denominator_b = rng.choice(denominators[: 4 + difficulty])
@@ -36,4 +41,3 @@ class FractionGenerator(BaseGenerator):
             difficulty=difficulty,
             tags=("fraction", "arithmetic"),
         )
-

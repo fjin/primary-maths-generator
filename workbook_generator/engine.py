@@ -52,6 +52,8 @@ class GeneratorRegistry:
 
 
 class WorksheetBuilder:
+    max_duplicate_retries = 1000
+
     def __init__(self, registry: GeneratorRegistry) -> None:
         self.registry = registry
 
@@ -59,14 +61,24 @@ class WorksheetBuilder:
         rng = random.Random(recipe.seed)
         difficulty = DIFFICULTY_LEVELS.get(recipe.difficulty.lower(), 3)
         topics = self._expand_topics(recipe)
+        if recipe.subtopics and any(
+            self.registry.resolve(topic).topic != "word_problems" for topic in topics
+        ):
+            raise ValueError("Subtopic filtering is currently supported only for word_problems.")
         questions: list[Question] = []
         used_prompts: set[str] = set()
 
         for index in range(recipe.questions):
             generator = self.registry.resolve(topics[index % len(topics)])
-            question = self._generate_unique_question(generator, rng, difficulty, used_prompts)
+            question = self._generate_unique_question(
+                generator,
+                rng,
+                difficulty,
+                used_prompts,
+                recipe.subtopics,
+            )
             questions.append(question)
-            used_prompts.add(question.prompt)
+            used_prompts.add(self._question_key(question.prompt))
 
         rng.shuffle(questions)
         return Worksheet(
@@ -102,16 +114,24 @@ class WorksheetBuilder:
     def _slugify(value: str) -> str:
         return re.sub(r"[^a-z0-9]+", "_", value.lower()).strip("_")
 
-    @staticmethod
+    @classmethod
     def _generate_unique_question(
+        cls,
         generator: BaseGenerator,
         rng: random.Random,
         difficulty: int,
         used_prompts: set[str],
+        subtopics: list[str] | None = None,
     ) -> Question:
-        question = generator.generate_one(rng, difficulty)
-        for _ in range(50):
-            if question.prompt not in used_prompts:
+        for _ in range(cls.max_duplicate_retries):
+            question = generator.generate_one(rng, difficulty, subtopics=subtopics)
+            if cls._question_key(question.prompt) not in used_prompts:
                 return question
-            question = generator.generate_one(rng, difficulty)
-        return question
+        raise ValueError(
+            "Could not generate enough unique questions. "
+            "Try fewer questions, a different seed, or add more templates/question-bank entries."
+        )
+
+    @staticmethod
+    def _question_key(prompt: str) -> str:
+        return re.sub(r"\s+", " ", prompt).strip().lower()
