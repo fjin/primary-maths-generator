@@ -72,10 +72,31 @@
             <input id="answer-key-toggle" type="checkbox" checked />
             <span>Include answer key</span>
           </label>
+
+          <label class="wide-label">
+            <span>GitHub token</span>
+            <input
+              id="github-token-input"
+              name="github-token"
+              type="password"
+              autocomplete="off"
+              placeholder="Fine-grained token with Actions read/write"
+            />
+          </label>
+
+          <label>
+            <span>GitHub branch</span>
+            <input id="github-branch-input" name="github-branch" type="text" value="main" />
+          </label>
+
+          <label class="check-row">
+            <input id="remember-token-toggle" type="checkbox" />
+            <span>Remember token on this browser</span>
+          </label>
         </form>
 
         <div class="action-row">
-          <button id="generate-button" type="button">Generate PDF</button>
+          <button id="generate-button" type="button">Create PDF</button>
           <a
             class="action-link"
             href="https://github.com/fjin/primary-maths-generator/actions/workflows/generate-pdf.yml"
@@ -88,6 +109,7 @@
         </div>
 
         <p id="status-message" class="status-message" role="status">Loading question bank...</p>
+        <p id="download-message" class="download-message" aria-live="polite"></p>
       </section>
 
       <section class="preview-panel" aria-labelledby="preview-title">

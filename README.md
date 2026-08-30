@@ -50,6 +50,13 @@ Actions tab. Click `Run workflow`, choose the topic, subtopic, difficulty,
 question count, seed, columns, and title, then download the `worksheet-pdf`
 artifact after the run finishes.
 
+The static web page can also start that workflow for you. Create a fine-grained
+GitHub personal access token for this repository with Actions read/write
+permission, paste it into the GitHub token field, choose the options, and click
+`Create PDF`. The page will start the workflow, wait for it to finish, then show
+a download link for the `worksheet-pdf` artifact. The token is used only in the
+browser; do not commit tokens to the repository.
+
 ## CLI Examples
 
 ```bash

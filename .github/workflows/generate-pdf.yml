@@ -1,5 +1,7 @@
 name: Generate PDF
 
+run-name: Generate PDF - ${{ inputs.title }} - ${{ inputs.request_id }}
+
 on:
   workflow_dispatch:
     inputs:
@@ -68,6 +70,11 @@ on:
         description: Worksheet title
         required: true
         default: Primary Maths Practice
+        type: string
+      request_id:
+        description: Request id from the web page
+        required: false
+        default: manual
         type: string
 
 jobs:

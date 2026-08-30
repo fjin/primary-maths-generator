@@ -195,6 +195,18 @@ button:hover,
   color: var(--warn);
 }
 
+.download-message {
+  min-height: 1.5em;
+  margin: 10px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.download-message a {
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+
 .preview-header {
   display: flex;
   align-items: end;

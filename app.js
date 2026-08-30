@@ -16,6 +16,14 @@ const TOPIC_LABELS = {
   word_problems: "Word Problems",
 };
 
+const GITHUB_OWNER = "fjin";
+const GITHUB_REPO = "primary-maths-generator";
+const GITHUB_WORKFLOW = "generate-pdf.yml";
+const GITHUB_TOKEN_KEY = "primaryMathsGithubToken";
+const GITHUB_BRANCH_KEY = "primaryMathsGithubBranch";
+const GITHUB_POLL_INTERVAL_MS = 7000;
+const GITHUB_TIMEOUT_MS = 10 * 60 * 1000;
+
 const state = {
   bank: [],
   selectedQuestions: [],
@@ -31,9 +39,13 @@ const elements = {
   seed: document.querySelector("#seed-input"),
   title: document.querySelector("#title-input"),
   includeAnswers: document.querySelector("#answer-key-toggle"),
+  githubToken: document.querySelector("#github-token-input"),
+  githubBranch: document.querySelector("#github-branch-input"),
+  rememberToken: document.querySelector("#remember-token-toggle"),
   generate: document.querySelector("#generate-button"),
   preview: document.querySelector("#preview-button"),
   status: document.querySelector("#status-message"),
+  download: document.querySelector("#download-message"),
   summary: document.querySelector("#question-summary"),
   questionPreview: document.querySelector("#question-preview"),
 };
@@ -47,6 +59,7 @@ async function init() {
       throw new Error(`Question bank returned ${response.status}`);
     }
     state.bank = (await response.json()).map(normalizeQuestion).filter(Boolean);
+    hydrateGithubSettings();
     populateTopicOptions();
     populateSubtopicOptions();
     attachEvents();
@@ -72,6 +85,33 @@ function attachEvents() {
   elements.columns.addEventListener("change", refreshPreview);
   elements.preview.addEventListener("click", refreshPreview);
   elements.generate.addEventListener("click", generatePdf);
+  elements.githubToken.addEventListener("input", persistGithubSettings);
+  elements.githubBranch.addEventListener("input", persistGithubSettings);
+  elements.rememberToken.addEventListener("change", persistGithubSettings);
+}
+
+function hydrateGithubSettings() {
+  const savedToken = localStorage.getItem(GITHUB_TOKEN_KEY);
+  const savedBranch = localStorage.getItem(GITHUB_BRANCH_KEY);
+  if (savedToken) {
+    elements.githubToken.value = savedToken;
+    elements.rememberToken.checked = true;
+  }
+  if (savedBranch) {
+    elements.githubBranch.value = savedBranch;
+  }
+}
+
+function persistGithubSettings() {
+  const branch = elements.githubBranch.value.trim();
+  if (branch) {
+    localStorage.setItem(GITHUB_BRANCH_KEY, branch);
+  }
+  if (elements.rememberToken.checked && elements.githubToken.value.trim()) {
+    localStorage.setItem(GITHUB_TOKEN_KEY, elements.githubToken.value.trim());
+  } else {
+    localStorage.removeItem(GITHUB_TOKEN_KEY);
+  }
 }
 
 function normalizeQuestion(item) {
@@ -230,6 +270,11 @@ async function generatePdf() {
     return;
   }
 
+  const generatedByActions = await generateWithGitHubActions();
+  if (generatedByActions) {
+    return;
+  }
+
   const generatedByServer = await generateCliStylePdf();
   if (generatedByServer) {
     return;
@@ -257,6 +302,136 @@ async function generatePdf() {
   const filename = `${slugify(title)}.pdf`;
   doc.save(filename);
   setStatus(`Downloaded ${filename}.`);
+}
+
+async function generateWithGitHubActions() {
+  const token = elements.githubToken.value.trim();
+  const ref = elements.githubBranch.value.trim() || "main";
+  if (!token) {
+    setDownloadMessage("");
+    return false;
+  }
+
+  persistGithubSettings();
+  const requestId = crypto.randomUUID();
+  const title = elements.title.value.trim() || "Primary Maths Practice";
+  const startedAt = new Date().toISOString();
+  const payload = {
+    ref,
+    inputs: {
+      topic: elements.topic.value,
+      subtopic: elements.subtopic.value,
+      difficulty: difficultyNameFromValue(elements.difficulty.value),
+      questions: String(numberFromInput(elements.count.value, 40)),
+      seed: String(numberFromInput(elements.seed.value, 42)),
+      columns: String(numberFromInput(elements.columns.value, 1)),
+      answer_columns: "3",
+      title,
+      request_id: requestId,
+    },
+  };
+
+  try {
+    setDownloadMessage("");
+    setStatus("Starting GitHub Actions PDF run...");
+    await githubFetch(
+      `/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/${GITHUB_WORKFLOW}/dispatches`,
+      token,
+      {
+        method: "POST",
+        body: JSON.stringify(payload),
+      },
+    );
+
+    setStatus("GitHub Actions run started. Waiting for the PDF artifact...");
+    const run = await waitForWorkflowRun(token, ref, requestId, startedAt);
+    const artifact = await waitForArtifact(token, run.id);
+    const downloadUrl = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}/actions/runs/${run.id}/artifacts/${artifact.id}`;
+    setDownloadMessage(
+      `Ready: <a href="${downloadUrl}" target="_blank" rel="noreferrer">download worksheet-pdf</a>`,
+    );
+    setStatus("GitHub Actions finished. Download link is ready.");
+    return true;
+  } catch (error) {
+    console.error(error);
+    setStatus(`GitHub Actions failed: ${error.message}`, true);
+    setDownloadMessage("");
+    return true;
+  }
+}
+
+async function waitForWorkflowRun(token, branch, requestId, startedAt) {
+  const deadline = Date.now() + GITHUB_TIMEOUT_MS;
+  while (Date.now() < deadline) {
+    const data = await githubFetch(
+      `/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/${GITHUB_WORKFLOW}/runs?event=workflow_dispatch&branch=${encodeURIComponent(branch)}&per_page=20`,
+      token,
+    );
+    const run = data.workflow_runs?.find((item) => {
+      const isNewEnough = new Date(item.created_at) >= new Date(startedAt);
+      const titleMatches = String(item.display_title || "").includes(requestId);
+      return isNewEnough && titleMatches;
+    });
+    if (run?.status === "completed") {
+      if (run.conclusion !== "success") {
+        throw new Error(`workflow completed with ${run.conclusion}`);
+      }
+      return run;
+    }
+    if (run) {
+      setStatus(`GitHub Actions is ${run.status}. Waiting for the PDF artifact...`);
+    }
+    await sleep(GITHUB_POLL_INTERVAL_MS);
+  }
+  throw new Error("timed out waiting for the workflow run");
+}
+
+async function waitForArtifact(token, runId) {
+  const deadline = Date.now() + GITHUB_TIMEOUT_MS;
+  while (Date.now() < deadline) {
+    const data = await githubFetch(
+      `/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/runs/${runId}/artifacts`,
+      token,
+    );
+    const artifact = data.artifacts?.find((item) => item.name === "worksheet-pdf" && !item.expired);
+    if (artifact) {
+      return artifact;
+    }
+    await sleep(GITHUB_POLL_INTERVAL_MS);
+  }
+  throw new Error("timed out waiting for the worksheet-pdf artifact");
+}
+
+async function githubFetch(path, token, options = {}) {
+  const response = await fetch(`https://api.github.com${path}`, {
+    ...options,
+    headers: {
+      Accept: "application/vnd.github+json",
+      Authorization: `Bearer ${token}`,
+      "X-GitHub-Api-Version": "2022-11-28",
+      ...(options.body ? { "Content-Type": "application/json" } : {}),
+      ...options.headers,
+    },
+  });
+  if (response.status === 204) {
+    return null;
+  }
+  const text = await response.text();
+  const data = text ? JSON.parse(text) : null;
+  if (!response.ok) {
+    throw new Error(data?.message || `GitHub API returned ${response.status}`);
+  }
+  return data;
+}
+
+function difficultyNameFromValue(value) {
+  return {
+    1: "year3",
+    2: "year4",
+    3: "year5",
+    4: "year6",
+    5: "selective",
+  }[value] || "year5";
 }
 
 async function generateCliStylePdf() {
@@ -611,6 +786,16 @@ function proceduralQuestion(subtopic, question, answer) {
 function setStatus(message, isWarning = false) {
   elements.status.textContent = message;
   elements.status.classList.toggle("warning", isWarning);
+}
+
+function setDownloadMessage(html) {
+  elements.download.innerHTML = html;
+}
+
+function sleep(milliseconds) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, milliseconds);
+  });
 }
 
 function mulberry32(seed) {
