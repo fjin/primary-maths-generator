@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Primary Maths Worksheet Generator</title>
+    <meta
+      name="description"
+      content="Generate printable primary maths question and answer worksheets from a curated question bank."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="controls-panel" aria-labelledby="app-title">
+        <div class="brand-block">
+          <p class="eyebrow">Primary maths</p>
+          <h1 id="app-title">Worksheet Generator</h1>
+          <a class="doc-link" href="cli.html">CLI instructions</a>
+        </div>
+
+        <form id="generator-form" class="controls-grid">
+          <label>
+            <span>Topic</span>
+            <select id="topic-select" name="topic"></select>
+          </label>
+
+          <label>
+            <span>Subtopic</span>
+            <select id="subtopic-select" name="subtopic"></select>
+          </label>
+
+          <label>
+            <span>Difficulty</span>
+            <select id="difficulty-select" name="difficulty">
+              <option value="1">Year 3</option>
+              <option value="2">Year 4</option>
+              <option value="3" selected>Year 5</option>
+              <option value="4">Year 6 / NAPLAN</option>
+              <option value="5">Selective / ICAS</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Questions</span>
+            <input id="question-count" name="questions" type="number" min="1" max="250" value="40" />
+          </label>
+
+          <label>
+            <span>Worksheet columns</span>
+            <select id="column-select" name="columns">
+              <option value="1">1 column</option>
+              <option value="2" selected>2 columns</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Seed</span>
+            <input id="seed-input" name="seed" type="number" value="42" />
+          </label>
+
+          <label class="wide-label">
+            <span>Title</span>
+            <input id="title-input" name="title" type="text" value="Primary Maths Practice" />
+          </label>
+
+          <label class="switch-row wide-label">
+            <input id="multiple-choice-toggle" name="multipleChoice" type="checkbox" checked />
+            <span class="switch-control" aria-hidden="true"></span>
+            <span class="switch-text">Show multiple-choice options</span>
+          </label>
+        </form>
+
+        <div class="action-row">
+          <button id="generate-button" type="button">Generate Worksheet</button>
+          <button id="print-button" class="secondary-button" type="button">Print</button>
+        </div>
+
+        <p id="status-message" class="status-message" role="status">Loading question bank...</p>
+      </section>
+
+      <section class="worksheet-panel" aria-labelledby="worksheet-title">
+        <header class="worksheet-header">
+          <div>
+            <p class="eyebrow">Printable worksheet</p>
+            <h2 id="worksheet-title">Primary Maths Practice</h2>
+            <p id="worksheet-meta" class="worksheet-meta"></p>
+          </div>
+          <p id="question-summary" class="question-summary">No questions selected yet.</p>
+        </header>
+
+        <section class="print-section" aria-labelledby="questions-title">
+          <h3 id="questions-title">Questions</h3>
+          <ol id="questions-list" class="questions-list"></ol>
+        </section>
+
+        <section class="print-section answer-section" aria-labelledby="answers-title">
+          <h3 id="answers-title">Answers</h3>
+          <ol id="answers-list" class="answers-list"></ol>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

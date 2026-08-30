@@ -65,7 +65,14 @@ class WorksheetBuilder:
         rng = random.Random(recipe.seed)
         difficulty = DIFFICULTY_LEVELS.get(recipe.difficulty.lower(), 3)
         topics = self._expand_topics(recipe)
-        subtopic_filter_topics = {"number_system", "word_problems"}
+        subtopic_filter_topics = {
+            "fractions",
+            "money",
+            "number_patterns",
+            "number_system",
+            "time",
+            "word_problems",
+        }
         if recipe.subtopics and any(
             self.registry.resolve(topic).topic not in subtopic_filter_topics for topic in topics
         ):

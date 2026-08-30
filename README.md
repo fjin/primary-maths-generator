@@ -19,6 +19,33 @@ python generate.py examples/year5-mixed.yaml
 
 Outputs are written to `output/`.
 
+## Static Web App
+
+This repository includes a GitHub Pages-friendly worksheet generator:
+
+- `index.html`
+- `styles.css`
+- `app.js`
+- `data/question_bank.json`
+
+The web app runs entirely in the browser. Users can choose a topic, subtopic,
+difficulty, question count, columns, seed, and title. It displays all selected
+questions in one section and all answers in a second section, with a print
+friendly layout.
+
+To preview locally:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000/`.
+
+For exact CLI-style PDFs from GitHub, use the `Generate PDF` workflow in the
+Actions tab. Click `Run workflow`, choose the topic, subtopic, difficulty,
+question count, seed, columns, and title, then download the `worksheet-pdf`
+artifact after the run finishes.
+
 ## CLI Examples
 
 ```bash

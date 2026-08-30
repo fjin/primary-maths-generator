@@ -74,6 +74,114 @@ class LatexRendererTests(unittest.TestCase):
         self.assertIn(r"\$40", latex)
         self.assertIn(r"\$10\_00", latex)
 
+    def test_latex_renderer_formats_multiple_choice_questions(self) -> None:
+        worksheet = Worksheet(
+            title="Sample",
+            slug="sample",
+            questions=[
+                Question(
+                    prompt="Which number is closest to 6,500? A. 6,049 B. 6,481 C. 6,725 D. 6,951",
+                    answer="B. 6,481",
+                    topic="number_system",
+                    subtopic="place_value",
+                    difficulty=3,
+                    meta={"source": "question_bank"},
+                )
+            ],
+            seed=42,
+            difficulty="year5",
+        )
+
+        latex = LatexRenderer().render(worksheet)
+
+        self.assertIn("Which number is closest to 6,500?", latex)
+        self.assertIn(r"\begin{enumerate}[label=\Alph*.", latex)
+        self.assertIn(r"\item 6,049", latex)
+        self.assertIn(r"\item 6,481", latex)
+        self.assertIn(r"\item 6,725", latex)
+        self.assertIn(r"\item 6,951", latex)
+        self.assertNotIn("A. 6,049 B. 6,481", latex)
+
+    def test_latex_renderer_does_not_format_plain_question_mentions_of_options(self) -> None:
+        worksheet = Worksheet(
+            title="Sample",
+            slug="sample",
+            questions=[
+                Question(
+                    prompt="Bus A has 18 students and Bus B has 23 students. Which bus has more students?",
+                    answer="Bus B",
+                    topic="word_problems",
+                    subtopic="comparison",
+                    difficulty=3,
+                    meta={"source": "question_bank"},
+                )
+            ],
+            seed=42,
+            difficulty="year5",
+        )
+
+        latex = LatexRenderer().render(worksheet)
+
+        self.assertIn("Bus A has 18 students", latex)
+        self.assertNotIn(r"\begin{enumerate}[label=\Alph*.", latex)
+
+    def test_latex_renderer_formats_plain_text_fractions(self) -> None:
+        worksheet = Worksheet(
+            title="Sample",
+            slug="sample",
+            questions=[
+                Question(
+                    prompt=(
+                        "Chef Alfredo's Restaurant had a supply of 12 litres of mustard sauce. "
+                        "They wanted to use all the mustard sauce for five days, using the same amount each day. "
+                        "How much should they use each day? A 2 1/5 litres D 2 4/5 litres "
+                        "B 2 2/5 litres E 3 litres C 2 3/5 litres"
+                    ),
+                    answer="B. 2 2/5 litres",
+                    topic="fractions",
+                    subtopic="word_problems",
+                    difficulty=3,
+                    meta={"source": "question_bank"},
+                )
+            ],
+            seed=42,
+            difficulty="year5",
+        )
+
+        latex = LatexRenderer().render(worksheet)
+
+        self.assertIn(r"\item \(2\frac{1}{5}\) litres", latex)
+        self.assertIn(r"\item \(2\frac{2}{5}\) litres", latex)
+        self.assertIn(r"\item \(2\frac{3}{5}\) litres", latex)
+        self.assertIn(r"\item \(2\frac{4}{5}\) litres", latex)
+        self.assertIn(r"\item B. \(2\frac{2}{5}\) litres", latex)
+        self.assertNotIn("2 1/5 litres", latex)
+
+    def test_latex_renderer_can_hide_multiple_choice_options(self) -> None:
+        worksheet = Worksheet(
+            title="Sample",
+            slug="sample",
+            questions=[
+                Question(
+                    prompt="Which number is closest to 6,500? A. 6,049 B. 6,481 C. 6,725 D. 6,951",
+                    answer="B. 6,481",
+                    topic="number_system",
+                    subtopic="place_value",
+                    difficulty=3,
+                    meta={"source": "question_bank"},
+                )
+            ],
+            seed=42,
+            difficulty="year5",
+        )
+
+        latex = LatexRenderer(show_multiple_choice=False).render(worksheet)
+
+        self.assertIn(r"\item Which number is closest to 6,500?", latex)
+        self.assertIn(r"\item 6,481", latex)
+        self.assertNotIn(r"\begin{enumerate}[label=\Alph*.", latex)
+        self.assertNotIn("A. 6,049", latex)
+
 
 if __name__ == "__main__":
     unittest.main()

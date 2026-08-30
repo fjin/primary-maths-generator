@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CLI Instructions - Primary Maths Worksheet Generator</title>
+    <meta
+      name="description"
+      content="Command-line instructions for generating primary maths worksheets and PDFs."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="cli.js"></script>
+  </head>
+  <body>
+    <main class="doc-page">
+      <nav class="doc-nav" aria-label="Page navigation">
+        <a class="doc-link" href="index.html">Back to generator</a>
+      </nav>
+
+      <article class="doc-panel">
+        <header class="doc-header">
+          <p class="eyebrow">Command line</p>
+          <h1>CLI Instructions</h1>
+          <p>
+            Use the CLI when you want the LaTeX-generated worksheet PDF, repeatable output from a
+            seed, or batch generation from your terminal.
+          </p>
+        </header>
+
+        <section>
+          <h2>Start Locally</h2>
+          <pre><code>cd /Users/fan.jin/study/ebu
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt</code></pre>
+        </section>
+
+        <section>
+          <h2>Generate a PDF</h2>
+          <pre><code>python3 generate.py --topic number_system --questions 40 --difficulty year5</code></pre>
+          <p>
+            Files are written to the <code>output</code> folder. If <code>pdflatex</code> is
+            installed, the command writes both <code>.tex</code> and <code>.pdf</code> files.
+          </p>
+        </section>
+
+        <section>
+          <h2>Useful Examples</h2>
+          <pre><code>python3 generate.py --topic mixed --questions 100 --difficulty year5 --seed 2026
+python3 generate.py --topic fractions --questions 40 --difficulty year5 --columns 2
+python3 generate.py --topic word_problems --subtopic time --questions 30 --difficulty year5
+python3 generate.py --topic number_system --questions 40 --difficulty year5 --no-multiple-choice
+python3 generate.py --topic money --questions 50 --no-pdf</code></pre>
+        </section>
+
+        <section>
+          <h2>Common Options</h2>
+          <dl class="option-list">
+            <dt><code>--topic</code></dt>
+            <dd>Choose a topic, such as <code>number_system</code>, <code>fractions</code>, <code>money</code>, <code>time</code>, <code>word_problems</code>, or <code>mixed</code>.</dd>
+
+            <dt><code>--subtopic</code></dt>
+            <dd>Filter to a subtopic. You can use comma-separated subtopics for some topics.</dd>
+
+            <dt><code>--questions</code></dt>
+            <dd>Set how many questions to generate.</dd>
+
+            <dt><code>--difficulty</code></dt>
+            <dd>Use values such as <code>year3</code>, <code>year4</code>, <code>year5</code>, <code>year6</code>, <code>naplan</code>, or <code>selective</code>.</dd>
+
+            <dt><code>--seed</code></dt>
+            <dd>Use the same seed to generate the same worksheet again.</dd>
+
+            <dt><code>--columns</code></dt>
+            <dd>Set question columns. Allowed values are <code>1</code>, <code>2</code>, and <code>3</code>.</dd>
+
+            <dt><code>--answer-columns</code></dt>
+            <dd>Set answer key columns. Allowed values are <code>1</code>, <code>2</code>, <code>3</code>, and <code>4</code>.</dd>
+
+            <dt><code>--no-multiple-choice</code></dt>
+            <dd>Hide multiple-choice options and print only the question stem.</dd>
+
+            <dt><code>--no-pdf</code></dt>
+            <dd>Write only the LaTeX file and skip PDF compilation.</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Available Topics and Subtopics</h2>
+          <p>
+            Use these exact names with <code>--topic</code> and <code>--subtopic</code>.
+            Subtopics can be comma-separated.
+          </p>
+          <div id="topic-subtopic-list" class="topic-subtopic-list" aria-live="polite">
+            Loading topics...
+          </div>
+        </section>
+
+        <section>
+          <h2>Recipe Files</h2>
+          <p>You can also generate from a YAML recipe.</p>
+          <pre><code>python3 generate.py examples/year5-mixed.yaml</code></pre>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
