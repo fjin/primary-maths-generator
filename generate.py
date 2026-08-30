@@ -40,6 +40,11 @@ def parse_args() -> argparse.Namespace:
         choices=[1, 2, 3, 4],
         help="Number of columns to use on the answer key page.",
     )
+    parser.add_argument(
+        "--no-multiple-choice",
+        action="store_true",
+        help="Hide multiple-choice options and print only the question stem.",
+    )
     parser.add_argument("--output-dir", default="output")
     parser.add_argument(
         "--no-pdf",
@@ -102,7 +107,11 @@ def main() -> int:
 
     registry = GeneratorRegistry.default()
     worksheet = WorksheetBuilder(registry).build(recipe)
-    tex = LatexRenderer(columns=recipe.columns, answer_columns=args.answer_columns).render(worksheet)
+    tex = LatexRenderer(
+        columns=recipe.columns,
+        answer_columns=args.answer_columns,
+        show_multiple_choice=not args.no_multiple_choice,
+    ).render(worksheet)
 
     recipe.output_dir.mkdir(parents=True, exist_ok=True)
     tex_path = recipe.output_dir / f"{worksheet.slug}.tex"

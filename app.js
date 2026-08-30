@@ -16,21 +16,12 @@ const TOPIC_LABELS = {
   word_problems: "Word Problems",
 };
 
-const GITHUB_OWNER = "fjin";
-const GITHUB_REPO = "primary-maths-generator";
-const GITHUB_WORKFLOW = "generate-pdf.yml";
-const GITHUB_TOKEN_KEY = "primaryMathsGithubToken";
-const GITHUB_BRANCH_KEY = "primaryMathsGithubBranch";
-const GITHUB_POLL_INTERVAL_MS = 7000;
-const GITHUB_TIMEOUT_MS = 10 * 60 * 1000;
-
 const state = {
   bank: [],
   selectedQuestions: [],
 };
 
 const elements = {
-  form: document.querySelector("#generator-form"),
   topic: document.querySelector("#topic-select"),
   subtopic: document.querySelector("#subtopic-select"),
   difficulty: document.querySelector("#difficulty-select"),
@@ -38,16 +29,15 @@ const elements = {
   columns: document.querySelector("#column-select"),
   seed: document.querySelector("#seed-input"),
   title: document.querySelector("#title-input"),
-  includeAnswers: document.querySelector("#answer-key-toggle"),
-  githubToken: document.querySelector("#github-token-input"),
-  githubBranch: document.querySelector("#github-branch-input"),
-  rememberToken: document.querySelector("#remember-token-toggle"),
+  multipleChoice: document.querySelector("#multiple-choice-toggle"),
   generate: document.querySelector("#generate-button"),
-  preview: document.querySelector("#preview-button"),
+  print: document.querySelector("#print-button"),
   status: document.querySelector("#status-message"),
-  download: document.querySelector("#download-message"),
   summary: document.querySelector("#question-summary"),
-  questionPreview: document.querySelector("#question-preview"),
+  worksheetTitle: document.querySelector("#worksheet-title"),
+  worksheetMeta: document.querySelector("#worksheet-meta"),
+  questions: document.querySelector("#questions-list"),
+  answers: document.querySelector("#answers-list"),
 };
 
 init();
@@ -59,11 +49,10 @@ async function init() {
       throw new Error(`Question bank returned ${response.status}`);
     }
     state.bank = (await response.json()).map(normalizeQuestion).filter(Boolean);
-    hydrateGithubSettings();
     populateTopicOptions();
     populateSubtopicOptions();
     attachEvents();
-    refreshPreview();
+    generateWorksheet();
   } catch (error) {
     setStatus(
       "Could not load the question bank. Open this page through GitHub Pages or a local web server.",
@@ -76,42 +65,17 @@ async function init() {
 function attachEvents() {
   elements.topic.addEventListener("change", () => {
     populateSubtopicOptions();
-    refreshPreview();
+    generateWorksheet();
   });
-  elements.subtopic.addEventListener("change", refreshPreview);
-  elements.difficulty.addEventListener("change", refreshPreview);
-  elements.count.addEventListener("input", refreshPreview);
-  elements.seed.addEventListener("input", refreshPreview);
-  elements.columns.addEventListener("change", refreshPreview);
-  elements.preview.addEventListener("click", refreshPreview);
-  elements.generate.addEventListener("click", generatePdf);
-  elements.githubToken.addEventListener("input", persistGithubSettings);
-  elements.githubBranch.addEventListener("input", persistGithubSettings);
-  elements.rememberToken.addEventListener("change", persistGithubSettings);
-}
-
-function hydrateGithubSettings() {
-  const savedToken = localStorage.getItem(GITHUB_TOKEN_KEY);
-  const savedBranch = localStorage.getItem(GITHUB_BRANCH_KEY);
-  if (savedToken) {
-    elements.githubToken.value = savedToken;
-    elements.rememberToken.checked = true;
-  }
-  if (savedBranch) {
-    elements.githubBranch.value = savedBranch;
-  }
-}
-
-function persistGithubSettings() {
-  const branch = elements.githubBranch.value.trim();
-  if (branch) {
-    localStorage.setItem(GITHUB_BRANCH_KEY, branch);
-  }
-  if (elements.rememberToken.checked && elements.githubToken.value.trim()) {
-    localStorage.setItem(GITHUB_TOKEN_KEY, elements.githubToken.value.trim());
-  } else {
-    localStorage.removeItem(GITHUB_TOKEN_KEY);
-  }
+  elements.subtopic.addEventListener("change", generateWorksheet);
+  elements.difficulty.addEventListener("change", generateWorksheet);
+  elements.count.addEventListener("input", generateWorksheet);
+  elements.columns.addEventListener("change", generateWorksheet);
+  elements.seed.addEventListener("input", generateWorksheet);
+  elements.title.addEventListener("input", updateWorksheetHeading);
+  elements.multipleChoice.addEventListener("change", generateWorksheet);
+  elements.generate.addEventListener("click", generateWorksheet);
+  elements.print.addEventListener("click", () => window.print());
 }
 
 function normalizeQuestion(item) {
@@ -159,10 +123,10 @@ function populateSubtopicOptions() {
   }
 }
 
-function refreshPreview() {
+function generateWorksheet() {
   const selection = selectQuestions();
   state.selectedQuestions = selection.questions;
-  renderPreview(selection);
+  renderWorksheet(selection);
 }
 
 function selectQuestions() {
@@ -216,467 +180,189 @@ function sampleUnique(items, count, rng) {
   return shuffled.slice(0, count);
 }
 
-function renderPreview(selection) {
+function renderWorksheet(selection) {
   const { questions, available, requested, generated } = selection;
-  elements.questionPreview.innerHTML = "";
+  updateWorksheetHeading();
+  elements.questions.innerHTML = "";
+  elements.answers.innerHTML = "";
+  document.documentElement.style.setProperty("--worksheet-columns", elements.columns.value);
 
   if (!questions.length) {
-    elements.questionPreview.innerHTML =
-      '<p class="empty-state">No questions match these filters yet.</p>';
+    elements.questions.innerHTML = '<li class="empty-state">No questions match these filters yet.</li>';
     elements.summary.textContent = "No questions selected.";
     setStatus("Try a different topic, subtopic, or difficulty.", true);
     return;
   }
 
-  const fragment = document.createDocumentFragment();
-  questions.slice(0, 30).forEach((question, index) => {
-    const card = document.createElement("article");
-    card.className = "question-card";
+  questions.forEach((question) => {
+    const questionItem = document.createElement("li");
+    appendQuestionContent(questionItem, question.question, elements.multipleChoice.checked);
+    elements.questions.append(questionItem);
 
-    const number = document.createElement("span");
-    number.className = "question-number";
-    number.textContent = String(index + 1);
-
-    const text = document.createElement("p");
-    text.className = "question-text";
-    text.textContent = question.question;
-
-    card.append(number, text);
-    fragment.append(card);
+    const answerItem = document.createElement("li");
+    appendFormattedText(answerItem, answerTextForDisplay(question));
+    elements.answers.append(answerItem);
   });
-  elements.questionPreview.append(fragment);
 
-  const hiddenCount = Math.max(0, questions.length - 30);
-  if (hiddenCount) {
-    const note = document.createElement("p");
-    note.className = "empty-state";
-    note.textContent = `${hiddenCount} more questions will be included in the PDF.`;
-    elements.questionPreview.append(note);
-  }
-
-  elements.summary.textContent = `${questions.length} questions selected`;
+  elements.summary.textContent = `${questions.length} questions`;
   if (questions.length < requested) {
     setStatus(`Only ${questions.length} unique questions match these filters.`, true);
   } else if (generated) {
-    setStatus(`Ready. ${available} bank questions matched; ${generated} extra number-system questions were generated.`);
+    setStatus(`${questions.length} questions ready. ${generated} extra number-system questions were generated.`);
   } else {
-    setStatus(`Ready. ${available} questions match these filters.`);
+    setStatus(`${questions.length} questions ready from ${available} matching bank questions.`);
   }
 }
 
-async function generatePdf() {
-  refreshPreview();
-  if (!state.selectedQuestions.length) {
+function appendQuestionContent(questionItem, questionText, showChoices) {
+  const parsed = parseMultipleChoice(questionText);
+
+  if (!parsed) {
+    questionItem.textContent = questionText;
     return;
   }
 
-  const generatedByActions = await generateWithGitHubActions();
-  if (generatedByActions) {
+  const stem = document.createElement("p");
+  stem.className = "question-stem";
+  stem.textContent = parsed.stem;
+  questionItem.append(stem);
+
+  if (!showChoices) {
     return;
   }
 
-  const generatedByServer = await generateCliStylePdf();
-  if (generatedByServer) {
-    return;
-  }
+  const choices = document.createElement("ol");
+  choices.className = "choice-list";
+  choices.setAttribute("aria-label", "Answer choices");
 
-  if (!window.jspdf?.jsPDF) {
-    setStatus("PDF library is still loading. Try again in a moment.", true);
-    return;
-  }
+  parsed.options.forEach((option) => {
+    const choice = document.createElement("li");
 
-  const doc = new window.jspdf.jsPDF({ unit: "pt", format: "a4" });
-  const title = elements.title.value.trim() || "Primary Maths Practice";
-  const difficultyLabel = DIFFICULTY_LABELS[elements.difficulty.value] || "Worksheet";
-  const columns = Number(elements.columns.value);
+    const label = document.createElement("span");
+    label.className = "choice-label";
+    label.textContent = option.label;
 
-  drawHeader(doc, title, difficultyLabel);
-  drawQuestionPages(doc, state.selectedQuestions, columns);
+    const value = document.createElement("span");
+    value.className = "choice-text";
+    appendFormattedText(value, option.text);
 
-  if (elements.includeAnswers.checked) {
-    doc.addPage();
-    drawHeader(doc, "Answer Key", title);
-    drawAnswerPages(doc, state.selectedQuestions);
-  }
-
-  const filename = `${slugify(title)}.pdf`;
-  doc.save(filename);
-  setStatus(`Downloaded ${filename}.`);
-}
-
-async function generateWithGitHubActions() {
-  const token = elements.githubToken.value.trim();
-  const ref = elements.githubBranch.value.trim() || "main";
-  if (!token) {
-    setDownloadMessage("");
-    return false;
-  }
-
-  persistGithubSettings();
-  const requestId = crypto.randomUUID();
-  const title = elements.title.value.trim() || "Primary Maths Practice";
-  const startedAt = new Date().toISOString();
-  const payload = {
-    ref,
-    inputs: {
-      topic: elements.topic.value,
-      subtopic: elements.subtopic.value,
-      difficulty: difficultyNameFromValue(elements.difficulty.value),
-      questions: String(numberFromInput(elements.count.value, 40)),
-      seed: String(numberFromInput(elements.seed.value, 42)),
-      columns: String(numberFromInput(elements.columns.value, 1)),
-      answer_columns: "3",
-      title,
-      request_id: requestId,
-    },
-  };
-
-  try {
-    setDownloadMessage("");
-    setStatus("Starting GitHub Actions PDF run...");
-    await githubFetch(
-      `/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/${GITHUB_WORKFLOW}/dispatches`,
-      token,
-      {
-        method: "POST",
-        body: JSON.stringify(payload),
-      },
-    );
-
-    setStatus("GitHub Actions run started. Waiting for the PDF artifact...");
-    const run = await waitForWorkflowRun(token, ref, requestId, startedAt);
-    const artifact = await waitForArtifact(token, run.id);
-    const downloadUrl = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}/actions/runs/${run.id}/artifacts/${artifact.id}`;
-    setDownloadMessage(
-      `Ready: <a href="${downloadUrl}" target="_blank" rel="noreferrer">download worksheet-pdf</a>`,
-    );
-    setStatus("GitHub Actions finished. Download link is ready.");
-    return true;
-  } catch (error) {
-    console.error(error);
-    setStatus(`GitHub Actions failed: ${error.message}`, true);
-    setDownloadMessage("");
-    return true;
-  }
-}
-
-async function waitForWorkflowRun(token, branch, requestId, startedAt) {
-  const deadline = Date.now() + GITHUB_TIMEOUT_MS;
-  while (Date.now() < deadline) {
-    const data = await githubFetch(
-      `/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/${GITHUB_WORKFLOW}/runs?event=workflow_dispatch&branch=${encodeURIComponent(branch)}&per_page=20`,
-      token,
-    );
-    const run = data.workflow_runs?.find((item) => {
-      const isNewEnough = new Date(item.created_at) >= new Date(startedAt);
-      const titleMatches = String(item.display_title || "").includes(requestId);
-      return isNewEnough && titleMatches;
-    });
-    if (run?.status === "completed") {
-      if (run.conclusion !== "success") {
-        throw new Error(`workflow completed with ${run.conclusion}`);
-      }
-      return run;
-    }
-    if (run) {
-      setStatus(`GitHub Actions is ${run.status}. Waiting for the PDF artifact...`);
-    }
-    await sleep(GITHUB_POLL_INTERVAL_MS);
-  }
-  throw new Error("timed out waiting for the workflow run");
-}
-
-async function waitForArtifact(token, runId) {
-  const deadline = Date.now() + GITHUB_TIMEOUT_MS;
-  while (Date.now() < deadline) {
-    const data = await githubFetch(
-      `/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/runs/${runId}/artifacts`,
-      token,
-    );
-    const artifact = data.artifacts?.find((item) => item.name === "worksheet-pdf" && !item.expired);
-    if (artifact) {
-      return artifact;
-    }
-    await sleep(GITHUB_POLL_INTERVAL_MS);
-  }
-  throw new Error("timed out waiting for the worksheet-pdf artifact");
-}
-
-async function githubFetch(path, token, options = {}) {
-  const response = await fetch(`https://api.github.com${path}`, {
-    ...options,
-    headers: {
-      Accept: "application/vnd.github+json",
-      Authorization: `Bearer ${token}`,
-      "X-GitHub-Api-Version": "2022-11-28",
-      ...(options.body ? { "Content-Type": "application/json" } : {}),
-      ...options.headers,
-    },
+    choice.append(label, value);
+    choices.append(choice);
   });
-  if (response.status === 204) {
-    return null;
+
+  questionItem.append(choices);
+}
+
+function answerTextForDisplay(question) {
+  if (elements.multipleChoice.checked) {
+    return question.answer;
   }
-  const text = await response.text();
-  const data = text ? JSON.parse(text) : null;
-  if (!response.ok) {
-    throw new Error(data?.message || `GitHub API returned ${response.status}`);
-  }
-  return data;
-}
 
-function difficultyNameFromValue(value) {
-  return {
-    1: "year3",
-    2: "year4",
-    3: "year5",
-    4: "year6",
-    5: "selective",
-  }[value] || "year5";
-}
-
-async function generateCliStylePdf() {
-  const payload = {
-    topic: elements.topic.value,
-    subtopic: elements.subtopic.value,
-    difficulty: elements.difficulty.value,
-    questions: numberFromInput(elements.count.value, 40),
-    columns: numberFromInput(elements.columns.value, 1),
-    answerColumns: 3,
-    seed: numberFromInput(elements.seed.value, 42),
-    title: elements.title.value.trim() || "Primary Maths Practice",
-  };
-
-  try {
-    setStatus("Generating CLI-style PDF...");
-    const response = await fetch("/api/generate", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-    if (response.status === 404 || response.status === 405) {
-      setStatus("Using browser PDF mode. Run the local Python server for CLI-style output.");
-      return false;
-    }
-    if (!response.ok) {
-      const message = await response.json().catch(() => null);
-      throw new Error(message?.error || `PDF generation failed with ${response.status}`);
-    }
-
-    const blob = await response.blob();
-    const filename = filenameFromDisposition(response.headers.get("Content-Disposition"))
-      || `${slugify(payload.title)}.pdf`;
-    downloadBlob(blob, filename);
-    setStatus(`Downloaded ${filename}.`);
-    return true;
-  } catch (error) {
-    console.warn(error);
-    setStatus("Using browser PDF mode. Run the local Python server for CLI-style output.", true);
-    return false;
-  }
-}
-
-function filenameFromDisposition(value) {
-  if (!value) {
-    return null;
-  }
-  const match = value.match(/filename="([^"]+)"/);
-  return match ? match[1] : null;
-}
-
-function downloadBlob(blob, filename) {
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = filename;
-  document.body.append(link);
-  link.click();
-  link.remove();
-  URL.revokeObjectURL(url);
-}
-
-function drawHeader(doc, title, subtitle) {
-  const pageWidth = doc.internal.pageSize.getWidth();
-  doc.setFont("helvetica", "bold");
-  doc.setFontSize(17);
-  doc.text(title, 44, 44, { maxWidth: pageWidth - 88 });
-  doc.setFont("helvetica", "normal");
-  doc.setFontSize(10);
-  doc.setTextColor(90);
-  doc.text(subtitle, 44, 62, { maxWidth: pageWidth - 88 });
-  doc.setTextColor(0);
-  doc.setDrawColor(210);
-  doc.line(44, 78, pageWidth - 44, 78);
-}
-
-function drawQuestionPages(doc, questions, columns) {
-  const page = pageMetrics(doc);
-  const gap = columns === 2 ? 28 : 0;
-  const columnWidth = (page.width - gap) / columns;
-  const yStart = 100;
-  let column = 0;
-  let y = yStart;
-
-  questions.forEach((question, index) => {
-    const x = page.left + column * (columnWidth + gap);
-    const block = measureQuestionBlock(doc, question, index + 1, columnWidth);
-
-    if (y + block.height > page.bottom) {
-      if (columns === 2 && column === 0) {
-        column = 1;
-        y = yStart;
-      } else {
-        doc.addPage();
-        drawHeader(doc, elements.title.value.trim() || "Primary Maths Practice", DIFFICULTY_LABELS[elements.difficulty.value]);
-        column = 0;
-        y = yStart;
-      }
-    }
-
-    drawQuestionBlock(doc, question, index + 1, x, y, columnWidth);
-    y += block.height;
-  });
-}
-
-function drawAnswerPages(doc, questions) {
-  const page = pageMetrics(doc);
-  const columns = 3;
-  const gap = 18;
-  const columnWidth = (page.width - gap * 2) / columns;
-  let column = 0;
-  let y = 104;
-
-  questions.forEach((question, index) => {
-    const x = page.left + column * (columnWidth + gap);
-    const lines = doc.splitTextToSize(`${index + 1}. ${question.answer}`, columnWidth);
-    const height = Math.max(18, lines.length * 12 + 6);
-
-    if (y + height > page.bottom) {
-      if (column < columns - 1) {
-        column += 1;
-        y = 104;
-      } else {
-        doc.addPage();
-        drawHeader(doc, "Answer Key", elements.title.value.trim() || "Primary Maths Practice");
-        column = 0;
-        y = 104;
-      }
-    }
-
-    doc.setFont("helvetica", "normal");
-    doc.setFontSize(9);
-    doc.text(lines, x, y);
-    y += height;
-  });
-}
-
-function pageMetrics(doc) {
-  const pageWidth = doc.internal.pageSize.getWidth();
-  const pageHeight = doc.internal.pageSize.getHeight();
-  return {
-    left: 44,
-    width: pageWidth - 88,
-    bottom: pageHeight - 46,
-  };
-}
-
-function measureQuestionBlock(doc, question, number, width) {
   const parsed = parseMultipleChoice(question.question);
-  const stemWidth = width - 28;
-  const stemLines = doc.splitTextToSize(parsed.stem, stemWidth);
-  const optionLines = parsed.options
-    ? parsed.options.reduce((count, option) => {
-        const optionWidth = width > 360 ? (width - 44) / 2 : width - 28;
-        return count + doc.splitTextToSize(`${option.label}. ${option.text}`, optionWidth).length;
-      }, 0)
-    : 0;
-  const optionRows = parsed.options && width > 360 ? Math.ceil(optionLines / 2) : optionLines;
-  const lineHeight = 13;
-  return {
-    height: Math.max(34, stemLines.length * lineHeight + optionRows * 13 + 20),
-  };
-}
-
-function drawQuestionBlock(doc, question, number, x, y, width) {
-  const parsed = parseMultipleChoice(question.question);
-  const numberSize = 19;
-  const stemX = x + 28;
-  const stemWidth = width - 28;
-
-  doc.setFillColor(232, 242, 237);
-  doc.circle(x + 9, y - 4, numberSize / 2, "F");
-  doc.setFont("helvetica", "bold");
-  doc.setFontSize(8);
-  doc.setTextColor(31, 79, 65);
-  doc.text(String(number), x + 9, y - 1, { align: "center" });
-
-  doc.setTextColor(25);
-  doc.setFont("helvetica", "normal");
-  doc.setFontSize(width > 300 ? 10 : 9);
-  const stemLines = doc.splitTextToSize(parsed.stem, stemWidth);
-  doc.text(stemLines, stemX, y);
-
-  let optionY = y + stemLines.length * 13 + 7;
-  if (parsed.options) {
-    const twoColumnOptions = width > 360;
-    const optionWidth = twoColumnOptions ? (width - 44) / 2 : stemWidth;
-    parsed.options.forEach((option, index) => {
-      const optionX = twoColumnOptions && index % 2 === 1 ? stemX + optionWidth + 22 : stemX;
-      const rowY = twoColumnOptions
-        ? optionY + Math.floor(index / 2) * 15
-        : optionY + index * 15;
-      doc.setFont("helvetica", "bold");
-      doc.text(`${option.label}.`, optionX, rowY);
-      doc.setFont("helvetica", "normal");
-      const lines = doc.splitTextToSize(option.text, optionWidth - 18);
-      doc.text(lines, optionX + 18, rowY);
-    });
+  const labelMatch = question.answer.match(/^([A-E])\.?\s*(.*)$/);
+  if (!parsed || !labelMatch) {
+    return question.answer;
   }
 
-  doc.setDrawColor(225);
-  doc.line(x, y + measureQuestionBlock(doc, question, number, width).height - 9, x + width, y + measureQuestionBlock(doc, question, number, width).height - 9);
-}
-
-function parseMultipleChoice(text) {
-  const questionEnd = text.lastIndexOf("?");
-  const searchStart = questionEnd === -1 ? 0 : questionEnd;
-  const firstOption = text.slice(searchStart).search(/\sA\.?\s/);
-  if (firstOption === -1) {
-    return { stem: text, options: null };
+  const [, answerLabel, answerText] = labelMatch;
+  const choice = parsed.options.find((option) => option.label === answerLabel);
+  if (!choice) {
+    return answerText || question.answer;
   }
 
-  const optionStart = searchStart + firstOption + 1;
-  const stem = text.slice(0, optionStart).trim();
-  const optionText = text.slice(optionStart).trim();
-  const order = optionText.includes(" D ") && optionText.indexOf(" D ") < optionText.indexOf(" B ")
-    ? ["A", "D", "B", "E", "C"]
-    : ["A", "B", "C", "D", "E"];
-  const options = [];
+  return answerText && answerText !== answerLabel ? answerText : choice.text;
+}
+
+function appendFormattedText(container, text) {
+  const fractionPattern = /(?:^|[^\w/])(?:(\d+)\s+)?(\d+)\/(\d+)(?![\w/])/g;
   let cursor = 0;
+  let match = fractionPattern.exec(text);
 
-  for (let index = 0; index < order.length; index += 1) {
-    const label = order[index];
-    const pattern = new RegExp(`(?:^|\\\\s)${label}\\\\.?\\\\s+`, "g");
-    pattern.lastIndex = cursor;
-    const match = pattern.exec(optionText);
-    if (!match) {
-      return { stem: text, options: null };
-    }
-    const valueStart = match.index + match[0].length;
-    let valueEnd = optionText.length;
-    for (let nextIndex = index + 1; nextIndex < order.length; nextIndex += 1) {
-      const nextPattern = new RegExp(`\\\\s${order[nextIndex]}\\\\.?\\\\s+`, "g");
-      nextPattern.lastIndex = valueStart;
-      const nextMatch = nextPattern.exec(optionText);
-      if (nextMatch) {
-        valueEnd = nextMatch.index;
-        break;
-      }
-    }
-    options.push({ label, text: optionText.slice(valueStart, valueEnd).trim() });
-    cursor = valueEnd;
+  while (match) {
+    const prefixLength = match[0].length - match[0].trimStart().length;
+    const fractionStart = match.index + prefixLength;
+    const fractionEnd = match.index + match[0].length;
+
+    container.append(document.createTextNode(text.slice(cursor, fractionStart)));
+    appendFraction(container, match[1], match[2], match[3]);
+    cursor = fractionEnd;
+    match = fractionPattern.exec(text);
   }
 
-  return { stem, options: options.sort((a, b) => a.label.localeCompare(b.label)) };
+  container.append(document.createTextNode(text.slice(cursor)));
+}
+
+function appendFraction(container, whole, numerator, denominator) {
+  const wrapper = document.createElement("span");
+  wrapper.className = whole ? "mixed-number" : "simple-fraction";
+
+  if (whole) {
+    const wholeNumber = document.createElement("span");
+    wholeNumber.className = "whole-number";
+    wholeNumber.textContent = whole;
+    wrapper.append(wholeNumber);
+  }
+
+  const fraction = document.createElement("span");
+  fraction.className = "stacked-fraction";
+
+  const numeratorText = document.createElement("span");
+  numeratorText.className = "fraction-numerator";
+  numeratorText.textContent = numerator;
+
+  const denominatorText = document.createElement("span");
+  denominatorText.className = "fraction-denominator";
+  denominatorText.textContent = denominator;
+
+  fraction.append(numeratorText, denominatorText);
+  wrapper.append(fraction);
+  container.append(wrapper);
+}
+
+function parseMultipleChoice(questionText) {
+  const stemEnd = questionText.lastIndexOf("?");
+  if (stemEnd === -1) {
+    return null;
+  }
+
+  const stem = questionText.slice(0, stemEnd + 1).trim();
+  const choicesText = questionText.slice(stemEnd + 1).trim();
+  if (!stem || !choicesText) {
+    return null;
+  }
+
+  const matches = [...choicesText.matchAll(/(?:^|\s)([A-E])\.?\s+/g)];
+  if (matches.length < 2 || matches[0][1] !== "A") {
+    return null;
+  }
+
+  const options = matches.map((match, index) => {
+    const nextMatch = matches[index + 1];
+    const valueStart = match.index + match[0].length;
+    const valueEnd = nextMatch ? nextMatch.index : choicesText.length;
+    return {
+      label: match[1],
+      text: choicesText.slice(valueStart, valueEnd).trim(),
+    };
+  });
+
+  const labels = new Set(options.map((option) => option.label));
+  if (!labels.has("B") || !labels.has("C") || options.some((option) => !option.text)) {
+    return null;
+  }
+
+  return {
+    stem,
+    options: options.sort((left, right) => left.label.localeCompare(right.label)),
+  };
+}
+
+function updateWorksheetHeading() {
+  const title = elements.title.value.trim() || "Primary Maths Practice";
+  const topic = TOPIC_LABELS[elements.topic.value] || titleCase(elements.topic.value);
+  const subtopic = elements.subtopic.value === "all" ? "All subtopics" : titleCase(elements.subtopic.value);
+  elements.worksheetTitle.textContent = title;
+  elements.worksheetMeta.textContent = `${DIFFICULTY_LABELS[elements.difficulty.value]} - ${topic} - ${subtopic}`;
 }
 
 function createProceduralNumberSystemQuestion(rng, difficulty, selectedSubtopic) {
@@ -788,16 +474,6 @@ function setStatus(message, isWarning = false) {
   elements.status.classList.toggle("warning", isWarning);
 }
 
-function setDownloadMessage(html) {
-  elements.download.innerHTML = html;
-}
-
-function sleep(milliseconds) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, milliseconds);
-  });
-}
-
 function mulberry32(seed) {
   let value = seed >>> 0;
   return function nextRandom() {
@@ -834,13 +510,4 @@ function titleCase(value) {
 
 function formatNumber(value) {
   return new Intl.NumberFormat("en-AU").format(value);
-}
-
-function slugify(value) {
-  return (
-    value
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-+|-+$/g, "") || "maths-worksheet"
-  );
 }

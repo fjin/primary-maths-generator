@@ -29,33 +29,22 @@ This repository includes a GitHub Pages-friendly worksheet generator:
 - `data/question_bank.json`
 
 The web app runs entirely in the browser. Users can choose a topic, subtopic,
-difficulty, question count, columns, seed, and whether to include an answer key,
-then download a generated PDF.
+difficulty, question count, columns, seed, and title. It displays all selected
+questions in one section and all answers in a second section, with a print
+friendly layout.
 
 To preview locally:
 
 ```bash
-python3 serve.py
+python3 -m http.server 8000
 ```
 
 Then open `http://localhost:8000/`.
-
-When served with `python3 serve.py`, the Generate PDF button uses the same
-Python and LaTeX pipeline as the CLI. On GitHub Pages, the page falls back to
-browser-only PDF generation because static hosting cannot run Python or
-`pdflatex`.
 
 For exact CLI-style PDFs from GitHub, use the `Generate PDF` workflow in the
 Actions tab. Click `Run workflow`, choose the topic, subtopic, difficulty,
 question count, seed, columns, and title, then download the `worksheet-pdf`
 artifact after the run finishes.
-
-The static web page can also start that workflow for you. Create a fine-grained
-GitHub personal access token for this repository with Actions read/write
-permission, paste it into the GitHub token field, choose the options, and click
-`Create PDF`. The page will start the workflow, wait for it to finish, then show
-a download link for the `worksheet-pdf` artifact. The token is used only in the
-browser; do not commit tokens to the repository.
 
 ## CLI Examples
 

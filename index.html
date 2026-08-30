@@ -6,13 +6,9 @@
     <title>Primary Maths Worksheet Generator</title>
     <meta
       name="description"
-      content="Generate printable primary maths question booklets from a curated question bank."
+      content="Generate printable primary maths question and answer worksheets from a curated question bank."
     />
     <link rel="stylesheet" href="styles.css" />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"
-    ></script>
     <script defer src="app.js"></script>
   </head>
   <body>
@@ -21,6 +17,7 @@
         <div class="brand-block">
           <p class="eyebrow">Primary maths</p>
           <h1 id="app-title">Worksheet Generator</h1>
+          <a class="doc-link" href="cli.html">CLI instructions</a>
         </div>
 
         <form id="generator-form" class="controls-grid">
@@ -51,10 +48,10 @@
           </label>
 
           <label>
-            <span>Columns</span>
+            <span>Worksheet columns</span>
             <select id="column-select" name="columns">
-              <option value="1" selected>1 column</option>
-              <option value="2">2 columns</option>
+              <option value="1">1 column</option>
+              <option value="2" selected>2 columns</option>
             </select>
           </label>
 
@@ -68,60 +65,40 @@
             <input id="title-input" name="title" type="text" value="Primary Maths Practice" />
           </label>
 
-          <label class="check-row">
-            <input id="answer-key-toggle" type="checkbox" checked />
-            <span>Include answer key</span>
-          </label>
-
-          <label class="wide-label">
-            <span>GitHub token</span>
-            <input
-              id="github-token-input"
-              name="github-token"
-              type="password"
-              autocomplete="off"
-              placeholder="Fine-grained token with Actions read/write"
-            />
-          </label>
-
-          <label>
-            <span>GitHub branch</span>
-            <input id="github-branch-input" name="github-branch" type="text" value="main" />
-          </label>
-
-          <label class="check-row">
-            <input id="remember-token-toggle" type="checkbox" />
-            <span>Remember token on this browser</span>
+          <label class="switch-row wide-label">
+            <input id="multiple-choice-toggle" name="multipleChoice" type="checkbox" checked />
+            <span class="switch-control" aria-hidden="true"></span>
+            <span class="switch-text">Show multiple-choice options</span>
           </label>
         </form>
 
         <div class="action-row">
-          <button id="generate-button" type="button">Create PDF</button>
-          <a
-            class="action-link"
-            href="https://github.com/fjin/primary-maths-generator/actions/workflows/generate-pdf.yml"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Generate with GitHub Actions
-          </a>
-          <button id="preview-button" class="secondary-button" type="button">Refresh Preview</button>
+          <button id="generate-button" type="button">Generate Worksheet</button>
+          <button id="print-button" class="secondary-button" type="button">Print</button>
         </div>
 
         <p id="status-message" class="status-message" role="status">Loading question bank...</p>
-        <p id="download-message" class="download-message" aria-live="polite"></p>
       </section>
 
-      <section class="preview-panel" aria-labelledby="preview-title">
-        <div class="preview-header">
+      <section class="worksheet-panel" aria-labelledby="worksheet-title">
+        <header class="worksheet-header">
           <div>
-            <p class="eyebrow">Preview</p>
-            <h2 id="preview-title">Question Booklet</h2>
+            <p class="eyebrow">Printable worksheet</p>
+            <h2 id="worksheet-title">Primary Maths Practice</h2>
+            <p id="worksheet-meta" class="worksheet-meta"></p>
           </div>
           <p id="question-summary" class="question-summary">No questions selected yet.</p>
-        </div>
+        </header>
 
-        <div id="question-preview" class="question-preview" aria-live="polite"></div>
+        <section class="print-section" aria-labelledby="questions-title">
+          <h3 id="questions-title">Questions</h3>
+          <ol id="questions-list" class="questions-list"></ol>
+        </section>
+
+        <section class="print-section answer-section" aria-labelledby="answers-title">
+          <h3 id="answers-title">Answers</h3>
+          <ol id="answers-list" class="answers-list"></ol>
+        </section>
       </section>
     </main>
   </body>
