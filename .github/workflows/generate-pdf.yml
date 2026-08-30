@@ -1,0 +1,113 @@
+name: Generate PDF
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: Topic to generate
+        required: true
+        default: mixed
+        type: choice
+        options:
+          - mixed
+          - fractions
+          - money
+          - number_patterns
+          - number_system
+          - time
+          - word_problems
+      subtopic:
+        description: Optional subtopic, or all
+        required: true
+        default: all
+        type: string
+      difficulty:
+        description: Difficulty level
+        required: true
+        default: year5
+        type: choice
+        options:
+          - year3
+          - year4
+          - year5
+          - year6
+          - naplan
+          - oc
+          - selective
+          - icas
+      questions:
+        description: Number of questions
+        required: true
+        default: "40"
+        type: string
+      seed:
+        description: Random seed
+        required: true
+        default: "42"
+        type: string
+      columns:
+        description: Question page columns
+        required: true
+        default: "2"
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+      answer_columns:
+        description: Answer key columns
+        required: true
+        default: "3"
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+          - "4"
+      title:
+        description: Worksheet title
+        required: true
+        default: Primary Maths Practice
+        type: string
+
+jobs:
+  generate:
+    name: Generate worksheet PDF
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Install Python dependencies
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends texlive-latex-base texlive-latex-extra
+
+      - name: Generate PDF
+        run: |
+          args=(
+            --topic "${{ inputs.topic }}"
+            --questions "${{ inputs.questions }}"
+            --difficulty "${{ inputs.difficulty }}"
+            --seed "${{ inputs.seed }}"
+            --columns "${{ inputs.columns }}"
+            --answer-columns "${{ inputs.answer_columns }}"
+            --title "${{ inputs.title }}"
+          )
+
+          if [ "${{ inputs.subtopic }}" != "all" ]; then
+            args+=(--subtopic "${{ inputs.subtopic }}")
+          fi
+
+          python3 generate.py "${args[@]}"
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v6
+        with:
+          name: worksheet-pdf
+          path: output/*.pdf
+          if-no-files-found: error
