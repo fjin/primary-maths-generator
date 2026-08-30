@@ -78,6 +78,13 @@ select {
   text-decoration: underline;
 }
 
+.last-updated {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
 .eyebrow {
   margin: 0 0 6px;
   color: var(--accent);

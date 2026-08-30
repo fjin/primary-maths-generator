@@ -33,6 +33,7 @@ const elements = {
   generate: document.querySelector("#generate-button"),
   print: document.querySelector("#print-button"),
   status: document.querySelector("#status-message"),
+  lastUpdated: document.querySelector("#last-updated"),
   summary: document.querySelector("#question-summary"),
   worksheetTitle: document.querySelector("#worksheet-title"),
   worksheetMeta: document.querySelector("#worksheet-meta"),
@@ -44,6 +45,7 @@ init();
 
 async function init() {
   try {
+    renderLastUpdated();
     const response = await fetch("data/question_bank.json", { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`Question bank returned ${response.status}`);
@@ -54,6 +56,7 @@ async function init() {
     attachEvents();
     generateWorksheet();
   } catch (error) {
+    renderLastUpdated();
     setStatus(
       "Could not load the question bank. Open this page through GitHub Pages or a local web server.",
       true,
@@ -204,7 +207,7 @@ function renderWorksheet(selection) {
     elements.answers.append(answerItem);
   });
 
-  elements.summary.textContent = `${questions.length} questions`;
+  elements.summary.textContent = `${questions.length} questions - Seed ${currentSeed()}`;
   if (questions.length < requested) {
     setStatus(`Only ${questions.length} unique questions match these filters.`, true);
   } else if (generated) {
@@ -363,6 +366,54 @@ function updateWorksheetHeading() {
   const subtopic = elements.subtopic.value === "all" ? "All subtopics" : titleCase(elements.subtopic.value);
   elements.worksheetTitle.textContent = title;
   elements.worksheetMeta.textContent = `${DIFFICULTY_LABELS[elements.difficulty.value]} - ${topic} - ${subtopic}`;
+}
+
+function currentSeed() {
+  return elements.seed.value.trim() || "42";
+}
+
+async function renderLastUpdated() {
+  if (!elements.lastUpdated) {
+    return;
+  }
+
+  const timestamp = (await fetchLatestCommitTime()) || window.SITE_META?.lastCommitTime;
+  if (!timestamp) {
+    elements.lastUpdated.textContent = "Last updated unavailable";
+    return;
+  }
+
+  const date = new Date(timestamp);
+  if (Number.isNaN(date.getTime())) {
+    elements.lastUpdated.textContent = `Last updated ${timestamp}`;
+    return;
+  }
+
+  elements.lastUpdated.textContent = `Last updated ${new Intl.DateTimeFormat("en-AU", {
+    dateStyle: "medium",
+    timeStyle: "short",
+  }).format(date)}`;
+}
+
+async function fetchLatestCommitTime() {
+  const repository = window.SITE_META?.repository;
+  if (!repository) {
+    return null;
+  }
+
+  try {
+    const response = await fetch(`https://api.github.com/repos/${repository}/commits?per_page=1`, {
+      headers: { Accept: "application/vnd.github+json" },
+    });
+    if (!response.ok) {
+      return null;
+    }
+    const commits = await response.json();
+    return commits[0]?.commit?.committer?.date || null;
+  } catch (error) {
+    console.warn("Could not load latest commit time.", error);
+    return null;
+  }
 }
 
 function createProceduralNumberSystemQuestion(rng, difficulty, selectedSubtopic) {
