@@ -207,7 +207,7 @@ function renderWorksheet(selection) {
     elements.answers.append(answerItem);
   });
 
-  elements.summary.textContent = `${questions.length} questions - Seed ${currentSeed()}`;
+  elements.summary.textContent = `${questions.length} questions`;
   if (questions.length < requested) {
     setStatus(`Only ${questions.length} unique questions match these filters.`, true);
   } else if (generated) {
@@ -365,7 +365,7 @@ function updateWorksheetHeading() {
   const topic = TOPIC_LABELS[elements.topic.value] || titleCase(elements.topic.value);
   const subtopic = elements.subtopic.value === "all" ? "All subtopics" : titleCase(elements.subtopic.value);
   elements.worksheetTitle.textContent = title;
-  elements.worksheetMeta.textContent = `${DIFFICULTY_LABELS[elements.difficulty.value]} - ${topic} - ${subtopic}`;
+  elements.worksheetMeta.textContent = `${DIFFICULTY_LABELS[elements.difficulty.value]} - ${topic} - ${subtopic} - Seed ${currentSeed()}`;
 }
 
 function currentSeed() {
@@ -377,7 +377,7 @@ async function renderLastUpdated() {
     return;
   }
 
-  const timestamp = (await fetchLatestCommitTime()) || window.SITE_META?.lastCommitTime;
+  const timestamp = (await fetchLatestDeployTime()) || (await fetchLatestCommitTime()) || document.lastModified;
   if (!timestamp) {
     elements.lastUpdated.textContent = "Last updated unavailable";
     return;
@@ -393,6 +393,30 @@ async function renderLastUpdated() {
     dateStyle: "medium",
     timeStyle: "short",
   }).format(date)}`;
+}
+
+async function fetchLatestDeployTime() {
+  const repository = window.SITE_META?.repository;
+  if (!repository) {
+    return null;
+  }
+
+  try {
+    const response = await fetch(
+      `https://api.github.com/repos/${repository}/deployments?environment=github-pages&per_page=1`,
+      {
+        headers: { Accept: "application/vnd.github+json" },
+      },
+    );
+    if (!response.ok) {
+      return null;
+    }
+    const deployments = await response.json();
+    return deployments[0]?.updated_at || deployments[0]?.created_at || null;
+  } catch (error) {
+    console.warn("Could not load latest deployment time.", error);
+    return null;
+  }
 }
 
 async function fetchLatestCommitTime() {
