@@ -35,10 +35,15 @@ then download a generated PDF.
 To preview locally:
 
 ```bash
-python3 -m http.server 8000
+python3 serve.py
 ```
 
 Then open `http://localhost:8000/`.
+
+When served with `python3 serve.py`, the Generate PDF button uses the same
+Python and LaTeX pipeline as the CLI. On GitHub Pages, the page falls back to
+browser-only PDF generation because static hosting cannot run Python or
+`pdflatex`.
 
 ## CLI Examples
 

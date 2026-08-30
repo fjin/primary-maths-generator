@@ -224,9 +224,14 @@ function renderPreview(selection) {
   }
 }
 
-function generatePdf() {
+async function generatePdf() {
   refreshPreview();
   if (!state.selectedQuestions.length) {
+    return;
+  }
+
+  const generatedByServer = await generateCliStylePdf();
+  if (generatedByServer) {
     return;
   }
 
@@ -254,35 +259,93 @@ function generatePdf() {
   setStatus(`Downloaded ${filename}.`);
 }
 
+async function generateCliStylePdf() {
+  const payload = {
+    topic: elements.topic.value,
+    subtopic: elements.subtopic.value,
+    difficulty: elements.difficulty.value,
+    questions: numberFromInput(elements.count.value, 40),
+    columns: numberFromInput(elements.columns.value, 1),
+    answerColumns: 3,
+    seed: numberFromInput(elements.seed.value, 42),
+    title: elements.title.value.trim() || "Primary Maths Practice",
+  };
+
+  try {
+    setStatus("Generating CLI-style PDF...");
+    const response = await fetch("/api/generate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (response.status === 404 || response.status === 405) {
+      setStatus("Using browser PDF mode. Run the local Python server for CLI-style output.");
+      return false;
+    }
+    if (!response.ok) {
+      const message = await response.json().catch(() => null);
+      throw new Error(message?.error || `PDF generation failed with ${response.status}`);
+    }
+
+    const blob = await response.blob();
+    const filename = filenameFromDisposition(response.headers.get("Content-Disposition"))
+      || `${slugify(payload.title)}.pdf`;
+    downloadBlob(blob, filename);
+    setStatus(`Downloaded ${filename}.`);
+    return true;
+  } catch (error) {
+    console.warn(error);
+    setStatus("Using browser PDF mode. Run the local Python server for CLI-style output.", true);
+    return false;
+  }
+}
+
+function filenameFromDisposition(value) {
+  if (!value) {
+    return null;
+  }
+  const match = value.match(/filename="([^"]+)"/);
+  return match ? match[1] : null;
+}
+
+function downloadBlob(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  document.body.append(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+}
+
 function drawHeader(doc, title, subtitle) {
   const pageWidth = doc.internal.pageSize.getWidth();
   doc.setFont("helvetica", "bold");
-  doc.setFontSize(18);
-  doc.text(title, 48, 48, { maxWidth: pageWidth - 96 });
+  doc.setFontSize(17);
+  doc.text(title, 44, 44, { maxWidth: pageWidth - 88 });
   doc.setFont("helvetica", "normal");
   doc.setFontSize(10);
   doc.setTextColor(90);
-  doc.text(subtitle, 48, 66, { maxWidth: pageWidth - 96 });
+  doc.text(subtitle, 44, 62, { maxWidth: pageWidth - 88 });
   doc.setTextColor(0);
   doc.setDrawColor(210);
-  doc.line(48, 82, pageWidth - 48, 82);
+  doc.line(44, 78, pageWidth - 44, 78);
 }
 
 function drawQuestionPages(doc, questions, columns) {
   const page = pageMetrics(doc);
-  const gap = columns === 2 ? 24 : 0;
+  const gap = columns === 2 ? 28 : 0;
   const columnWidth = (page.width - gap) / columns;
-  const yStart = 104;
+  const yStart = 100;
   let column = 0;
   let y = yStart;
 
   questions.forEach((question, index) => {
     const x = page.left + column * (columnWidth + gap);
-    const label = `${index + 1}. `;
-    const lines = doc.splitTextToSize(label + question.question, columnWidth);
-    const height = lines.length * 13 + 12;
+    const block = measureQuestionBlock(doc, question, index + 1, columnWidth);
 
-    if (y + height > page.bottom) {
+    if (y + block.height > page.bottom) {
       if (columns === 2 && column === 0) {
         column = 1;
         y = yStart;
@@ -294,10 +357,8 @@ function drawQuestionPages(doc, questions, columns) {
       }
     }
 
-    doc.setFont("helvetica", "normal");
-    doc.setFontSize(10);
-    doc.text(lines, x, y);
-    y += height;
+    drawQuestionBlock(doc, question, index + 1, x, y, columnWidth);
+    y += block.height;
   });
 }
 
@@ -337,10 +398,110 @@ function pageMetrics(doc) {
   const pageWidth = doc.internal.pageSize.getWidth();
   const pageHeight = doc.internal.pageSize.getHeight();
   return {
-    left: 48,
-    width: pageWidth - 96,
-    bottom: pageHeight - 48,
+    left: 44,
+    width: pageWidth - 88,
+    bottom: pageHeight - 46,
   };
+}
+
+function measureQuestionBlock(doc, question, number, width) {
+  const parsed = parseMultipleChoice(question.question);
+  const stemWidth = width - 28;
+  const stemLines = doc.splitTextToSize(parsed.stem, stemWidth);
+  const optionLines = parsed.options
+    ? parsed.options.reduce((count, option) => {
+        const optionWidth = width > 360 ? (width - 44) / 2 : width - 28;
+        return count + doc.splitTextToSize(`${option.label}. ${option.text}`, optionWidth).length;
+      }, 0)
+    : 0;
+  const optionRows = parsed.options && width > 360 ? Math.ceil(optionLines / 2) : optionLines;
+  const lineHeight = 13;
+  return {
+    height: Math.max(34, stemLines.length * lineHeight + optionRows * 13 + 20),
+  };
+}
+
+function drawQuestionBlock(doc, question, number, x, y, width) {
+  const parsed = parseMultipleChoice(question.question);
+  const numberSize = 19;
+  const stemX = x + 28;
+  const stemWidth = width - 28;
+
+  doc.setFillColor(232, 242, 237);
+  doc.circle(x + 9, y - 4, numberSize / 2, "F");
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(8);
+  doc.setTextColor(31, 79, 65);
+  doc.text(String(number), x + 9, y - 1, { align: "center" });
+
+  doc.setTextColor(25);
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(width > 300 ? 10 : 9);
+  const stemLines = doc.splitTextToSize(parsed.stem, stemWidth);
+  doc.text(stemLines, stemX, y);
+
+  let optionY = y + stemLines.length * 13 + 7;
+  if (parsed.options) {
+    const twoColumnOptions = width > 360;
+    const optionWidth = twoColumnOptions ? (width - 44) / 2 : stemWidth;
+    parsed.options.forEach((option, index) => {
+      const optionX = twoColumnOptions && index % 2 === 1 ? stemX + optionWidth + 22 : stemX;
+      const rowY = twoColumnOptions
+        ? optionY + Math.floor(index / 2) * 15
+        : optionY + index * 15;
+      doc.setFont("helvetica", "bold");
+      doc.text(`${option.label}.`, optionX, rowY);
+      doc.setFont("helvetica", "normal");
+      const lines = doc.splitTextToSize(option.text, optionWidth - 18);
+      doc.text(lines, optionX + 18, rowY);
+    });
+  }
+
+  doc.setDrawColor(225);
+  doc.line(x, y + measureQuestionBlock(doc, question, number, width).height - 9, x + width, y + measureQuestionBlock(doc, question, number, width).height - 9);
+}
+
+function parseMultipleChoice(text) {
+  const questionEnd = text.lastIndexOf("?");
+  const searchStart = questionEnd === -1 ? 0 : questionEnd;
+  const firstOption = text.slice(searchStart).search(/\sA\.?\s/);
+  if (firstOption === -1) {
+    return { stem: text, options: null };
+  }
+
+  const optionStart = searchStart + firstOption + 1;
+  const stem = text.slice(0, optionStart).trim();
+  const optionText = text.slice(optionStart).trim();
+  const order = optionText.includes(" D ") && optionText.indexOf(" D ") < optionText.indexOf(" B ")
+    ? ["A", "D", "B", "E", "C"]
+    : ["A", "B", "C", "D", "E"];
+  const options = [];
+  let cursor = 0;
+
+  for (let index = 0; index < order.length; index += 1) {
+    const label = order[index];
+    const pattern = new RegExp(`(?:^|\\\\s)${label}\\\\.?\\\\s+`, "g");
+    pattern.lastIndex = cursor;
+    const match = pattern.exec(optionText);
+    if (!match) {
+      return { stem: text, options: null };
+    }
+    const valueStart = match.index + match[0].length;
+    let valueEnd = optionText.length;
+    for (let nextIndex = index + 1; nextIndex < order.length; nextIndex += 1) {
+      const nextPattern = new RegExp(`\\\\s${order[nextIndex]}\\\\.?\\\\s+`, "g");
+      nextPattern.lastIndex = valueStart;
+      const nextMatch = nextPattern.exec(optionText);
+      if (nextMatch) {
+        valueEnd = nextMatch.index;
+        break;
+      }
+    }
+    options.push({ label, text: optionText.slice(valueStart, valueEnd).trim() });
+    cursor = valueEnd;
+  }
+
+  return { stem, options: options.sort((a, b) => a.label.localeCompare(b.label)) };
 }
 
 function createProceduralNumberSystemQuestion(rng, difficulty, selectedSubtopic) {
