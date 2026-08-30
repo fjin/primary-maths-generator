@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Primary Maths Worksheet Generator</title>
+    <meta
+      name="description"
+      content="Generate printable primary maths question booklets from a curated question bank."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"
+    ></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="controls-panel" aria-labelledby="app-title">
+        <div class="brand-block">
+          <p class="eyebrow">Primary maths</p>
+          <h1 id="app-title">Worksheet Generator</h1>
+        </div>
+
+        <form id="generator-form" class="controls-grid">
+          <label>
+            <span>Topic</span>
+            <select id="topic-select" name="topic"></select>
+          </label>
+
+          <label>
+            <span>Subtopic</span>
+            <select id="subtopic-select" name="subtopic"></select>
+          </label>
+
+          <label>
+            <span>Difficulty</span>
+            <select id="difficulty-select" name="difficulty">
+              <option value="1">Year 3</option>
+              <option value="2">Year 4</option>
+              <option value="3" selected>Year 5</option>
+              <option value="4">Year 6 / NAPLAN</option>
+              <option value="5">Selective / ICAS</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Questions</span>
+            <input id="question-count" name="questions" type="number" min="1" max="250" value="40" />
+          </label>
+
+          <label>
+            <span>Columns</span>
+            <select id="column-select" name="columns">
+              <option value="1">1 column</option>
+              <option value="2" selected>2 columns</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Seed</span>
+            <input id="seed-input" name="seed" type="number" value="42" />
+          </label>
+
+          <label class="wide-label">
+            <span>Title</span>
+            <input id="title-input" name="title" type="text" value="Primary Maths Practice" />
+          </label>
+
+          <label class="check-row">
+            <input id="answer-key-toggle" type="checkbox" checked />
+            <span>Include answer key</span>
+          </label>
+        </form>
+
+        <div class="action-row">
+          <button id="generate-button" type="button">Generate PDF</button>
+          <button id="preview-button" class="secondary-button" type="button">Refresh Preview</button>
+        </div>
+
+        <p id="status-message" class="status-message" role="status">Loading question bank...</p>
+      </section>
+
+      <section class="preview-panel" aria-labelledby="preview-title">
+        <div class="preview-header">
+          <div>
+            <p class="eyebrow">Preview</p>
+            <h2 id="preview-title">Question Booklet</h2>
+          </div>
+          <p id="question-summary" class="question-summary">No questions selected yet.</p>
+        </div>
+
+        <div id="question-preview" class="question-preview" aria-live="polite"></div>
+      </section>
+    </main>
+  </body>
+</html>
