@@ -45,6 +45,11 @@ Python and LaTeX pipeline as the CLI. On GitHub Pages, the page falls back to
 browser-only PDF generation because static hosting cannot run Python or
 `pdflatex`.
 
+For exact CLI-style PDFs from GitHub, use the `Generate PDF` workflow in the
+Actions tab. Click `Run workflow`, choose the topic, subtopic, difficulty,
+question count, seed, columns, and title, then download the `worksheet-pdf`
+artifact after the run finishes.
+
 ## CLI Examples
 
 ```bash
