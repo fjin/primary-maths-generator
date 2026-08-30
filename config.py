@@ -22,7 +22,11 @@ TOPIC_ALIASES = {
     "decimal": "decimals",
     "percent": "percentages",
     "percentage": "percentages",
+    "number": "number_system",
+    "pattern": "number_patterns",
+    "patterns": "number_patterns",
+    "numbers": "number_system",
+    "number_systems": "number_system",
     "word": "word_problems",
     "words": "word_problems",
 }
-

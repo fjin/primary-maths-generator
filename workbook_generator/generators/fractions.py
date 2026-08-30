@@ -5,10 +5,14 @@ from fractions import Fraction
 
 from workbook_generator.generators.base import BaseGenerator
 from workbook_generator.models import Question, latex_fraction
+from workbook_generator.question_bank import QuestionBank
 
 
 class FractionGenerator(BaseGenerator):
     topic = "fractions"
+
+    def __init__(self, question_bank: QuestionBank | None = None) -> None:
+        self.question_bank = question_bank or QuestionBank()
 
     def generate_one(
         self,
@@ -16,6 +20,15 @@ class FractionGenerator(BaseGenerator):
         difficulty: int,
         subtopics: list[str] | None = None,
     ) -> Question:
+        bank_question = self.question_bank.generate_one(
+            self.topic,
+            difficulty,
+            rng,
+            subtopics=subtopics,
+        )
+        if bank_question:
+            return bank_question
+
         denominators = [2, 3, 4, 5, 6, 8, 10, 12]
         denominator_a = rng.choice(denominators[: 4 + difficulty])
         denominator_b = rng.choice(denominators[: 4 + difficulty])

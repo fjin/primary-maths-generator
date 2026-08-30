@@ -12,6 +12,8 @@ from workbook_generator.generators.geometry import GeometryGenerator
 from workbook_generator.generators.measurement import MeasurementGenerator
 from workbook_generator.generators.money import MoneyGenerator
 from workbook_generator.generators.naplan import NaplanGenerator
+from workbook_generator.generators.number_patterns import NumberPatternGenerator
+from workbook_generator.generators.number_system import NumberSystemGenerator
 from workbook_generator.generators.percentages import PercentageGenerator
 from workbook_generator.generators.time import TimeGenerator
 from workbook_generator.generators.word_problems import WordProblemGenerator
@@ -34,6 +36,8 @@ class GeneratorRegistry:
                 MeasurementGenerator(),
                 MoneyGenerator(),
                 TimeGenerator(),
+                NumberPatternGenerator(),
+                NumberSystemGenerator(),
                 WordProblemGenerator(),
                 NaplanGenerator(),
             ]
@@ -61,10 +65,13 @@ class WorksheetBuilder:
         rng = random.Random(recipe.seed)
         difficulty = DIFFICULTY_LEVELS.get(recipe.difficulty.lower(), 3)
         topics = self._expand_topics(recipe)
+        subtopic_filter_topics = {"number_system", "word_problems"}
         if recipe.subtopics and any(
-            self.registry.resolve(topic).topic != "word_problems" for topic in topics
+            self.registry.resolve(topic).topic not in subtopic_filter_topics for topic in topics
         ):
-            raise ValueError("Subtopic filtering is currently supported only for word_problems.")
+            raise ValueError(
+                "Subtopic filtering is currently supported only for number_system and word_problems."
+            )
         questions: list[Question] = []
         used_prompts: set[str] = set()
 

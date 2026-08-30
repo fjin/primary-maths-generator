@@ -12,10 +12,12 @@ class LatexRenderer:
 
     def render(self, worksheet: Worksheet) -> str:
         question_rows = "\n".join(
-            rf"            \item {question.prompt}" for question in worksheet.questions
+            rf"            \item {self._format_question_text(question.prompt, question.meta)}"
+            for question in worksheet.questions
         )
         answer_rows = "\n".join(
-            rf"            \item {question.answer}" for question in worksheet.questions
+            rf"            \item {self._format_question_text(question.answer, question.meta)}"
+            for question in worksheet.questions
         )
 
         return dedent(
@@ -68,3 +70,31 @@ class LatexRenderer:
         for char, replacement in replacements.items():
             value = value.replace(char, replacement)
         return value
+
+    @classmethod
+    def _format_question_text(cls, value: str, meta: dict) -> str:
+        if meta.get("source"):
+            return cls._escape_plain_text(value)
+        return value
+
+    @staticmethod
+    def _escape_plain_text(value: str) -> str:
+        result: list[str] = []
+        special_chars = {
+            "&": r"\&",
+            "%": r"\%",
+            "$": r"\$",
+            "#": r"\#",
+            "_": r"\_",
+        }
+        index = 0
+        while index < len(value):
+            char = value[index]
+            if char == "\\" and index + 1 < len(value) and value[index + 1] in special_chars:
+                result.append(char)
+                result.append(value[index + 1])
+                index += 2
+                continue
+            result.append(special_chars.get(char, char))
+            index += 1
+        return "".join(result)

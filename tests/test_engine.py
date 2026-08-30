@@ -1,5 +1,9 @@
 from workbook_generator.engine import GeneratorRegistry, WorksheetBuilder
 from workbook_generator.generators.base import BaseGenerator
+from workbook_generator.generators.money import MoneyGenerator
+from workbook_generator.generators.number_patterns import NumberPatternGenerator
+from workbook_generator.generators.number_system import NumberSystemGenerator
+from workbook_generator.generators.time import TimeGenerator
 from workbook_generator.generators.word_problems import WordProblemGenerator
 from workbook_generator.models import Question
 from workbook_generator.question_bank import QuestionBank
@@ -99,6 +103,66 @@ class EngineTests(unittest.TestCase):
 
         self.assertEqual(question.topic, "word_problems")
         self.assertIn(question.meta.get("source"), {"imported", "template"})
+
+    def test_number_system_topic_generates_curated_questions(self) -> None:
+        recipe = Recipe(
+            title="Year 5 Number System",
+            questions=10,
+            difficulty="year5",
+            seed=17,
+            columns=2,
+            topics=["number_system"],
+        )
+        worksheet = WorksheetBuilder(GeneratorRegistry.default()).build(recipe)
+
+        self.assertEqual(len(worksheet.questions), 10)
+        self.assertEqual({question.topic for question in worksheet.questions}, {"number_system"})
+        self.assertEqual(len({question.prompt for question in worksheet.questions}), 10)
+
+    def test_number_system_can_generate_large_unique_worksheet(self) -> None:
+        recipe = Recipe(
+            title="Year 5 Number System",
+            questions=177,
+            difficulty="year5",
+            seed=177,
+            columns=2,
+            topics=["number_system"],
+        )
+        worksheet = WorksheetBuilder(GeneratorRegistry.default()).build(recipe)
+
+        self.assertEqual(len(worksheet.questions), 177)
+        self.assertEqual(len({question.prompt for question in worksheet.questions}), 177)
+
+    def test_number_system_generator_uses_question_bank(self) -> None:
+        question = NumberSystemGenerator().generate_one(__import__("random").Random(1), 3)
+
+        self.assertEqual(question.topic, "number_system")
+        self.assertEqual(question.meta.get("source"), "curated")
+
+    def test_number_patterns_topic_generates_curated_questions(self) -> None:
+        recipe = Recipe(
+            title="Year 3 Number Patterns",
+            questions=20,
+            difficulty="year3",
+            seed=23,
+            columns=2,
+            topics=["number_patterns"],
+        )
+        worksheet = WorksheetBuilder(GeneratorRegistry.default()).build(recipe)
+
+        self.assertEqual(len(worksheet.questions), 20)
+        self.assertEqual({question.topic for question in worksheet.questions}, {"number_patterns"})
+
+    def test_topic_generators_can_use_pdf_imports(self) -> None:
+        rng = __import__("random").Random(1)
+
+        money_question = MoneyGenerator().generate_one(rng, 1)
+        time_question = TimeGenerator().generate_one(rng, 1)
+        pattern_question = NumberPatternGenerator().generate_one(rng, 1)
+
+        self.assertEqual(money_question.meta.get("source"), "scholarly_pdf_import")
+        self.assertEqual(time_question.meta.get("source"), "scholarly_pdf_import")
+        self.assertEqual(pattern_question.meta.get("source"), "scholarly_pdf_import")
 
     def test_question_template_updates_answer(self) -> None:
         template_path = Path(__file__).parent / "tmp_question_templates.json"
@@ -330,6 +394,24 @@ class EngineTests(unittest.TestCase):
         ]
 
         self.assertTrue(any(question and " - " in question.prompt for question in questions))
+
+    def test_geometry_templates_render_tex_friendly_prompts(self) -> None:
+        bank = QuestionBank()
+        generated = [
+            bank.generate_one(
+                "word_problems",
+                3,
+                __import__("random").Random(seed),
+                subtopics=[subtopic],
+            )
+            for seed, subtopic in enumerate(
+                ["geometry_angles", "geometry_properties", "geometry_multistep"],
+                start=20,
+            )
+        ]
+
+        self.assertTrue(any(question and r"^\circ" in question.prompt for question in generated))
+        self.assertTrue(any(question and r"\text{" in question.answer for question in generated))
 
     def test_one_unknown_template_solves_equation(self) -> None:
         template_path = Path(__file__).parent / "tmp_one_unknown_templates.json"

@@ -49,6 +49,31 @@ class LatexRendererTests(unittest.TestCase):
         self.assertIn(r"\begin{multicols}{2}", latex)
         self.assertIn(r"\begin{multicols}{3}", latex)
 
+    def test_latex_renderer_escapes_plain_text_bank_questions(self) -> None:
+        worksheet = Worksheet(
+            title="Sample",
+            slug="sample",
+            questions=[
+                Question(
+                    prompt="Complete the pattern: 1, 2, 3, _____, _____. Save 25% of $40.",
+                    answer="$10_00",
+                    topic="number_system",
+                    subtopic="patterns",
+                    difficulty=1,
+                    meta={"source": "question_bank"},
+                )
+            ],
+            seed=42,
+            difficulty="year5",
+        )
+
+        latex = LatexRenderer().render(worksheet)
+
+        self.assertIn(r"\_\_\_\_\_", latex)
+        self.assertIn(r"25\%", latex)
+        self.assertIn(r"\$40", latex)
+        self.assertIn(r"\$10\_00", latex)
+
 
 if __name__ == "__main__":
     unittest.main()

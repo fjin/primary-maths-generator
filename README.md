@@ -27,6 +27,9 @@ python generate.py --topic mixed --questions 250 --difficulty year5 --seed 2026
 python generate.py --topic word_problems --questions 40 --difficulty year5 --columns 2 --answer-columns 3
 python generate.py --topic word_problems --subtopic ratios --questions 100 --difficulty year5
 python generate.py --topic word_problems --subtopic two_unknown_linear_ratio --questions 100 --difficulty year5
+python generate.py --topic word_problems --subtopic geometry_angles,geometry_properties,geometry_multistep --questions 100 --difficulty year5
+python generate.py --topic number_system --questions 10 --difficulty year5
+python generate.py --topic number_patterns --questions 20 --difficulty year3
 python generate.py --topic money --questions 50 --no-pdf
 ```
 
@@ -66,6 +69,12 @@ Example with two-unknown linear ratio questions only:
 python generate.py --topic word_problems --subtopic two_unknown_linear_ratio --questions 100 --difficulty year5
 ```
 
+Example with geometry, shape properties, angles, and multi-step geometry questions:
+
+```bash
+python generate.py --topic word_problems --subtopic geometry_angles,geometry_properties,geometry_multistep --questions 100 --difficulty year5
+```
+
 Example with more compact answers:
 
 ```bash
@@ -80,6 +89,8 @@ Supported topics:
 - `geometry`
 - `measurement`
 - `money`
+- `number_patterns`
+- `number_system`
 - `time`
 - `word_problems`
 - `naplan`

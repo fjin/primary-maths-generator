@@ -2435,5 +2435,402 @@
       "template"
     ],
     "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_angles",
+    "difficulty": 3,
+    "question": "In triangle ABC, \\(\\angle A = {angle_a}^\\circ\\) and \\(\\angle B = {angle_b}^\\circ\\). What is \\(\\angle C\\)?",
+    "answer_format": "\\({angle_c}^\\circ\\)",
+    "variables": {
+      "angle_a": {
+        "choices": [
+          35,
+          40,
+          45,
+          50,
+          55,
+          60,
+          65
+        ]
+      },
+      "angle_b": {
+        "choices": [
+          45,
+          50,
+          55,
+          60,
+          65,
+          70,
+          75
+        ]
+      }
+    },
+    "constraints": [
+      "angle_a + angle_b < 170"
+    ],
+    "derived": {
+      "angle_c": "180 - angle_a - angle_b"
+    },
+    "tags": [
+      "year5",
+      "geometry",
+      "angles",
+      "triangle",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_angles",
+    "difficulty": 3,
+    "question": "Two angles sit on a straight line. One angle is \\({known_angle}^\\circ\\). What is the other angle?",
+    "answer_format": "\\({missing_angle}^\\circ\\)",
+    "variables": {
+      "known_angle": {
+        "choices": [
+          35,
+          45,
+          50,
+          65,
+          75,
+          80,
+          105,
+          120,
+          135
+        ]
+      }
+    },
+    "derived": {
+      "missing_angle": "180 - known_angle"
+    },
+    "tags": [
+      "year5",
+      "geometry",
+      "angles",
+      "straight_line",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_angles",
+    "difficulty": 3,
+    "question": "Three angles meet at a point. Two of them are \\({angle_a}^\\circ\\) and \\({angle_b}^\\circ\\). What is the third angle?",
+    "answer_format": "\\({angle_c}^\\circ\\)",
+    "variables": {
+      "angle_a": {
+        "choices": [
+          60,
+          75,
+          80,
+          90,
+          105,
+          120
+        ]
+      },
+      "angle_b": {
+        "choices": [
+          70,
+          85,
+          95,
+          110,
+          125,
+          140
+        ]
+      }
+    },
+    "constraints": [
+      "angle_a + angle_b < 330"
+    ],
+    "derived": {
+      "angle_c": "360 - angle_a - angle_b"
+    },
+    "tags": [
+      "year5",
+      "geometry",
+      "angles",
+      "around_point",
+      "multi_step",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_angles",
+    "difficulty": 3,
+    "question": "An isosceles triangle has two equal base angles of \\({base_angle}^\\circ\\). What is the vertex angle?",
+    "answer_format": "\\({vertex_angle}^\\circ\\)",
+    "variables": {
+      "base_angle": {
+        "choices": [
+          35,
+          40,
+          45,
+          50,
+          55,
+          60,
+          65,
+          70
+        ]
+      }
+    },
+    "derived": {
+      "vertex_angle": "180 - 2 * base_angle"
+    },
+    "tags": [
+      "year5",
+      "geometry",
+      "angles",
+      "shape_properties",
+      "isosceles_triangle",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_angles",
+    "difficulty": 3,
+    "question": "A quadrilateral has angles \\({angle_a}^\\circ\\), \\({angle_b}^\\circ\\), \\({angle_c}^\\circ\\), and \\(x^\\circ\\). Find \\(x\\).",
+    "answer_format": "\\(x = {angle_x}^\\circ\\)",
+    "variables": {
+      "angle_a": {
+        "choices": [
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      },
+      "angle_b": {
+        "choices": [
+          75,
+          85,
+          95,
+          105,
+          115
+        ]
+      },
+      "angle_c": {
+        "choices": [
+          65,
+          80,
+          90,
+          100,
+          120
+        ]
+      }
+    },
+    "constraints": [
+      "angle_a + angle_b + angle_c < 340"
+    ],
+    "derived": {
+      "angle_x": "360 - angle_a - angle_b - angle_c"
+    },
+    "tags": [
+      "year5",
+      "geometry",
+      "angles",
+      "quadrilateral",
+      "multi_step",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_properties",
+    "difficulty": 3,
+    "question": "A rectangle has perimeter \\({perimeter}\\) cm and width \\({width}\\) cm. What is its length?",
+    "answer_format": "\\({length}\\) cm",
+    "variables": {
+      "length": {
+        "min": 8,
+        "max": 30
+      },
+      "width": {
+        "min": 3,
+        "max": 16
+      }
+    },
+    "constraints": [
+      "length > width"
+    ],
+    "derived": {
+      "perimeter": "2 * (length + width)"
+    },
+    "tags": [
+      "year5",
+      "geometry",
+      "shape_properties",
+      "rectangle",
+      "perimeter",
+      "multi_step",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_properties",
+    "difficulty": 3,
+    "question": "A square has perimeter \\({perimeter}\\) cm. What is its area?",
+    "answer_format": "\\({area}\\text{{ cm}}^2\\)",
+    "variables": {
+      "side": {
+        "min": 4,
+        "max": 18
+      }
+    },
+    "derived": {
+      "perimeter": "4 * side",
+      "area": "side * side"
+    },
+    "tags": [
+      "year5",
+      "geometry",
+      "shape_properties",
+      "square",
+      "area",
+      "perimeter",
+      "multi_step",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_multistep",
+    "difficulty": 3,
+    "question": "A large rectangle is \\({length}\\) m by \\({width}\\) m. A smaller rectangle \\({cut_length}\\) m by \\({cut_width}\\) m is removed from one corner. What area is left?",
+    "answer_format": "\\({remaining_area}\\text{{ m}}^2\\)",
+    "variables": {
+      "length": {
+        "min": 10,
+        "max": 30
+      },
+      "width": {
+        "min": 8,
+        "max": 20
+      },
+      "cut_length": {
+        "min": 2,
+        "max": 8
+      },
+      "cut_width": {
+        "min": 2,
+        "max": 6
+      }
+    },
+    "constraints": [
+      "cut_length < length",
+      "cut_width < width"
+    ],
+    "derived": {
+      "remaining_area": "length * width - cut_length * cut_width"
+    },
+    "tags": [
+      "year5",
+      "geometry",
+      "area",
+      "composite_shape",
+      "multi_step",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_multistep",
+    "difficulty": 3,
+    "question": "A garden is a rectangle \\({length}\\) m long and \\({width}\\) m wide. A fence costs \\${cost_per_metre} per metre. How much does it cost to fence the whole garden?",
+    "answer_format": "\\${total_cost}",
+    "variables": {
+      "length": {
+        "min": 12,
+        "max": 35
+      },
+      "width": {
+        "min": 6,
+        "max": 20
+      },
+      "cost_per_metre": {
+        "choices": [
+          4,
+          5,
+          6,
+          8,
+          10,
+          12
+        ]
+      }
+    },
+    "constraints": [
+      "length > width"
+    ],
+    "derived": {
+      "perimeter": "2 * (length + width)",
+      "total_cost": "perimeter * cost_per_metre"
+    },
+    "tags": [
+      "year5",
+      "geometry",
+      "perimeter",
+      "money",
+      "multi_step",
+      "template"
+    ],
+    "source": "template"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "geometry_multistep",
+    "difficulty": 3,
+    "question": "A rectangular poster has area \\({area}\\text{{ cm}}^2\\) and width \\({width}\\) cm. What is its perimeter?",
+    "answer_format": "\\({perimeter}\\) cm",
+    "choice_sets": [
+      {
+        "length": 12,
+        "width": 5
+      },
+      {
+        "length": 14,
+        "width": 6
+      },
+      {
+        "length": 15,
+        "width": 8
+      },
+      {
+        "length": 18,
+        "width": 7
+      },
+      {
+        "length": 20,
+        "width": 9
+      },
+      {
+        "length": 24,
+        "width": 10
+      }
+    ],
+    "derived": {
+      "area": "length * width",
+      "perimeter": "2 * (length + width)"
+    },
+    "tags": [
+      "year5",
+      "geometry",
+      "area",
+      "perimeter",
+      "multi_step",
+      "template"
+    ],
+    "source": "template"
   }
 ]

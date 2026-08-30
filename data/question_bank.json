@@ -16,7 +16,7 @@
   {
     "topic": "word_problems",
     "subtopic": "money",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "An apple costs \\$1.20, while an orange costs 35 cents less than an apple. Snow White bought an apple and an orange. How much did Snow White pay for the apple and the orange?",
     "answer": "\\$2.05",
     "tags": [
@@ -43,7 +43,7 @@
   {
     "topic": "word_problems",
     "subtopic": "money",
-    "difficulty": 2,
+    "difficulty": 3,
     "question": "Elmo bought a basketball that cost \\$45. He paid the cashier with the exact amount consisting of 5-dollar bills only. How many 5-dollar bills did Elmo use to buy the basketball?",
     "answer": "9",
     "tags": [
@@ -176,7 +176,7 @@
   {
     "topic": "word_problems",
     "subtopic": "patterns",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "The numbers below follow a pattern: 3, 5, 8, 13, 21, 34. What number comes next in the pattern?",
     "answer": "55",
     "tags": [
@@ -282,7 +282,7 @@
   {
     "topic": "word_problems",
     "subtopic": "patterns",
-    "difficulty": 2,
+    "difficulty": 3,
     "question": "Look at the number pattern below: 2, 6, 18, 54, ... Each number is found by multiplying the number before it by the same value. What is the next number in the pattern?",
     "answer": "162",
     "tags": [
@@ -3951,5 +3951,2792 @@
       "digits"
     ],
     "source": "imported"
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "place_value",
+    "difficulty": 3,
+    "question": "What is the value of the digit 7 in 47,362? A. 7 B. 70 C. 700 D. 7,000",
+    "answer": "D. 7,000",
+    "tags": [
+      "year5",
+      "place_value",
+      "multiple_choice"
+    ],
+    "source": "curated"
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "expanded_form",
+    "difficulty": 3,
+    "question": "Write 30,000 + 4,000 + 500 + 20 + 8 as one number.",
+    "answer": "34,528",
+    "tags": [
+      "year5",
+      "expanded_form",
+      "place_value"
+    ],
+    "source": "curated"
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "ordering_numbers",
+    "difficulty": 3,
+    "question": "Put these numbers in order from smallest to largest: 4,709, 4,079, 4,790, 4,097",
+    "answer": "4,079, 4,097, 4,709, 4,790",
+    "tags": [
+      "year5",
+      "ordering",
+      "comparison"
+    ],
+    "source": "curated"
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "estimation",
+    "difficulty": 3,
+    "question": "Which number is closest to 6,500? A. 6,049 B. 6,481 C. 6,725 D. 6,951",
+    "answer": "B. 6,481",
+    "tags": [
+      "year5",
+      "estimation",
+      "multiple_choice"
+    ],
+    "source": "curated"
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "rounding",
+    "difficulty": 3,
+    "question": "Round 7,648 to the nearest 100.",
+    "answer": "7,600",
+    "tags": [
+      "year5",
+      "rounding",
+      "nearest_100"
+    ],
+    "source": "curated"
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "rounding",
+    "difficulty": 3,
+    "question": "Round 3,976 to the nearest 10.",
+    "answer": "3,980",
+    "tags": [
+      "year5",
+      "rounding",
+      "nearest_10"
+    ],
+    "source": "curated"
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_patterns",
+    "difficulty": 3,
+    "question": "Complete the pattern: 3,750, 3,650, 3,550, _____, _____",
+    "answer": "3,450, 3,350",
+    "tags": [
+      "year5",
+      "patterns",
+      "subtract_100"
+    ],
+    "source": "curated"
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_patterns",
+    "difficulty": 3,
+    "question": "Complete the pattern: 1,275, 1,325, 1,375, _____, _____",
+    "answer": "1,425, 1,475",
+    "tags": [
+      "year5",
+      "patterns",
+      "add_50"
+    ],
+    "source": "curated"
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "digit_logic",
+    "difficulty": 3,
+    "question": "I am a four-digit number. My thousands digit is 6. My hundreds digit is half my thousands digit. My tens digit is 2 more than my hundreds digit. My ones digit is 1. What number am I?",
+    "answer": "6,351",
+    "tags": [
+      "year5",
+      "place_value",
+      "logic",
+      "digits"
+    ],
+    "source": "curated"
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "comparing_numbers",
+    "difficulty": 3,
+    "question": "Which statement is true? A. 5,089 > 5,809 B. 7,320 < 7,302 C. 4,999 < 5,001 D. 8,101 = 8,011",
+    "answer": "C. 4,999 < 5,001",
+    "tags": [
+      "year5",
+      "comparison",
+      "multiple_choice"
+    ],
+    "source": "curated"
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "The passcode to a vault is a three-digit number. The digit in the hundreds place is twice the digit in the ones place. The digit in the tens place is twice the digit in the hundreds place. Which of these could be the passcode? A 248 D 482 B 284 E 842 C 428",
+    "answer": "D. 482",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 1
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "In the number 3 5[digit]3, [digit] represents the tens digit. When 3 5[digit]3 is rounded to the nearest hundred, the result is 3 500. Which of these could not be the value of [digit]? A 1 D 4 B 2 E 5 C 3",
+    "answer": "E. 5",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 2
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "A wildlife survey counted 34 258 black sparrows in a forest. The survey counted fewer brown sparrows than black sparrows. Which of these could be the number of brown sparrows? A 32 458 brown sparrows D 35 428 brown sparrows B 34 528 brown sparrows E 35 482 brown sparrows C 34 825 brown sparrows",
+    "answer": "A. 32 458 brown sparrows",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 3
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "What is the value of the digit 6 in 36 007? A 6 D 600 B 60 E 60 000 C 6 000",
+    "answer": "C. 6 000",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 4
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "The number line below shows the location of 57 345. Which of these numbers is located to the right of 57 345 on the number line? A 53 543 D 56 543 B 57 543 E 54 543 C 55 543",
+    "answer": "B. 57 543",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 5
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "Darren partitioned 5 480 using hundreds and tens only. Which of these is a correct partition? A 5 400 hundreds and 8 tens D 54 hundreds and 8 tens B 540 hundreds and 8 tens E 54 hundreds and 80 tens C 540 hundreds and 80 tens",
+    "answer": "D. 54 hundreds and 8 tens",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 6
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "Bellwood has a population of three hundred forty-five thousand six hundred eighty-two. Which digit is in the ten-thousands place? A 4 D 6 B 3 E 8 C 5",
+    "answer": "A. 4",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 7
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "There are 3 247 penguins living at a subarctic research facility. How is 3 247 written in words? A Three thousand twenty-four B Three thousand four hundred twenty-seven C Three thousand two hundred forty-seven D Thirty-two thousand forty-seven E Three hundred twenty-four thousand seven",
+    "answer": "C. Three thousand two hundred forty-seven",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 8
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "Miriam's six-digit access code has a 3 in the thousands place, a 4 in the hundreds place, a 5 in the hundred-thousands place, a 6 in the ones place, an 8 in the ten-thousands place, and a 9 in the tens place. Which number is Miriam's access code? A 345 689 D 853 496 B 583 496 E 986 543 C 496 583",
+    "answer": "B. 583 496",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 9
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "A five-digit number has 4 in the ten-thousands place. Its thousands digit is 3 less than 4. Its hundreds digit is 5 more than its thousands digit. Its tens digit is 3 more than its hundreds digit. Its ones digit is 2 less than its tens digit. What is the number? A 43 532 D 40 583 B 42 725 E 41 697 C 41 368",
+    "answer": "E. 41 697",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 10
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "In the number eighty-five million six hundred seventy thousand two hundred ninety, which place is occupied by the digit 7? A hundred-thousands place D hundreds place B thousands place E tens place C ten-thousands place",
+    "answer": "C. ten-thousands place",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 11
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "Lucky Joe's lucky number is a four-digit number. The thousands digit is 1 more than the ones digit, the tens digit is twice the thousands digit, and the hundreds digit is 1 less than the tens digit. If the ones digit is 2, what is the number? A 3 562 D 3 452 B 3 342 E 3 432 C 3 352",
+    "answer": "A. 3 562",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 12
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "Which statements are true about 35 964? I. The digit in the ten-thousands place is twice the digit in the hundreds place. II. The digit in the thousands place is one less than the digit in the tens place. III. The digit in the hundreds place is twice the digit in the ones place. A I only D I and II only B II only E II and III only C III only",
+    "answer": "B. II only",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 14
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "The table shows the number of stickers that Blossom, Bubbles, and Buttercup each have. Blossom 728 stickers Bubbles 872 stickers Buttercup 782 stickers Which list orders them from the least to the greatest number of stickers? A Blossom, Bubbles, Buttercup D Buttercup, Blossom, Bubbles B Bubbles, Blossom, Buttercup E Blossom, Buttercup, Bubbles C Bubbles, Buttercup, Blossom",
+    "answer": "E. Blossom, Buttercup, Bubbles",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 15
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "The number line below shows the locations of 28 500 and 30 000. Which of these numbers is located between 28 500 and 30 000 on the number line? A 25 000 D 28 000 B 25 800 E 38 500 C 29 500",
+    "answer": "C. 29 500",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 16
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "In the number 5 3[digit]4 785, [digit] represents the ten-thousands digit. If 5 3[digit]4 785 is greater than 5 384 785, which digit could [digit] represent? A 9 D 5 B 1 E 7 C 3",
+    "answer": "A. 9",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 17
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "What number has 2 hundreds, 3 thousands, 4 tens, 5 ones, and 6 ten-thousands? A 23 456 D 65 432 B 45 623 E 63 245 C 56 234",
+    "answer": "E. 63 245",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 18
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "Start with 638 472. Swap the ten-thousands digit and the hundreds digit. Then decrease the thousands digit by 3. What number is formed? A 645 372 D 645 732 B 648 372 E 654 372 C 635 472",
+    "answer": "A. 645 372",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 19
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "Which of these numbers satisfies both conditions? - It rounds to 72 000 to the nearest thousand. - Its hundreds digit is twice its tens digit, and its ones digit is 3 less than its tens digit. A 71 603 D 71 840 B 71 630 E 72 430 C 72 630",
+    "answer": "B. 71 630",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 20
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "A number is partitioned as 47 hundreds + 36 tens + 25 ones. Which expression represents the same number? A 4 thousands + 7 hundreds + 6 tens + 5 ones B 5 thousands + 8 hundreds + 5 ones C 5 thousands + 8 tens + 5 ones D 5 thousands + 8 hundreds + 5 tens E 50 hundreds + 8 tens + 50 ones",
+    "answer": "C. 5 thousands + 8 tens + 5 ones",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 21
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "The numbers 58 407, 58 740, 57 840, and 58 074 are arranged from greatest to least. What is the difference between the second number and the fourth number in that order? A 333 D 567 B 407 E 900 C 534",
+    "answer": "D. 567",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 22
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "A five-digit number has these clues: - The ten-thousands digit is 6. - The thousands digit is half the ten-thousands digit. - The hundreds digit is the sum of the ten-thousands and thousands digits. - The tens digit is 2 less than the hundreds digit. - The sum of all five digits is 25. What is the number? A 63 907 D 63 975 B 63 790 E 63 970 C 69 970",
+    "answer": "E. 63 970",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 23
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "In 4[digit]7 650, [digit] represents the ten-thousands digit. The number rounds to 480 000 to the nearest ten thousand and to 478 000 to the nearest thousand. Which digit is [digit]? A 6 D 5 B 7 E 9 C 8",
+    "answer": "B. 7",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 24
+  },
+  {
+    "topic": "number_system",
+    "subtopic": "number_sense",
+    "difficulty": 1,
+    "question": "Use the digit cards 0, 2, 4, 6, and 8 exactly once to form a five-digit number. What is the greatest number that is less than 64 000? A 64 820 D 62 840 B 62 804 E 60 842 C 62 480",
+    "answer": "D. 62 840",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_sense",
+      "number_system"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK1 - Y3 - MATH - HW - NUMBER SENSE - QN.docx (1).pdf",
+    "source_question_number": 25
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Two stores sell seashells. The first store sells 2 354 seashells, while the second store sells 816 fewer seashells than the first store. How many seashells does the second store sell? A 1 538 seashells D 3 070 seashells B 1 638 seashells E 3 170 seashells C 2 354 seashells",
+    "answer": "A. 1 538 seashells",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 1
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "The number of bacteria in a culture is expected to increase by 1 718 in the next hour. If the culture currently contains 3 526 bacteria, how many bacteria is it expected to contain after one hour? A 1 808 bacteria D 5 234 bacteria B 2 212 bacteria E 5 244 bacteria C 5 144 bacteria",
+    "answer": "E. 5 244 bacteria",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 2
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "There are 3 244 trees in the forest reserve. After the tree-planting activity, the number of trees in the forest increased to 5 186. How many trees were planted during the tree-planting activity? A 1 942 trees D 8 320 trees B 3 244 trees E 8 430 trees C 5 186 trees",
+    "answer": "A. 1 942 trees",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 3
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "There are 5 280 chickens on Old MacDonald's farm. If he sells 2 500 chickens, how many chickens will he have left? A 7 780 chickens D 2 780 chickens B 6 780 chickens E 2 500 chickens C 5 280 chickens",
+    "answer": "D. 2 780 chickens",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 4
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Bert and Ernie have a collection of bottle caps. Bert has 1 285 bottle caps, while Ernie has 675 more bottle caps than Bert. How many bottle caps does Ernie have? A 1 980 bottle caps D 610 bottle caps B 1 960 bottle caps E 675 bottle caps C 1 940 bottle caps",
+    "answer": "B. 1 960 bottle caps",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 5
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "In the correctly solved addition problem below, [digit] represents a single digit. 4 5 [digit] 6 + 3 8 7 5 8 4 3 1 What digit does [digit] represent? A 1 D 7 B 3 E 9 C 5",
+    "answer": "C. 5",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 6
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "In the correctly solved subtraction problem below, [digit] represents a single digit. 7 4 8 4 - 3 [digit] 4 1 3 8 4 3 What digit does [digit] represent? A 0 D 6 B 2 E 8 C 4",
+    "answer": "D. 6",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 7
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Alice has 385 stickers, while Belle has 125 more stickers than Alice. How many stickers do the two of them have together? A 260 stickers D 895 stickers B 510 stickers E 985 stickers C 635 stickers",
+    "answer": "D. 895 stickers",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 8
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Snow White picked a total of 890 apples from her garden. She sold 285 apples on Monday and 120 apples on Tuesday. How many apples did Snow White have left? A 770 apples D 285 apples B 605 apples E 120 apples C 485 apples",
+    "answer": "C. 485 apples",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 9
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Ben can make 1 200 widgets in one day, while Ken can make 600 more widgets in one day than Ben can. How many widgets can Ben and Ken make altogether in one day? A 600 widgets D 2 400 widgets B 1 200 widgets E 3 000 widgets C 1 800 widgets",
+    "answer": "E. 3 000 widgets",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 10
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Jason and Percy have a combined height of 244 centimetres. If Jason is 126 centimetres tall, how tall is Percy? A 118 centimetres D 244 centimetres B 126 centimetres E 370 centimetres C 216 centimetres",
+    "answer": "A. 118 centimetres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 11
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "There are 816 microscopes in Dexter's Lab and 284 fewer telescopes than microscopes. What is the total number of microscopes and telescopes in Dexter's Lab? A 532 D 1 384 B 1 100 E 1 916 C 1 348",
+    "answer": "C. 1 348",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 12
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Superman can make 8 460 push-ups, while Aquaman can make 6 980 push-ups. How many more push-ups can Superman make than Aquaman? A 1 320 push-ups D 1 660 push-ups B 1 480 push-ups E 1 750 push-ups C 1 570 push-ups",
+    "answer": "B. 1 480 push-ups",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 13
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Big Bird has a stamp collection. He has 2 460 Australian stamps and 620 fewer non-Australian stamps than Australian stamps. How many stamps does Big Bird have in his collection? A 1 840 stamps D 4 300 stamps B 2 100 stamps E 5 540 stamps C 3 080 stamps",
+    "answer": "D. 4 300 stamps",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 14
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "A truck driver travelled a total of 8 424 kilometres in April and May. He travelled 3 876 kilometres in April. How far did the truck driver travel in May? A 4 458 kilometres D 4 558 kilometres B 4 484 kilometres E 4 584 kilometres C 4 548 kilometres",
+    "answer": "C. 4 548 kilometres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 15
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Betty works from Tuesday to Friday at the local diner. Last week, she earned a total of \\$1 820. She earned \\$426 on Tuesday, \\$384 on Wednesday, and \\$508 on Thursday. How much did she earn on Friday? A \\$492 D \\$522 B \\$502 E \\$542 C \\$512",
+    "answer": "B. \\$502",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 16
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Veronica received an order to make 3 800 bracelets. She made 860 bracelets last week and 940 bracelets this week. How many more bracelets does she need to make to complete the order? A 2 020 bracelets D 2 000 bracelets B 2 060 bracelets E 2 140 bracelets C 2 080 bracelets",
+    "answer": "D. 2 000 bracelets",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 17
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Jimmy Neutron cleaned his computer by deleting 2 455 unnecessary files. If he had 5 784 files left after cleaning, how many files did his computer originally have? A 8 239 files D 5 429 files B 5 459 files E 3 329 files C 5 439 files",
+    "answer": "A. 8 239 files",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 18
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "George Martin is reading a book with 3 248 pages. He read 896 pages on Monday and 924 pages on Tuesday. At the start of Thursday, he had 730 pages left to read. How many pages did he read on Wednesday? A 714 pages D 688 pages B 706 pages E 684 pages C 698 pages",
+    "answer": "C. 698 pages",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 19
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "David and Gary recycled a total of 896 bottles. David recycled 444 bottles. How many more bottles did Gary recycle than David? A 462 bottles D 24 bottles B 452 bottles E 8 bottles C 442 bottles",
+    "answer": "E. 8 bottles",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 20
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Veronica had 120 dolls. On her birthday, she donated 86 dolls to the local children's hospital. Later, at her birthday party, she received 48 new dolls. How many dolls does she have now? A 34 dolls D 158 dolls B 82 dolls E 168 dolls C 132 dolls",
+    "answer": "B. 82 dolls",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 21
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Huey, Dewey, and Louie have a total of 450 baseball cards. Huey has 130 baseball cards, and Dewey has 40 more baseball cards than Huey. How many baseball cards does Louie have? A 540 baseball cards D 150 baseball cards B 360 baseball cards E 90 baseball cards C 280 baseball cards",
+    "answer": "D. 150 baseball cards",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 22
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Rayne is 45 centimetres taller than Dwayne, and Shane is 20 centimetres shorter than Rayne. Dwayne is 110 centimetres tall. How tall is Shane? A 135 centimetres D 165 centimetres B 145 centimetres E 175 centimetres C 155 centimetres",
+    "answer": "A. 135 centimetres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 23
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Barbie had \\$1 100 when she went to the mall. She spent \\$425 on bags and also bought some clothes. If she had \\$20 left after buying the bags and clothes, how much did she spend on clothes? A \\$1 080 D \\$655 B \\$685 E \\$445 C \\$675",
+    "answer": "D. \\$655",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 24
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Cookie Monster was baking and selling cookies. From January to March, he sold a total of 6 000 cookies. He sold 2 400 cookies in January and 800 more cookies in February than in January. How many cookies did he sell in March? A 400 cookies D 2 800 cookies B 1 200 cookies E 3 600 cookies C 2 400 cookies",
+    "answer": "A. 400 cookies",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 25
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "The organisers of a school fair printed 3 500 tickets. They sold 1 275 tickets on Friday and 1 486 tickets on Saturday. How many tickets were left unsold? A 639 tickets D 749 tickets B 719 tickets E 739 tickets C 729 tickets",
+    "answer": "E. 739 tickets",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 26
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "A warehouse received 1 475 boxes, shipped 2 368 boxes, and then received 425 returned boxes. At the end of the day, the warehouse contained 6 932 boxes. How many boxes were in the warehouse at the start of the day? A 6 932 boxes D 7 400 boxes B 7 825 boxes E 8 300 boxes C 7 868 boxes",
+    "answer": "D. 7 400 boxes",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 27
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "At a school fair, Class A earned \\$1 875 in the morning and \\$2 346 in the afternoon, but refunded \\$285. Class B earned \\$4 120 and paid \\$310 for supplies. How much more money must the two classes earn, after refunds and expenses, to reach a net total of \\$8 500? A \\$654 D \\$954 B \\$754 E \\$1 054 C \\$854",
+    "answer": "B. \\$754",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 28
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Four delivery vans carried 8 245 parcels altogether. Van A carried 1 685 parcels. Van B carried 475 more parcels than Van A, and Van C carried 290 fewer parcels than Van B. How many parcels did Van D carry? A 2 410 parcels D 2 820 parcels B 2 490 parcels E 2 530 parcels C 2 620 parcels",
+    "answer": "E. 2 530 parcels",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 29
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "A theatre printed 9 500 tickets. It sold 2 785 tickets online and 1 946 tickets at the counter. Then 328 online orders were cancelled, making those tickets available again. Later, another 1 275 tickets were sold. How many tickets remained unsold? A 3 822 tickets D 5 097 tickets B 3 494 tickets E 4 150 tickets C 3 166 tickets",
+    "answer": "A. 3 822 tickets",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 30
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "The East depot began with 6 840 packages, and the West depot began with 5 275 packages. East sent 1 360 packages to customers and transferred 725 packages to West. West then sent 980 packages to customers and received 410 returned packages. How many more packages did West have than East at the end? A 565 packages D 695 packages B 655 packages E 715 packages C 675 packages",
+    "answer": "C. 675 packages",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 31
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "A player began a game with an unknown number of credits. During the game, she gained 1 280 credits, spent 945 credits, gained another 675 credits, and paid a 390-credit entry fee. She finished with 4 820 credits. How many credits did she have at the start? A 3 900 credits D 4 600 credits B 4 100 credits E 4 200 credits C 4 300 credits",
+    "answer": "E. 4 200 credits",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 32
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Three trucks carried 8 460 cartons altogether. Truck A carried 2 735 cartons. Truck B carried 480 more cartons than Truck A, and Truck C carried the rest. Before departure, 365 cartons were moved from Truck B to Truck C. How many cartons did Truck C then carry? A 2 510 cartons D 2 145 cartons B 2 875 cartons E 3 580 cartons C 3 215 cartons",
+    "answer": "B. 2 875 cartons",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 33
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "A factory must deliver 25 000 acceptable parts. It made 4 875 parts on Monday, 650 more on Tuesday than on Monday, 1 275 fewer on Wednesday than on Tuesday, and 5 960 on Thursday. Inspection rejected 385 of the parts made on those four days. How many acceptable parts must the factory make on Friday to reach its target? A 4 390 parts D 5 160 parts B 4 585 parts E 5 545 parts C 4 775 parts",
+    "answer": "C. 4 775 parts",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 34
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "addition_subtraction",
+    "difficulty": 1,
+    "question": "Red Team began with 2 450 points, gained 1 375 points, and then lost 860 points. Blue Team began with 3 100 points, gained 950 points, and then lost 425 points. How many points must Red Team gain next to finish exactly 250 points ahead of Blue Team? A 910 points D 1 160 points B 660 points E 1 410 points C 860 points",
+    "answer": "A. 910 points",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "addition_subtraction",
+      "word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK2 - Y3 - MATH - HW - ADDITION & SUBTRACTION - QN.docx.pdf",
+    "source_question_number": 35
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Mia buys 3 notebooks at \\$2.75 each and 2 pens at \\$1.20 each. She pays with a \\$15 note. How much change should she receive? A \\$3.15 D \\$4.65 B \\$3.35 E \\$5.35 C \\$4.35",
+    "answer": "C. \\$4.35",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 1
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "At a museum, adult tickets cost \\$8.50 and child tickets cost \\$5.50. A family buys 4 adult tickets and 3 child tickets. What is the total cost? A \\$50.50 D \\$52.00 B \\$45.50 E \\$55.50 C \\$49.00",
+    "answer": "A. \\$50.50",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 2
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Leo buys a fruit basket for \\$6.80, 2 loaves of bread at \\$3.45 each, and milk for \\$2.75. He pays with a \\$25 note. How much change should he receive? A \\$7.55 D \\$16.45 B \\$8.45 E \\$8.55 C \\$9.55",
+    "answer": "E. \\$8.55",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 3
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Ava buys 4 markers at \\$1.35 each and a sketchbook for \\$4.60. She pays with \\$12. How much change should she receive? A \\$1.40 D \\$6.00 B \\$2.00 E \\$10.00 C \\$2.60",
+    "answer": "B. \\$2.00",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 4
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "At the cinema, two tickets cost \\$7.25 each and a tub of popcorn costs \\$5.50. Ravi pays with \\$25. How much change should he receive? A \\$3.00 D \\$5.00 B \\$4.50 E \\$6.00 C \\$5.50",
+    "answer": "D. \\$5.00",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 5
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A class buys 6 glue sticks at \\$1.25 each and 4 rulers at \\$0.85 each. The teacher pays with \\$20. How much change should the teacher receive? A \\$8.10 D \\$10.10 B \\$9.10 E \\$11.10 C \\$9.90",
+    "answer": "B. \\$9.10",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 6
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Lila buys 3 packs of stickers at \\$2.40 each and a diary for \\$5.75. She pays with \\$15. How much change should she receive? A \\$1.05 D \\$2.95 B \\$1.95 E \\$2.05 C \\$2.25",
+    "answer": "E. \\$2.05",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 7
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A game costs \\$17.65. Amir pays with two \\$10 notes and three \\$1 coins. First find the total amount Amir gives the cashier. How much change should he receive? A \\$2.35 D \\$6.35 B \\$3.35 E \\$7.35 C \\$5.35",
+    "answer": "C. \\$5.35",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 8
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Noah has a \\$30 budget for a game and a puzzle. The game costs \\$18.75 and the puzzle costs \\$7.50. How much of his budget will remain? A \\$3.75 D \\$5.25 B \\$4.25 E \\$7.50 C \\$4.75",
+    "answer": "A. \\$3.75",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 9
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A class has a \\$75 budget for a party. It buys 5 pizzas at \\$8.50 each, drinks for \\$14.75, and plates for \\$6.25. The class must pay for all three types of items. How much of the budget is left? A \\$9.50 D \\$11.50 B \\$10.50 E \\$13.50 C \\$12.50",
+    "answer": "D. \\$11.50",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 10
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Keira has \\$50. She plans to buy a book for \\$16.80, 4 art pens at \\$6.25 each, and a pencil case for \\$8.50. She wants to buy every item. Which statement is correct? A She will have \\$0.30 left. D She is \\$0.30 short. B She will have \\$8.20 left. E She is \\$1.30 short. C She has exactly enough.",
+    "answer": "D. She is \\$0.30 short",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 11
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A sports club has \\$120 to spend. It first buys training cones for \\$30. Footballs cost \\$18 each. What is the greatest number of footballs the club can buy without going over budget? A 4 footballs D 7 footballs B 5 footballs E 8 footballs C 6 footballs",
+    "answer": "B. 5 footballs",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 12
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A school has a \\$200 budget for a field trip. The bus costs \\$128, and tickets cost \\$9 for each of 8 students. The bus and all 8 tickets must be paid for. How much money will be left? A \\$8.00 D \\$64.00 B \\$9.00 E \\$72.00 C \\$0.00",
+    "answer": "C. \\$0.00",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 13
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Zara saves \\$7.50 each week for 6 weeks. She buys shoes for \\$38.90 and socks for \\$5.25. She uses only the money she saved. How much money does she have left? A \\$0.15 D \\$5.85 B \\$0.75 E \\$0.85 C \\$1.10",
+    "answer": "E. \\$0.85",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 14
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A cafe has a \\$60 ingredient budget. It buys 3 bags of flour at \\$6.40 each, 2 packs of butter at \\$4.85 each, and fruit for \\$18.50. Cartons of milk cost \\$4.20 each. What is the greatest number of cartons the cafe can still buy? A 3 cartons D 5 cartons B 2 cartons E 6 cartons C 4 cartons",
+    "answer": "A. 3 cartons",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 15
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A jacket costs \\$40. It is on sale for 25% off. A 25% discount is one quarter of the original price. What is the sale price? A \\$30.00 D \\$32.00 B \\$10.00 E \\$35.00 C \\$25.00",
+    "answer": "A. \\$30.00",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 16
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A board game costs \\$36 and is reduced by 20%. A 20% discount is one fifth of the original price. What is the sale price? A \\$7.20 D \\$28.80 B \\$16.00 E \\$30.80 C \\$28.20",
+    "answer": "D. \\$28.80",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 17
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A backpack costs \\$28. A sale takes \\$5 off the price. Sam pays with \\$30 after the discount is applied. How much change should he receive? A \\$5.00 D \\$23.00 B \\$7.00 E \\$25.00 C \\$2.00",
+    "answer": "B. \\$7.00",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 18
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Two T-shirts cost \\$15 each. A shop gives 10% off the total price when two are bought. The discount applies after the two prices are added. How much will the two T-shirts cost after the discount? A \\$3.00 D \\$30.00 B \\$15.00 E \\$27.00 C \\$24.00",
+    "answer": "E. \\$27.00",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 19
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A book costs \\$24 and is discounted by 25%. Mia also buys a bookmark for \\$2.50 at full price. The discount applies only to the book. What is the total amount she pays? A \\$18.50 D \\$22.50 B \\$19.50 E \\$26.50 C \\$20.50",
+    "answer": "C. \\$20.50",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 20
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A pair of shoes costs \\$50. The shop gives a 20% discount, then charges \\$3 for delivery. The delivery charge is not discounted. What is the final amount paid? A \\$37.00 D \\$47.00 B \\$40.00 E \\$53.00 C \\$43.00",
+    "answer": "C. \\$43.00",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 21
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Four packs of apples are on sale. Pack W has 4 apples for \\$3.20, Pack X has 6 for \\$4.50, Pack Y has 8 for \\$6.80, and Pack Z has 10 for \\$8.00. Which pack has the lowest cost per apple? A Pack W only D Packs W and Z B Pack Y only E Pack X only C Pack Z only",
+    "answer": "E. Pack X only",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 22
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A shop sells juice in three bottle sizes. A 2-litre bottle costs \\$4.80, a 3-litre bottle costs \\$6.60, and a 5-litre bottle costs \\$11.50. Which bottle gives the best value? A The 3-litre bottle D The 2- and 5-litre bottles B The 2-litre bottle E All three bottles C The 5-litre bottle",
+    "answer": "A. The 3-litre bottle",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 23
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "A class needs at least 24 pencils. Box A has 8 pencils for \\$4.00, Box B has 12 for \\$5.40, and Box C has 20 for \\$10.00. Each choice below provides at least 24 pencils. Which choice costs the least? A 3 boxes of A D 2 boxes of B B 1 box of A and 1 box of C E 1 box of B and 1 box of C C 2 boxes of C",
+    "answer": "D. 2 boxes of B",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 24
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Rice is sold in a 2 kg bag for \\$5.40, a 3 kg bag for \\$7.80, and a 5 kg bag for \\$13.50. First identify the bag with the lowest cost per kilogram. How much less per kilogram does it cost than the 2 kg bag? A \\$0.05 D \\$0.30 B \\$0.10 E \\$2.60 C \\$0.20",
+    "answer": "B. \\$0.10",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 25
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Yogurt is sold in packs of 4 for \\$3.60, 6 for \\$5.10, and 10 for \\$9.00. A family needs exactly 12 yogurt cups. What is the lowest possible cost? A \\$9.00 D \\$12.60 B \\$10.20 E \\$15.30 C \\$10.80",
+    "answer": "B. \\$10.20",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 26
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Shop A sells 3 notebooks for \\$4.50. Shop B sells 5 notebooks for \\$7.00. A teacher needs 15 notebooks and will buy all of them from one shop. How much does she save by buying from Shop B instead of Shop A? A \\$0.50 D \\$2.00 B \\$1.00 E \\$3.00 C \\$1.50",
+    "answer": "C. \\$1.50",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 27
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Three bottles of detergent are priced as follows: 800 mL for \\$3.84, 1 litre for \\$4.50, and 1.5 litres for \\$6.90. Compare each price using a 100 mL unit. Which is the lowest cost per 100 mL? A \\$0.40 D \\$0.45 B \\$0.46 E \\$0.50 C \\$0.48",
+    "answer": "D. \\$0.45",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 28
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Granola bars are sold in packs of 5 for \\$3.75, 8 for \\$5.60, and 12 for \\$9.00. A club needs exactly 24 bars and is comparing three 8-packs with two 12-packs. How much will it save by buying the three 8-packs? A \\$1.20 D \\$2.20 B \\$0.80 E \\$16.80 C \\$1.40",
+    "answer": "A. \\$1.20",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 29
+  },
+  {
+    "topic": "money",
+    "subtopic": "money_word_problems",
+    "difficulty": 1,
+    "question": "Shop A sells 6 juice boxes for \\$4.20. Shop B sells 10 juice boxes for \\$6.50. Lena has \\$13 and will buy from one shop only. What is the greatest number of juice boxes she can buy without going over budget? A 12 juice boxes D 19 juice boxes B 16 juice boxes E 20 juice boxes C 18 juice boxes",
+    "answer": "E. 20 juice boxes",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "money",
+      "money_word_problems"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK3 - Y3 - MATH - HW - MONEY - QN.docx.pdf",
+    "source_question_number": 30
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "The school maths challenge begins at 9:35 AM. Round 1 lasts 48 minutes, the break lasts 17 minutes, and Round 2 lasts 56 minutes. At what time does Round 2 end? A 11:26 AM D 11:41 AM B 11:31 AM E 12:36 PM C 11:36 AM",
+    "answer": "C. 11:36 AM",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 1
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Mia's rehearsal begins at 2:40 PM. She must arrive 15 minutes early. Working backwards from the rehearsal, her final walk takes 9 minutes, her bus journey takes 36 minutes, she must wait at the bus stop for 5 minutes, and her walk from home to the bus stop takes 11 minutes. What is the latest time she can leave home? A 1:24 PM D 1:39 PM B 1:29 PM E 1:44 PM C 1:34 PM",
+    "answer": "A. 1:24 PM",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 2
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Five messages were sent on the same calendar day at the times shown. Message Time P 23:45 Q 12:05 AM R 7:30 PM S 00:50 T 12:40 PM Which list shows the messages from earliest to latest? A S, Q, T, R, P D P, R, T, S, Q B Q, S, R, T, P E Q, S, T, R, P C Q, T, S, R, P",
+    "answer": "E. Q, S, T, R, P",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 3
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Use the bus timetable below. Bus Leaves Oak Stop Arrives Town Station 1 8:12 AM 8:47 AM 2 8:28 AM 9:01 AM 3 8:45 AM 9:18 AM 4 9:03 AM 9:34 AM Noah must reach class by 9:20 AM. Walking from Town Station to class takes 14 minutes. He must reach Oak Stop at least 4 minutes before the bus leaves, and his walk from home to Oak Stop takes 11 minutes. What is the latest time Noah can leave home? A 8:03 AM D 8:24 AM B 8:13 AM E 8:28 AM C 8:17 AM",
+    "answer": "B. 8:13 AM",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 4
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "On Friday, 27 September, the science club schedules its next meeting for 19 days later. The meeting is then moved 3 days earlier. September has 30 days. On what day and date will the meeting be held? A Wednesday, 16 October D Sunday, 13 October B Monday, 14 October E Sunday, 20 October C Saturday, 13 October",
+    "answer": "D. Sunday, 13 October",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 5
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "An overnight train leaves at 22:48 and arrives at 01:37 the next day. During the journey it is stopped for 18 minutes. For how long is the train moving? A 2 hours 13 minutes D 2 hours 49 minutes B 2 hours 21 minutes E 3 hours 7 minutes C 2 hours 31 minutes",
+    "answer": "C. 2 hours 31 minutes",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 6
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "At a cinema, trailers begin at 6:12 PM and last 17 minutes. The film itself lasts 1 hour 38 minutes, and a 12-minute interval is not included in the film's running time. At what time does the programme end in 24-hour time? A 20:07 D 19:59 B 20:19 E 21:19 C 20:31",
+    "answer": "B. 20:19",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 7
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Ella leaves Lakeside at 10:18 and arrives at Junction at 10:46. The available connections from Junction to Museum are shown below. Connection Leaves Junction Arrives Museum A 10:52 11:21 B 11:05 11:31 C 11:24 11:51 Ella needs at least 9 minutes to change trains. Using the earliest connection she can catch, what is her total journey time from Lakeside to Museum? A 1 hour 3 minutes D 1 hour 12 minutes B 1 hour 9 minutes E 1 hour 13 minutes C 1 hour 11 minutes",
+    "answer": "E. 1 hour 13 minutes",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 8
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "A 31-day month begins on a Wednesday. What is the date of the fourth Monday in that month? A 27th D 26th B 20th E 28th C 21st",
+    "answer": "A. 27th",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 9
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "At a science fair, a demonstration lasts 1 hour 12 minutes. It is followed by 18 minutes of judging and then a 25-minute awards ceremony. The awards finish at 5:35 PM. At what time did the demonstration begin? A 3:22 PM D 3:40 PM B 3:30 PM E 3:55 PM C 3:35 PM",
+    "answer": "D. 3:40 PM",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 10
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Swimming lessons begin every 35 minutes, starting at 9:10 AM. Each lesson lasts 28 minutes. At what time does the fifth lesson end? A 11:23 AM D 12:03 PM B 11:30 AM E 12:28 PM C 11:58 AM",
+    "answer": "C. 11:58 AM",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 11
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Opening day of a camp is 25 days after Tuesday, 8 April. The camp runs for 6 days, with opening day counted as Day 1. April has 30 days. On what day and date is Day 6? A Friday, 3 May D Thursday, 9 May B Tuesday, 6 May E Thursday, 8 May C Wednesday, 7 May",
+    "answer": "E. Thursday, 8 May",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 12
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Which pair of times is exactly 3 hours 45 minutes apart? A 09:35 and 13:10 D 7:40 PM and 22:15 B 11:50 AM and 15:35 E 23:25 and 3:00 AM next day C 14:20 and 5:55 PM",
+    "answer": "B. 11:50 AM and 15:35",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 13
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Today is Thursday, 16 November. What day and date will it be 45 days later? November has 30 days. A Sunday, 31 December D Sunday, 30 December B Saturday, 30 December E Monday, 1 January C Monday, 31 December",
+    "answer": "A. Sunday, 31 December",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 14
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Ava's activity timetable is shown below. Activity Start Finish Reading 09:25 10:10 Puzzle Lab 10:25 11:05 Coding 11:50 12:35 Art 13:00 13:42 Ava attends all four activities but leaves Art 7 minutes early. How much time does she spend in activities, excluding the gaps between them? A 2 hours 35 minutes D 2 hours 45 minutes B 2 hours 38 minutes E 2 hours 52 minutes C 2 hours 40 minutes",
+    "answer": "D. 2 hours 45 minutes",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 15
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "At 21:47, a timer has already been running for 38 minutes. It continues until 00:15 the next day. For how long does the timer run altogether? A 2 hours 28 minutes D 3 hours 28 minutes B 3 hours 6 minutes E 4 hours 6 minutes C 3 hours 16 minutes",
+    "answer": "B. 3 hours 6 minutes",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 16
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Buses leave a depot every 22 minutes, beginning at 07:14. Each journey takes 47 minutes. At what time does the first bus to arrive after 09:00 reach its destination? A 08:59 D 09:07 B 09:01 E 09:29 C 09:04",
+    "answer": "D. 09:07",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 17
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "On Monday, 4 March, the book club and chess club meet together. The book club meets every 6 days and the chess club every 8 days. On what day and date will they next meet together? A Thursday, 28 March D Thursday, 22 March B Wednesday, 27 March E Monday, 1 April C Friday, 28 March",
+    "answer": "A. Thursday, 28 March",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 18
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "A cooking team must serve a dish at 12:30 PM. The following stages happen one after another: preheating, 20 minutes; preparation, 37 minutes; baking, 1 hour 5 minutes; and resting, 18 minutes. What is the latest time the team can begin preheating? A 9:50 AM D 10:05 AM B 9:55 AM E 10:10 AM C 10:00 AM",
+    "answer": "E. 10:10 AM",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 19
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "The year 2024 is a leap year. A school closes at the end of Wednesday, 28 February, and reopens 12 days later. On what day and date does it reopen? A Sunday, 10 March D Tuesday, 11 March B Monday, 10 March E Tuesday, 12 March C Monday, 11 March",
+    "answer": "C. Monday, 11 March",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 20
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Use the train timetable below. Service Departs Arrives P 08:05 09:12 Q 08:18 09:20 R 08:35 09:32 S 08:49 09:43 T 09:02 10:00 Which service has the shortest journey, and by how many minutes is it shorter than the longest journey? A Service S, 13 minutes D Service T, 9 minutes B Service R, 10 minutes E Service Q, 5 minutes C Service S, 8 minutes",
+    "answer": "A. Service S, 13 minutes",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 21
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "At 23:35 on Friday, a telescope session begins. It runs for 1 hour 48 minutes, pauses for 27 minutes, and then runs for another 42 minutes. On what day and time does it end? A Friday, 2:32 AM D Saturday, 2:22 AM B Saturday, 1:50 AM E Saturday, 2:32 AM C Saturday, 2:02 AM",
+    "answer": "E. Saturday, 2:32 AM",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 22
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "Sofia must travel from Home Stop to Central, change to a train, and then walk from Venue Station to a competition. Bus Leaves Home Stop Arrives Central B1 12:41 13:05 B2 12:58 13:22 B3 13:15 13:39 B4 13:32 13:56 Train Leaves Central Arrives Venue Station T1 13:12 13:54 T2 13:42 14:24 T3 14:12 14:54 Sofia must reach the competition by 2:50 PM. The final walk takes 13 minutes, and she needs at least 8 minutes at Central to change. What is the latest bus she can take from Home Stop? A 12:41 D 12:58 B 13:15 E 13:42 C 13:32",
+    "answer": "D. 12:58",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 23
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "A school begins checking one project each school day on Monday, 6 May; that day is Project 1. No projects are checked at weekends. Monday, 13 May and Friday, 24 May are closure days. On what day and date will Project 17 be checked? A Wednesday, 29 May D Monday, 3 June B Thursday, 30 May E Tuesday, 28 May C Friday, 31 May",
+    "answer": "B. Thursday, 30 May",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 24
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "An overnight coach leaves at 22:46 on Tuesday. It travels for 1 hour 38 minutes, stops for 23 minutes, then travels for 2 hours 17 minutes. A road delay adds another 14 minutes after the stop. At what day and time does the coach arrive in 24-hour time? A Wednesday, 03:04 D Wednesday, 03:32 B Tuesday, 03:18 E Wednesday, 04:18 C Wednesday, 03:18",
+    "answer": "C. Wednesday, 03:18",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 25
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "On Thursday, 14 March 2024, three maintenance teams visit the same site. They return every 12 days, 18 days and 30 days respectively. The year 2024 is a leap year. On what day and date will all three teams next visit together? A Tuesday, 10 September D Tuesday, 3 September B Monday, 9 September E Thursday, 12 September C Wednesday, 11 September",
+    "answer": "A. Tuesday, 10 September",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 26
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "A team must complete 26 hours 15 minutes of observation. On each full day it works from 08:35 to 12:10 and from 13:00 to 16:20. The team starts on Monday. On Wednesday only, the morning session begins 45 minutes late; all other session times stay the same. When does the team complete the required observation? A Wednesday, 15:40 D Friday, 09:15 B Thursday, 15:15 E Thursday, 15:40 C Thursday, 15:25",
+    "answer": "E. Thursday, 15:40",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 27
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "A ship arrives at 00:42 on Saturday. Before arriving, it sails for 1 hour 36 minutes, stops for 27 minutes, sails for 2 hours 5 minutes, stops for 19 minutes, and sails for another 58 minutes. All stages happen one after another. On what day and at what time did the ship depart, in 24-hour time? A Friday, 18:57 D Friday, 19:17 B Friday, 19:07 E Saturday, 19:17 C Friday, 19:27",
+    "answer": "D. Friday, 19:17",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 28
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "The first review of a reading challenge is on Friday, 26 January 2024. Each later review is scheduled 9 days after the previous one. The fifth review is then moved 2 days later. The year 2024 is a leap year. On what day and date will the fifth review take place? A Saturday, 2 March D Tuesday, 5 March B Monday, 4 March E Monday, 11 March C Sunday, 3 March",
+    "answer": "B. Monday, 4 March",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 29
+  },
+  {
+    "topic": "time",
+    "subtopic": "time_date",
+    "difficulty": 1,
+    "question": "A family plans a ferry trip 19 days after Monday, 12 August. Each timetable entry below shows a departure time followed by its arrival time. Day type Journey 1 Journey 2 Journey 3 Weekdays 06:40-08:15 08:15-09:50 10:05-11:40 Weekends 07:20-08:55 09:50-11:25 12:40-14:15 The family must reach an island event by 11:50. Walking from the ferry dock to the event takes 20 minutes. They must check in 25 minutes before departure, and the drive from home to the ferry terminal takes 50 minutes. What is the latest time they can leave home? A 6:05 AM D 8:45 AM B 8:15 AM E 9:25 AM C 8:35 AM",
+    "answer": "C. 8:35 AM",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "time_date",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK4 - Y3 - MATH - HW - Time & Date - QN.docx.pdf",
+    "source_question_number": 30
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "Daisy is planting lilies in her garden. She planted 16 lilies in the first row, 20 lilies in the second row, 24 lilies in the third row, and 28 lilies in the fourth row. How many lilies did she plant in the sixth row if this pattern continues? A 30 lilies D 36 lilies B 32 lilies E 40 lilies C 34 lilies",
+    "answer": "D. 36 lilies",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 1
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "Kim created a number pattern by skip-counting by 4, starting with 2. Which of these numbers does not belong in Kim's number pattern? A 8 D 22 B 10 E 30 C 18",
+    "answer": "A. 8",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 3
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "A librarian arranges books on bookshelves. She put 10 books on the first bookshelf, 20 books on the second bookshelf, 30 books on the third bookshelf, and 40 books on the fourth bookshelf. If this pattern continues, how many books does the librarian put on the eighth bookshelf? A 50 books D 80 books B 60 books E 100 books C 70 books",
+    "answer": "D. 80 books",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 5
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "The numbers below follow a pattern. 2 15 28 41 54 What number comes next in the pattern? A 64 D 69 B 66 E 70 C 67",
+    "answer": "C. 67",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 6
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "Each set of three numbers below follows the same rule. 1 2 4 2 3 5 3 4 6 4 5 N What number is N? A 6 D 9 B 7 E 10 C 8",
+    "answer": "B. 7",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 8
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "Tom was drilling holes in the ground. He drilled 3 holes in the first row, 7 holes in the second row, 15 holes in the fourth row, 19 holes in the fifth row, and 23 holes in the sixth row. If the number of holes he drilled in each row followed a pattern, how many holes did he drill in the third row? A 9 holes D 12 holes B 10 holes E 13 holes C 11 holes",
+    "answer": "C. 11 holes",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 11
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "The numbers below follow a pattern. 7 11 15 19 23 What number comes next in the pattern? A 25 D 28 B 26 E 30 C 27",
+    "answer": "C. 27",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 13
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "Maya was reviewing her phone bill and noticed a pattern in the number of calls she made. She made 25 calls in the first month, 35 calls in the second month, 45 calls in the third month, 55 calls in the fourth month, and 65 calls in the fifth month. How many calls did she make in the sixth month? A 70 calls D 75 calls B 72 calls E 80 calls C 74 calls",
+    "answer": "D. 75 calls",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 14
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "A new adventure book was selling quickly. It sold 17 copies in February, 24 copies in March, 31 copies in April, 38 copies in May, and 45 copies in June. If this pattern continued, how many copies did it sell in July? A 48 copies D 54 copies B 50 copies E 55 copies C 52 copies",
+    "answer": "C. 52 copies",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 16
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "The numbers in each of the four brackets follow the same rule. [8, 19, 30] [12, 23, 34] [15, 26, 37] [N, 29, 40] What number is N? A 13 D 18 B 14 E 20 C 16",
+    "answer": "D. 18",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 19
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "Josephine is sorting some stamps. She put 3 stamps in the first album, 8 stamps in the second album, 13 stamps in the third album, 18 stamps in the fourth album, and 23 stamps in the fifth album. How many stamps did she put in the sixth album if this pattern continued? A 25 stamps D 29 stamps B 26 stamps E 30 stamps C 28 stamps",
+    "answer": "C. 28 stamps",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 20
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "Clarisse was conducting interviews for a paper. She interviewed 3 people on the first day, 6 people on the second day, 12 people on the third day, and 24 people on the fourth day. If this pattern continued, how many people did she interview on the fifth day? A 30 people D 42 people B 36 people E 48 people C 40 people",
+    "answer": "E. 48 people",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 22
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "A grocery store owner arranged cans of peaches into a pyramid display. The bottom layer is composed of 40 cans, the next layer is composed of 36 cans, the next layer is composed of 32 cans, and the fourth layer is composed of 28 cans. If this pattern continues, how many cans will be in the sixth layer? A 26 cans D 20 cans B 24 cans E 16 cans C 22 cans",
+    "answer": "D. 20 cans",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 23
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "Study the number pattern below. 6, 10, 17, 21, 28, 32, ... The changes repeat in the same order. What is the ninth number in the pattern? A 43 D 49 B 46 E 50 C 47",
+    "answer": "E. 50",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 24
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "The changes in this number pattern repeat: add 8, then add 5. N, 18, 23, 31, 36, 44, ... What is the sum of N and the next number after 44? A 59 D 62 B 54 E 67 C 57",
+    "answer": "A. 59",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 25
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "The numbers in the odd positions make one pattern. The numbers in the even positions make another pattern. 4, 20, 7, 18, 10, 16, 13, N, ... What is the sum of N and the ninth number in the pattern? A 28 D 32 B 30 E 34 C 31",
+    "answer": "B. 30",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 26
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "In each row, add the first two numbers, then double the sum to get the third number. 3 5 16 4 7 22 6 N 30 What number is N? A 6 D 9 B 7 E 10 C 8",
+    "answer": "D. 9",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 27
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "Study the number pattern below. 5, 8, 12, 17, ... The amount added increases by 1 each time. What is the sum of the fifth and sixth numbers in the pattern? A 53 D 50 B 47 E 55 C 49",
+    "answer": "A. 53",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 28
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "Jay wrote this number pattern. 40, 36, 31, 25, 18, ... Jay says, \"The rule is subtract 4 each time.\" Which option correctly describes the pattern and gives the next number? A Subtract 4 each time; next is 14. D Subtract 5 each time; next is 13. B Subtract 4, 5, 6, 7, then 8; next is 10. E Add 4, 5, 6, then 7; next is 26. C Subtract 4, 6, 4, then 6; next is 14.",
+    "answer": "B. Subtract 4, 5, 6, 7, then 8; next is 10",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 29
+  },
+  {
+    "topic": "number_patterns",
+    "subtopic": "number_sequences",
+    "difficulty": 1,
+    "question": "Four boxes contain counters in a number pattern. Box 1 has 7 counters, Box 2 has 11 counters, Box 3 has 15 counters, and Box 4 has 19 counters. The pattern continues. Lina moves 5 counters from Box 5 to Box 2. How many counters are now in Box 2 and Box 5 altogether? A 29 D 33 B 30 E 34 C 31",
+    "answer": "E. 34",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "number_patterns",
+      "number_sequences"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK5 - Y3 - MATH - HW - NUMBER PATTERNS _ SEQUENCES - QN.docx.pdf",
+    "source_question_number": 30
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "The frosting recipe calls for 1/3 of a cup of brown sugar and 3/4 of a cup of white sugar. How many cups of sugar does the frosting recipe require? A 3/7 of a cup D 4/12 of a cup B 4/7 of a cup E 13/12 of a cup C 3/12 of a cup",
+    "answer": "E. 13/12 of a cup",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 1
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Chef Alfredo's Restaurant had a supply of 12 litres of mustard sauce. They wanted to use all the mustard sauce for five days, using the same amount each day. How much should they use each day? A 2 1/5 litres D 2 4/5 litres B 2 2/5 litres E 3 litres C 2 3/5 litres",
+    "answer": "B. 2 2/5 litres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 2
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Tony Stark stacked 13 sheets of metal on top of each other. If each sheet is 5/6 of a centimetre thick, what is the total height of the stack of metal sheets? A 13 5/6 centimetres D 10 5/6 centimetres B 13 3/6 centimetres E 10 1/6 centimetres C 13 1/6 centimetres",
+    "answer": "D. 10 5/6 centimetres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 3
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Betty drove 4 2/5 kilometres to the grocery store, and then she drove 3 1/2 kilometres to the mall. How far did she drive altogether? A 7 2/7 kilometres D 7 3/10 kilometres B 7 2/10 kilometres E 7 9/10 kilometres C 7 3/7 kilometres",
+    "answer": "E. 7 9/10 kilometres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 4
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Big Bird's relay race team is composed of six runners. If they ran a total of 20 kilometres, with each runner running the same distance, how far did Big Bird run? A 3 1/6 kilometres D 3 2/3 kilometres B 3 1/3 kilometres E 3 5/6 kilometres C 3 1/2 kilometres",
+    "answer": "B. 3 1/3 kilometres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 6
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Snow White cuts a piece of ribbon 7 metres long into three pieces. If all pieces are equal in length, what is the length of each piece? A 2 1/7 metres D 2 1/3 metres B 2 3/7 metres E 2 2/3 metres C 2 5/7 metres",
+    "answer": "D. 2 1/3 metres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 7
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Jack eats 3/4 of a cup of apples each day. How many cups of apples would he have eaten after 7 days? A 5 1/4 cups D 7 2/4 cups B 5 3/4 cups E 7 3/4 cups C 7 1/4 cups",
+    "answer": "A. 5 1/4 cups",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 8
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "A can of vegetable oil contains 2 1/2 litres. Angela uses 3/4 of a litre of vegetable oil to fry some chicken wings. How many litres of vegetable oil does she have left? A 1 1/4 litres D 1 2/3 litres B 1 1/3 litres E 1 3/4 litres C 1 1/2 litres",
+    "answer": "E. 1 3/4 litres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 9
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "A group of three friends equally shared a carton of milk. If the carton contains 2 litres of milk, how many litres of milk did each friend get? A 1/3 of a litre D 1 1/3 litres B 1/2 of a litre E 1 2/3 litres C 2/3 of a litre",
+    "answer": "C. 2/3 of a litre",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 10
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "The Batmobile consumed 7/8 of a litre of petrol for every kilometre it travelled. How many litres of petrol did the Batmobile consume if it travelled 15 kilometres? A 13 1/8 litres D 13 3/8 litres B 13 1/4 litres E 13 7/8 litres C 13 1/2 litres",
+    "answer": "A. 13 1/8 litres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 11
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "A cookie recipe calls for 2 cups of milk. However, Cookie Monster can only use a 1/2-cup measuring cup. How many times must he fill the measuring cup to measure 2 cups? A 2 times D 6 times B 3 times E 8 times C 4 times",
+    "answer": "C. 4 times",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 12
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Elsa needs to peel 8 kilograms of nuts in three days. She peeled 2 1/2 kilograms of nuts on the first day and 3 3/4 kilograms of nuts on the second day. How many kilograms of nuts does she have left to peel on the third day? A 3 1/4 kilograms D 1 3/4 kilograms B 2 3/4 kilograms E 1 1/4 kilograms C 2 1/4 kilograms",
+    "answer": "D. 1 3/4 kilograms",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 13
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Johnny needs to write a 12-page essay. He has already completed 3/4 of the required pages. How many pages has he already completed? A 9 pages D 5 pages B 8 pages E 4 pages C 6 pages",
+    "answer": "A. 9 pages",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 14
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "One-fourth of the students in Anastacia's class wear glasses. If there are 36 students in Anastacia's class, how many students wear glasses? A 16 students D 9 students B 15 students E 8 students C 12 students",
+    "answer": "D. 9 students",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 15
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Betty and Veronica shared a large chocolate bar. Betty ate 1/4 of the chocolate bar, and Veronica ate 3/8 of the chocolate bar. What fraction of the chocolate bar was left? A 5/8 D 1/4 B 3/8 E 1/2 C 1/8",
+    "answer": "B. 3/8",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 16
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Usain Bolt is running a 16-kilometre race. If he has already completed 5/8 of the race, how many kilometres does he have left to run? A 4 kilometres D 10 kilometres B 6 kilometres E 12 kilometres C 8 kilometres",
+    "answer": "B. 6 kilometres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 17
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Dexter spent 5/6 of an hour studying Biology, 1/2 of an hour studying Chemistry, and 2/3 of an hour studying Physics. How many hours did Dexter spend studying Biology, Chemistry, and Physics? A 1 1/3 hours D 1 5/6 hours B 1 1/2 hours E 2 hours C 1 2/3 hours",
+    "answer": "E. 2 hours",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 18
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Cinderella needs to sew two sets of curtains. If each set of curtains requires 8 3/4 metres of fabric, how many metres of fabric does she need in total? A 16 1/4 metres D 17 1/2 metres B 16 1/2 metres E 17 3/4 metres C 16 3/4 metres",
+    "answer": "D. 17 1/2 metres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 20
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "How many one-fifths are there in 2 wholes? A 2 D 20 B 5 E 50 C 10",
+    "answer": "C. 10",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 21
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Angela is planning to knit two blankets. One blanket requires 12 3/4 metres of yarn, and the other requires 10 3/4 metres of yarn. If yarn is sold only by the whole metre, how many metres of yarn does Angela need to buy? A 25 metres D 22 metres B 24 metres E 20 metres C 23 metres",
+    "answer": "B. 24 metres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 22
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Huey, Dewey, and Louie ordered a large pizza. Huey ate 1/6 of the pizza, Dewey ate 1/3 of the pizza, and Louie ate 1/6 of the pizza. What fraction of the pizza did the three of them eat? A 5/6 D 2/3 B 4/5 E 1/2 C 3/4",
+    "answer": "D. 2/3",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 23
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Among the participants of the comic convention, one-half are adult males, one-fourth are adult females, and the rest are teenagers. What fraction of the participants are teenagers? A 1/8 D 3/4 B 1/4 E 3/8 C 1/2",
+    "answer": "B. 1/4",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 24
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Mia used 1 3/4 metres of ribbon for one project. She used 2 2/3 metres of ribbon for another project. How many metres of ribbon did Mia use altogether? A 4 5/12 metres D 4 7/12 metres B 3 5/12 metres E 5 5/12 metres C 4 1/12 metres",
+    "answer": "A. 4 5/12 metres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 26
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Five fractions are shown in the answer choices below. Only one fraction is equivalent to 3/4. Which fraction is equivalent to 3/4? A 6/10 D 12/20 B 8/12 E 15/24 C 9/12",
+    "answer": "C. 9/12",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 27
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "A jug contained 5 1/2 litres of juice. Then 2 3/4 litres of juice were poured out. How many litres of juice remained? A 2 3/4 litres D 3 3/4 litres B 2 1/4 litres E 7 1/4 litres C 3 1/4 litres",
+    "answer": "A. 2 3/4 litres",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 28
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Sara has 32 stickers. She gives 3/8 of the stickers to her friend. How many stickers does Sara give to her friend? A 4 stickers D 16 stickers B 8 stickers E 12 stickers C 10 stickers",
+    "answer": "E. 12 stickers",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 29
+  },
+  {
+    "topic": "fractions",
+    "subtopic": "intermediate_fractions",
+    "difficulty": 1,
+    "question": "Four children share 9 pizzas equally. Each child receives the same amount. How much pizza does each child receive? A 2 1/4 pizzas D 3 1/4 pizzas B 2 1/2 pizzas E 4 1/2 pizzas C 2 3/4 pizzas",
+    "answer": "A. 2 1/4 pizzas",
+    "tags": [
+      "year3",
+      "multiple_choice",
+      "fractions",
+      "intermediate_fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
+    "source_question_number": 30
   }
 ]
