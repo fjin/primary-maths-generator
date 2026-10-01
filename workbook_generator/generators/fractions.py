@@ -32,9 +32,19 @@ class FractionGenerator(BaseGenerator):
         denominators = [2, 3, 4, 5, 6, 8, 10, 12]
         denominator_a = rng.choice(denominators[: 4 + difficulty])
         denominator_b = rng.choice(denominators[: 4 + difficulty])
-        a = Fraction(rng.randint(1, denominator_a - 1), denominator_a)
-        b = Fraction(rng.randint(1, denominator_b - 1), denominator_b)
-        operation = rng.choice(["+", "-"] if difficulty < 4 else ["+", "-", r"\times"])
+
+        operations = ["+", "-"]
+        if difficulty >= 3:
+            operations.append(r"\times")
+        if difficulty >= 5:
+            operations.append(r"\div")
+        operation = rng.choice(operations)
+
+        # Keep multiplication/division operands as proper fractions so the
+        # arithmetic stays approachable; mixed numbers are only used for +/-.
+        allow_mixed = difficulty >= 3 and operation in ("+", "-")
+        a = self._random_operand(rng, denominator_a, allow_mixed)
+        b = self._random_operand(rng, denominator_b, allow_mixed)
 
         if operation == "+":
             answer = a + b
@@ -42,15 +52,28 @@ class FractionGenerator(BaseGenerator):
             if b > a:
                 a, b = b, a
             answer = a - b
-        else:
+        elif operation == r"\times":
             answer = a * b
+        else:
+            answer = a / b
 
-        prompt = rf"${latex_fraction(a, mixed=False)} {operation} {latex_fraction(b, mixed=False)} =$"
+        tags = ["fraction", "arithmetic"]
+        tags.append("mixed_numbers" if a >= 1 or b >= 1 else "proper_fractions")
+
+        prompt = rf"${latex_fraction(a)} {operation} {latex_fraction(b)} =$"
         return Question(
             prompt=prompt,
             answer=rf"${latex_fraction(answer)}$",
             topic=self.topic,
             subtopic="operations",
             difficulty=difficulty,
-            tags=("fraction", "arithmetic"),
+            tags=tuple(tags),
         )
+
+    @staticmethod
+    def _random_operand(rng: random.Random, denominator: int, allow_mixed: bool) -> Fraction:
+        proper = Fraction(rng.randint(1, denominator - 1), denominator)
+        if allow_mixed and rng.random() < 0.5:
+            whole = rng.randint(1, 4)
+            return whole + proper
+        return proper

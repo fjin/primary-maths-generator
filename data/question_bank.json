@@ -6738,5 +6738,806 @@
     "source": "scholarly_pdf_import",
     "source_file": "WK6 - Y3 - MATH - HW - INTERMEDIATE FRACTIONS - QN.docx.pdf",
     "source_question_number": 30
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A caterpillar crawls at 30 centimetres per minute. How far will it crawl in 3 minutes?",
+    "answer": "90 centimetres",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "distance"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A runner travels 150 kilometres in 2 hours at a constant speed. What is the speed?",
+    "answer": "75 kilometres per hour",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "speed"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "Nemo swims at 4 metres per minute. How many minutes will it take to swim 12 metres?",
+    "answer": "3 minutes",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "Lassie runs at 5 metres per second. How far can Lassie run in 10 seconds?",
+    "answer": "50 metres",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "distance"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "Sherlock travels 6 kilometres from his house to the library between 9:00 AM and 10:00 AM. What is his speed?",
+    "answer": "6 kilometres per hour",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "speed",
+      "elapsed_time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A toy aeroplane flies at 16 metres per second. How many seconds will it take to fly 80 metres?",
+    "answer": "5 seconds",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A horse runs at 220 metres per minute. How far can it run in 20 minutes?",
+    "answer": "4 400 metres",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "distance"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "The White Rabbit runs 250 metres in 5 minutes. What is its speed?",
+    "answer": "50 metres per minute",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "speed"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A boat sails at 300 metres per minute. How many minutes will it take to sail 4 500 metres?",
+    "answer": "15 minutes",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "Big Bird walks at 25 metres per minute. How far can Big Bird walk in 25 minutes?",
+    "answer": "625 metres",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "distance"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A train travels 500 metres in 5 seconds at a constant speed. What is the speed of the train?",
+    "answer": "100 metres per second",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "speed"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A submarine moves 3 kilometres in 2 hours at a steady speed. What is its speed?",
+    "answer": "1.5 kilometres per hour",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "speed"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "Sabrina travels from 5:00 PM to 7:30 PM at 40 kilometres per hour. What distance does she travel?",
+    "answer": "100 kilometres",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "distance",
+      "elapsed_time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A snail crawls 80 centimetres in 3 minutes. What is its speed?",
+    "answer": "26 2/3 centimetres per minute",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "speed",
+      "fractions"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "Batman leaves at 10:15 PM and travels 30 kilometres at 60 kilometres per hour. What time does he arrive?",
+    "answer": "10:45 PM",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "arrival_time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A dragonfly flies at 24 metres per second. How far can it fly in 120 seconds?",
+    "answer": "2 880 metres",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "distance"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A hiker walks a 12 kilometre trail from 5:00 AM to 6:30 AM. What is the hiker's speed?",
+    "answer": "8 kilometres per hour",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "speed",
+      "elapsed_time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "Scooby and the Gang travel 175 kilometres at 50 kilometres per hour after leaving at 5:30 PM. What time do they arrive?",
+    "answer": "9:00 PM",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "arrival_time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "Mickey Mouse runs at 16 metres per minute for half an hour. How far does he run?",
+    "answer": "480 metres",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "distance"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "Percy crosses a 480 metre lake in 8 minutes at a constant rate. What is Percy's speed?",
+    "answer": "60 metres per minute",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "speed"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "Archie can drive to Riverdale in 4 hours at 60 kilometres per hour. How long will the same trip take at 80 kilometres per hour?",
+    "answer": "3 hours",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "time",
+      "comparison"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A space module travels at 320 kilometres per minute. How far will it travel in half an hour?",
+    "answer": "9 600 kilometres",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "distance"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "The straight distance from a beehive to a flower garden is 480 metres. What speed is needed to arrive in 12 minutes?",
+    "answer": "40 metres per minute",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "speed"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "Elmo needs to travel 18 kilometres between 8:00 AM and 11:00 AM. What minimum speed does he need?",
+    "answer": "6 kilometres per hour",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "speed",
+      "elapsed_time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "speed_distance_time",
+    "difficulty": 1,
+    "question": "A steamboat travels from 3:00 AM to 10:00 AM at 15 kilometres per hour. What distance does it travel?",
+    "answer": "105 kilometres",
+    "tags": [
+      "year3",
+      "speed_distance_time",
+      "rates",
+      "distance",
+      "elapsed_time"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK8 - Y3 - MATH - HW - Speed, Distance, Time - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A rectangular playground is 20 metres long and 15 metres wide. What is its perimeter?",
+    "answer": "70 metres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "rectangle"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A square coaster has side length 8 centimetres. What is its area?",
+    "answer": "64 square centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "square"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "One side of an equilateral triangle is 6 centimetres. What is its perimeter?",
+    "answer": "18 centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "triangle"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A square mouse pad has perimeter 40 centimetres. What is its area?",
+    "answer": "100 square centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "square",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A 9 cm by 4 cm rectangle has the same area as a square. What is the perimeter of the square?",
+    "answer": "24 centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "same_area",
+      "square"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A rectangular lot is 40 metres long and 20 metres wide. It is divided equally among 4 children. What area does each child get?",
+    "answer": "200 square metres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "division",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A square has side length 4 centimetres. A rectangle has the same area, but no side length of the rectangle is given. Can the rectangle's perimeter be determined?",
+    "answer": "It cannot be determined.",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "same_area",
+      "reasoning"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A farm is 12 metres long and 10 metres wide. Potatoes are planted on half of the farm. What area is planted with potatoes?",
+    "answer": "60 square metres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "half",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A 12 cm by 4 cm rectangle has the same area as a second rectangle with width 6 cm. What is the perimeter of the second rectangle?",
+    "answer": "28 centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "same_area",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A rectangle is 12 centimetres long and has perimeter 32 centimetres. How wide is it?",
+    "answer": "4 centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "missing_side"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A rectangular bed has area 12 square metres and length 4 metres. How wide is the bed?",
+    "answer": "3 metres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "missing_side"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A rectangular piece of paper is 20 centimetres long and 10 centimetres wide. What is its area?",
+    "answer": "200 square centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "rectangle"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A 6 m by 4 m rectangle has the same perimeter as another rectangle with width 3 m. What is the area of the second rectangle?",
+    "answer": "21 square metres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "same_perimeter",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A square card has area 49 square centimetres. What is the length of one side?",
+    "answer": "7 centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "square",
+      "missing_side"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "Rectangle I is 8 cm by 2 cm, rectangle II is 5 cm by 3 cm, and rectangle III is 10 cm by 6 cm. Which rectangles have area 16 square centimetres?",
+    "answer": "Rectangle I only",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "comparison"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A rectangular hole is 10 metres wide and has area 60 square metres. What is its perimeter?",
+    "answer": "32 metres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "missing_side",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A square table has perimeter 16 metres. What is its area?",
+    "answer": "16 square metres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "square",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "An equilateral triangle has side length 30 centimetres. What is its perimeter?",
+    "answer": "90 centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "triangle"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A square stamp has area 36 square centimetres. What is the length of each side?",
+    "answer": "6 centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "square",
+      "missing_side"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A triangle and a square have the same perimeter. The square has side length 7 centimetres. Two sides of the triangle are 6 centimetres and 12 centimetres. What is the third side of the triangle?",
+    "answer": "10 centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "same_perimeter",
+      "triangle",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A square pendant has perimeter 24 centimetres. What is its area?",
+    "answer": "36 square centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "square",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "Two triangles have the same perimeter. One triangle has sides 9 cm, 5 cm, and 10 cm. The other triangle has two sides of 8 cm each. What is the third side of the second triangle?",
+    "answer": "8 centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "same_perimeter",
+      "triangle",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "The perimeter of a green square is half the perimeter of a blue square. The blue square has side length 10 centimetres. What is the area of the green square?",
+    "answer": "25 square centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "square",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A rectangle is made from 4 identical squares in a row. Each square has area 4 square centimetres. What is the perimeter of the rectangle?",
+    "answer": "20 centimetres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "composite_shape",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
+  },
+  {
+    "topic": "word_problems",
+    "subtopic": "area_perimeter",
+    "difficulty": 1,
+    "question": "A 16 metre piece of wire is bent into a square frame with no wire left over. What is the area of the square frame?",
+    "answer": "16 square metres",
+    "tags": [
+      "year3",
+      "geometry",
+      "area",
+      "perimeter",
+      "square",
+      "multi_step"
+    ],
+    "source": "scholarly_pdf_import",
+    "source_file": "WK9 - Y3 - MATH - HW - Perimeter & Area - QN.docx.pdf"
   }
 ]
