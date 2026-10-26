@@ -2832,5 +2832,126 @@
       "template"
     ],
     "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "speed_distance_time", "difficulty": 1,
+    "question": "{name} travels at {speed} metres per minute for {minutes} minutes. How far does {name} travel?",
+    "question_forms": [
+      "{name} travels at {speed} metres per minute for {minutes} minutes. How far does {name} travel?",
+      "For {minutes} minutes, {name} moves steadily at {speed} metres per minute. Find the distance travelled."
+    ],
+    "variables": {"name": {"choices": ["Mia", "Liam", "Zoe", "Ethan", "Ava", "Noah"]}, "speed": {"min": 20, "max": 100, "step": 5}, "minutes": {"min": 3, "max": 25}},
+    "answer_formula": "speed * minutes", "answer_format": "{answer} metres",
+    "tags": ["year3", "speed_distance_time", "distance", "rates", "template"], "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "speed_distance_time", "difficulty": 1,
+    "question": "{name} cycles {distance} kilometres in {hours} hours at a steady speed. What is the speed?",
+    "question_forms": [
+      "{name} cycles {distance} kilometres in {hours} hours at a steady speed. What is the speed?",
+      "A {hours}-hour bicycle journey covers {distance} kilometres. At what constant speed does {name} cycle?"
+    ],
+    "variables": {"name": {"choices": ["Aria", "Oscar", "Ruby", "Leo", "Isla", "Finn"]}, "speed": {"min": 8, "max": 24}, "hours": {"min": 2, "max": 6}},
+    "derived": {"distance": "speed * hours"}, "answer_format": "{speed} kilometres per hour",
+    "tags": ["year3", "speed_distance_time", "speed", "rates", "template"], "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "speed_distance_time", "difficulty": 1,
+    "question": "A {vehicle} moves at {speed} metres per second. How many seconds will it take to travel {distance} metres?",
+    "question_forms": [
+      "A {vehicle} moves at {speed} metres per second. How many seconds will it take to travel {distance} metres?",
+      "A {vehicle} must cover {distance} metres at a constant speed of {speed} metres per second. Find the travel time in seconds."
+    ],
+    "variables": {"vehicle": {"choices": ["toy car", "model train", "toy aeroplane", "robot"]}, "speed": {"min": 3, "max": 20}, "seconds": {"min": 3, "max": 30}},
+    "derived": {"distance": "speed * seconds"}, "answer_format": "{seconds} seconds",
+    "tags": ["year3", "speed_distance_time", "time", "rates", "template"], "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "speed_distance_time", "difficulty": 1,
+    "question": "{name} leaves at {start_hour:02d}:00 and travels {distance} kilometres at {speed} kilometres per hour. Using the 24-hour clock, what time does {name} arrive?",
+    "variables": {"name": {"choices": ["Mia", "Liam", "Grace", "Hugo", "Alice", "Sam"]}, "start_hour": {"min": 8, "max": 14}, "speed": {"choices": [40, 60, 80]}, "minutes": {"choices": [30, 60, 90, 120, 150]}},
+    "derived": {"distance": "speed * minutes // 60", "end_hour": "start_hour + minutes // 60", "end_minute": "minutes % 60"},
+    "answer_format": "{end_hour:02d}:{end_minute:02d}",
+    "tags": ["year3", "speed_distance_time", "arrival_time", "multi_step", "template"], "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "speed_distance_time", "difficulty": 1,
+    "question": "{name} normally takes {hours} hours to complete a journey at {speed} kilometres per hour. How long would the same journey take at {new_speed} kilometres per hour?",
+    "variables": {"name": {"choices": ["Emma", "Jack", "Amir", "Sofia", "Lucas", "Ella"]}, "unit": {"min": 10, "max": 20}, "factor": {"choices": [2, 3, 4]}, "new_hours": {"min": 2, "max": 5}},
+    "derived": {"speed": "unit * factor", "hours": "new_hours * (factor + 1)", "new_speed": "unit * (factor + 1)"},
+    "answer_format": "{answer} hours", "answer_formula": "speed * hours // new_speed",
+    "tags": ["year3", "speed_distance_time", "comparison", "multi_step", "template"], "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "area_perimeter", "difficulty": 1,
+    "question": "{name} measures a rectangular {place} that is {length} metres long and {width} metres wide. What is its perimeter?",
+    "question_forms": [
+      "{name} measures a rectangular {place} that is {length} metres long and {width} metres wide. What is its perimeter?",
+      "A rectangular {place} measures {length} m by {width} m. How far does {name} walk to go once around its boundary?"
+    ],
+    "variables": {"name": {"choices": ["Mia", "Noah", "Zoe", "Leo", "Sofia", "Amir"]}, "place": {"choices": ["garden", "playground", "courtyard", "vegetable patch"]}, "length": {"min": 12, "max": 35}, "width": {"min": 4, "max": 11}},
+    "answer_formula": "2 * (length + width)", "answer_format": "{answer} metres",
+    "tags": ["year3", "geometry", "area", "perimeter", "template"], "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "area_perimeter", "difficulty": 1,
+    "question": "{name} has a square {item} with perimeter {perimeter} cm. What is its area?",
+    "question_forms": [
+      "{name} has a square {item} with perimeter {perimeter} cm. What is its area?",
+      "The four equal sides of a square {item} total {perimeter} cm. Find its area."
+    ],
+    "variables": {"name": {"choices": ["Ava", "Oscar", "Ruby", "Liam", "Isla", "Ethan"]}, "item": {"choices": ["card", "coaster", "tile", "mouse pad"]}, "side": {"min": 3, "max": 20}},
+    "derived": {"perimeter": "4 * side"}, "answer_formula": "side * side", "answer_format": "\\({answer}\\text{{ cm}}^2\\)",
+    "tags": ["year3", "geometry", "square", "multi_step", "template"], "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "area_perimeter", "difficulty": 1,
+    "question": "A rectangle {length} cm long and {width} cm wide has the same area as a square. What is the perimeter of the square?",
+    "variables": {"unit": {"min": 2, "max": 10}, "factor": {"min": 2, "max": 4}},
+    "derived": {"length": "unit * factor * factor", "width": "unit", "side": "unit * factor"},
+    "answer_formula": "4 * side", "answer_format": "{answer} cm",
+    "tags": ["year3", "geometry", "same_area", "multi_step", "template"], "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "area_perimeter", "difficulty": 1,
+    "question": "{name} places {count} identical square tiles in one straight row, edge to edge, to make a rectangle. Each tile has area {area} square centimetres. What is the perimeter of the rectangle?",
+    "variables": {"name": {"choices": ["Sam", "Ella", "Finn", "Chloe", "Hugo", "Aria"]}, "count": {"min": 3, "max": 8}, "side": {"min": 2, "max": 9}},
+    "derived": {"area": "side * side"}, "answer_formula": "2 * (count + 1) * side", "answer_format": "{answer} cm",
+    "tags": ["year3", "geometry", "composite_shape", "multi_step", "template"], "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "addition_subtraction", "difficulty": 1,
+    "question": "{name} has {start} {item}, receives {received} more, then gives away {given}. How many {item} remain?",
+    "question_forms": [
+      "{name} has {start} {item}, receives {received} more, then gives away {given}. How many {item} remain?",
+      "After collecting {received} extra {item} and giving away {given}, how many does {name} have if the starting number was {start}?"
+    ],
+    "variables": {"name": {"choices": ["Mia", "Liam", "Zoe", "Noah", "Amir", "Isla"]}, "item": {"choices": ["stickers", "cards", "marbles", "shells"]}, "start": {"min": 50, "max": 250}, "received": {"min": 10, "max": 80}, "given": {"min": 5, "max": 45}},
+    "answer_formula": "start + received - given", "answer_format": "{answer} {item}",
+    "tags": ["year3", "addition", "subtraction", "multi_step", "template"], "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "money", "difficulty": 3,
+    "question": "{name} buys {count} {item} at \\${price} each and pays with \\${paid}. How much change is due?",
+    "question_forms": [
+      "{name} buys {count} {item} at \\${price} each and pays with \\${paid}. How much change is due?",
+      "Each of the {count} {item} that {name} buys costs \\${price}. What change should {name} receive from \\${paid}?"
+    ],
+    "variables": {"name": {"choices": ["Ruby", "Oscar", "Grace", "Leo", "Ava", "Ethan"]}, "item": {"choices": ["notebooks", "pens", "bookmarks", "pencils"]}, "count": {"min": 3, "max": 12}, "price": {"min": 2, "max": 8}, "change": {"min": 2, "max": 25}},
+    "derived": {"paid": "count * price + change"}, "answer_format": "\\${change}",
+    "tags": ["year5", "money", "multi_step", "template"], "source": "template"
+  },
+  {
+    "topic": "word_problems", "subtopic": "percentages", "difficulty": 4,
+    "question": "{first} has {base} {item}. {second} has {percent} percent more. {second} gives {transfer} {item} to {first}. How many more {item} does {first} have than {second} now?",
+    "question_forms": [
+      "{first} has {base} {item}. {second} has {percent} percent more. {second} gives {transfer} {item} to {first}. How many more {item} does {first} have than {second} now?",
+      "At first, {first} owns {base} {item}, while {second} owns {percent} percent more than {first}. After {second} hands over {transfer} {item} to {first}, find how many more {item} {first} has."
+    ],
+    "choice_sets": [{"first": "Ravi", "second": "Sonia"}, {"first": "Mia", "second": "Liam"}, {"first": "Noah", "second": "Zoe"}, {"first": "Amir", "second": "Ella"}, {"first": "Ruby", "second": "Oscar"}],
+    "variables": {"item": {"choices": ["cards", "stickers", "marbles", "tokens"]}, "base": {"min": 40, "max": 200, "step": 20}, "percent": {"choices": [10, 20, 25, 50]}, "offset": {"min": 2, "max": 20}},
+    "derived": {"extra": "base * percent // 100", "transfer": "extra + offset"},
+    "answer_formula": "2 * transfer - extra", "answer_format": "{answer} {item}",
+    "tags": ["year6", "percentages", "comparison", "multi_step", "template"], "source": "template"
   }
 ]

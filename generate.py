@@ -31,6 +31,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--questions", type=int, default=50, help="Number of questions.")
     parser.add_argument("--difficulty", default="year5", help="Difficulty level.")
     parser.add_argument("--seed", type=int, default=42, help="Deterministic random seed.")
+    parser.add_argument(
+        "--randomized", action="store_true",
+        help="Generate word problems from randomised templates only, excluding fixed bank questions.",
+    )
     parser.add_argument("--title", default=None, help="Worksheet title.")
     parser.add_argument("--columns", type=int, default=2, choices=[1, 2, 3])
     parser.add_argument(
@@ -105,7 +109,7 @@ def main() -> int:
     args = parse_args()
     recipe = recipe_from_args(args)
 
-    registry = GeneratorRegistry.default()
+    registry = GeneratorRegistry.default(randomized=args.randomized)
     worksheet = WorksheetBuilder(registry).build(recipe)
     tex = LatexRenderer(
         columns=recipe.columns,

@@ -19,6 +19,7 @@ from workbook_generator.generators.time import TimeGenerator
 from workbook_generator.generators.word_problems import WordProblemGenerator
 from workbook_generator.models import Question, Worksheet
 from workbook_generator.recipe import Recipe
+from workbook_generator.question_bank import QuestionBank
 
 
 class GeneratorRegistry:
@@ -26,7 +27,7 @@ class GeneratorRegistry:
         self._generators = {generator.topic: generator for generator in generators}
 
     @classmethod
-    def default(cls) -> "GeneratorRegistry":
+    def default(cls, randomized: bool = False) -> "GeneratorRegistry":
         return cls(
             [
                 FractionGenerator(),
@@ -38,7 +39,7 @@ class GeneratorRegistry:
                 TimeGenerator(),
                 NumberPatternGenerator(),
                 NumberSystemGenerator(),
-                WordProblemGenerator(),
+                WordProblemGenerator(QuestionBank(templates_only=randomized)),
                 NaplanGenerator(),
             ]
         )

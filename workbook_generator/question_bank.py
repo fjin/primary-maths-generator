@@ -14,11 +14,12 @@ class QuestionBank:
         self,
         path: Path | None = None,
         template_path: Path | None = None,
+        templates_only: bool = False,
     ) -> None:
         data_dir = Path(__file__).resolve().parent.parent / "data"
         self.path = path or data_dir / "question_bank.json"
         self.template_path = template_path or data_dir / "question_templates.json"
-        self._questions = self._load()
+        self._questions = [] if templates_only else self._load()
         self._templates = self._load_templates()
 
     def questions_for(self, topic: str, max_difficulty: int) -> list[Question]:
@@ -126,8 +127,10 @@ class QuestionBank:
             answer = _safe_eval(str(template["answer_formula"]), values)
             values["answer"] = _format_number(answer)
 
+        forms = template.get("question_forms")
+        prompt = rng.choice(forms) if forms else template["question"]
         return Question(
-            prompt=template["question"].format(**values),
+            prompt=prompt.format(**values),
             answer=str(template.get("answer_format", "{answer}")).format(**values),
             topic=template["topic"],
             subtopic=template.get("subtopic", "general"),

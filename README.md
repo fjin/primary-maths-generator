@@ -209,6 +209,32 @@ icas       difficulty 5
 
 ## Adding Randomised Questions
 
+Use `--randomized` to sample word problems from templates only. This keeps
+fixed bank questions out of the worksheet. Original questions remain in
+`data/question_bank.json`; reusable variants live in `data/question_templates.json`.
+The flag affects word problems, including the word-problem portion of `mixed`.
+Other topic generators keep their existing behaviour.
+
+```bash
+python3 generate.py --topic word_problems --randomized --questions 100 --difficulty year5 --seed 888
+python3 generate.py --topic word_problems --randomized --subtopic speed_distance_time --difficulty year3 --questions 100 --seed 889
+python3 generate.py --topic word_problems --randomized --subtopic area_perimeter --difficulty year3 --questions 100 --seed 890
+python3 generate.py --topic word_problems --randomized --subtopic percentages --difficulty year6 --questions 100 --seed 891
+```
+
+Change `--seed` to get a different worksheet; reusing it reproduces the same
+questions and answers. New templates cover speed/distance/time, area/perimeter,
+addition/subtraction, shopping/change, and percentage transfers. Existing ratio,
+algebra, fraction, and angle templates also work in this mode. This does not
+automatically convert every fixed question into a template. Difficulty selection
+still prefers the requested level and falls back to easier available templates.
+
+Templates can optionally provide `question_forms`, a list of alternative wordings
+using the same placeholders and answer calculation. Keep a `question` string as
+the default wording too. Choose matched names with `choice_sets` so two people in
+a question always have different names. Units and constraints must agree across
+every wording.
+
 Add templates to `data/question_templates.json` when you want the numbers and answer to change together:
 
 ```json
