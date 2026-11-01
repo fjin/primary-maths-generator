@@ -3048,7 +3048,17 @@
     "topic": "word_problems",
     "subtopic": "time",
     "difficulty": 4,
-    "question": "Use this timetable. Maple to Lake bus B departs at 8:30 AM and arrives at 9:05 AM. Lake to Ridge buses depart at 8:50 AM, 9:10 AM, and 9:35 AM, arriving at 9:25 AM, 9:42 AM, and 10:08 AM. Nina catches bus B from Maple to Lake, then the next bus from Lake to Ridge. What time does Nina arrive at Ridge?",
+    "question": "Nina catches bus B from Maple to Lake, then the next bus from Lake to Ridge. What time does Nina arrive at Ridge?",
+    "timetable": {
+      "caption": "Bus connections",
+      "headers": ["Route", "Departs", "Arrives"],
+      "rows": [
+        ["Maple to Lake (B)", "8:30 AM", "9:05 AM"],
+        ["Lake to Ridge", "8:50 AM", "9:25 AM"],
+        ["Lake to Ridge", "9:10 AM", "9:42 AM"],
+        ["Lake to Ridge", "9:35 AM", "10:08 AM"]
+      ]
+    },
     "answer": "9:42 AM",
     "tags": [
       "year5",
@@ -3451,7 +3461,15 @@
     "topic": "word_problems",
     "subtopic": "time",
     "difficulty": 4,
-    "question": "Use this timetable. Bus B leaves Home at 8:18 am and arrives at Park at 8:47 am. The next bus from Park to Pool leaves at 8:50 am. How long does Mira wait at Park?",
+    "question": "Mira takes bus B from Home to Park, then catches the next bus to Pool. How long does Mira wait at Park?",
+    "timetable": {
+      "caption": "Bus connections",
+      "headers": ["Route", "Departs", "Arrives"],
+      "rows": [
+        ["Home to Park (B)", "8:18 AM", "8:47 AM"],
+        ["Park to Pool", "8:50 AM", "Not given"]
+      ]
+    },
     "answer": "3 minutes",
     "tags": [
       "year5",
@@ -5559,7 +5577,17 @@
     "topic": "time",
     "subtopic": "time_date",
     "difficulty": 1,
-    "question": "Use the bus timetable below. Bus Leaves Oak Stop Arrives Town Station 1 8:12 AM 8:47 AM 2 8:28 AM 9:01 AM 3 8:45 AM 9:18 AM 4 9:03 AM 9:34 AM Noah must reach class by 9:20 AM. Walking from Town Station to class takes 14 minutes. He must reach Oak Stop at least 4 minutes before the bus leaves, and his walk from home to Oak Stop takes 11 minutes. What is the latest time Noah can leave home? A 8:03 AM D 8:24 AM B 8:13 AM E 8:28 AM C 8:17 AM",
+    "question": "Noah must reach class by 9:20 AM. Walking from Town Station to class takes 14 minutes. He must reach Oak Stop at least 4 minutes before the bus leaves, and his walk from home to Oak Stop takes 11 minutes. What is the latest time Noah can leave home? A 8:03 AM D 8:24 AM B 8:13 AM E 8:28 AM C 8:17 AM",
+    "timetable": {
+      "caption": "Bus timetable",
+      "headers": ["Bus", "Leaves Oak Stop", "Arrives Town Station"],
+      "rows": [
+        ["1", "8:12 AM", "8:47 AM"],
+        ["2", "8:28 AM", "9:01 AM"],
+        ["3", "8:45 AM", "9:18 AM"],
+        ["4", "9:03 AM", "9:34 AM"]
+      ]
+    },
     "answer": "B. 8:13 AM",
     "tags": [
       "year3",
@@ -5735,7 +5763,17 @@
     "topic": "time",
     "subtopic": "time_date",
     "difficulty": 1,
-    "question": "Ava's activity timetable is shown below. Activity Start Finish Reading 09:25 10:10 Puzzle Lab 10:25 11:05 Coding 11:50 12:35 Art 13:00 13:42 Ava attends all four activities but leaves Art 7 minutes early. How much time does she spend in activities, excluding the gaps between them? A 2 hours 35 minutes D 2 hours 45 minutes B 2 hours 38 minutes E 2 hours 52 minutes C 2 hours 40 minutes",
+    "question": "Ava attends all four activities but leaves Art 7 minutes early. How much time does she spend in activities, excluding the gaps between them? A 2 hours 35 minutes D 2 hours 45 minutes B 2 hours 38 minutes E 2 hours 52 minutes C 2 hours 40 minutes",
+    "timetable": {
+      "caption": "Ava's activity timetable",
+      "headers": ["Activity", "Start", "Finish"],
+      "rows": [
+        ["Reading", "09:25", "10:10"],
+        ["Puzzle Lab", "10:25", "11:05"],
+        ["Coding", "11:50", "12:35"],
+        ["Art", "13:00", "13:42"]
+      ]
+    },
     "answer": "D. 2 hours 45 minutes",
     "tags": [
       "year3",
@@ -5831,7 +5869,18 @@
     "topic": "time",
     "subtopic": "time_date",
     "difficulty": 1,
-    "question": "Use the train timetable below. Service Departs Arrives P 08:05 09:12 Q 08:18 09:20 R 08:35 09:32 S 08:49 09:43 T 09:02 10:00 Which service has the shortest journey, and by how many minutes is it shorter than the longest journey? A Service S, 13 minutes D Service T, 9 minutes B Service R, 10 minutes E Service Q, 5 minutes C Service S, 8 minutes",
+    "question": "Which service has the shortest journey, and by how many minutes is it shorter than the longest journey? A Service S, 13 minutes D Service T, 9 minutes B Service R, 10 minutes E Service Q, 5 minutes C Service S, 8 minutes",
+    "timetable": {
+      "caption": "Train timetable",
+      "headers": ["Service", "Departs", "Arrives"],
+      "rows": [
+        ["P", "08:05", "09:12"],
+        ["Q", "08:18", "09:20"],
+        ["R", "08:35", "09:32"],
+        ["S", "08:49", "09:43"],
+        ["T", "09:02", "10:00"]
+      ]
+    },
     "answer": "A. Service S, 13 minutes",
     "tags": [
       "year3",
@@ -5975,7 +6024,19 @@
     "topic": "time",
     "subtopic": "time_date",
     "difficulty": 1,
-    "question": "A family plans a ferry trip 19 days after Monday, 12 August. Each timetable entry below shows a departure time followed by its arrival time. Day type Journey 1 Journey 2 Journey 3 Weekdays 06:40-08:15 08:15-09:50 10:05-11:40 Weekends 07:20-08:55 09:50-11:25 12:40-14:15 The family must reach an island event by 11:50. Walking from the ferry dock to the event takes 20 minutes. They must check in 25 minutes before departure, and the drive from home to the ferry terminal takes 50 minutes. What is the latest time they can leave home? A 6:05 AM D 8:45 AM B 8:15 AM E 9:25 AM C 8:35 AM",
+    "question": "A family plans a ferry trip 19 days after Monday, 12 August. The family must reach an island event by 11:50. Walking from the ferry dock to the event takes 20 minutes. They must check in 25 minutes before departure, and the drive from home to the ferry terminal takes 50 minutes. What is the latest time they can leave home? A 6:05 AM D 8:45 AM B 8:15 AM E 9:25 AM C 8:35 AM",
+    "timetable": {
+      "caption": "Ferry timetable (24-hour clock)",
+      "headers": ["Day", "Departs", "Arrives"],
+      "rows": [
+        ["Weekdays", "06:40", "08:15"],
+        ["Weekdays", "08:15", "09:50"],
+        ["Weekdays", "10:05", "11:40"],
+        ["Weekends", "07:20", "08:55"],
+        ["Weekends", "09:50", "11:25"],
+        ["Weekends", "12:40", "14:15"]
+      ]
+    },
     "answer": "C. 8:35 AM",
     "tags": [
       "year3",

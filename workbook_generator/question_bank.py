@@ -104,7 +104,10 @@ class QuestionBank:
                 subtopic=item.get("subtopic", "general"),
                 difficulty=int(item.get("difficulty", 3)),
                 tags=tuple(item.get("tags", [])),
-                meta={"source": item.get("source", "question_bank")},
+                meta={
+                    "source": item.get("source", "question_bank"),
+                    **({"timetable": item["timetable"]} if "timetable" in item else {}),
+                },
             )
             for item in raw_questions
         ]

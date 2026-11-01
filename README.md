@@ -176,6 +176,30 @@ To add a topic, create a new `BaseGenerator` subclass and register it in `Genera
 
 ## Adding Real Questions
 
+For a fixed timetable question, store the schedule as structured data instead of
+flattening it into the question text:
+
+```json
+{
+  "topic": "time",
+  "subtopic": "time_date",
+  "difficulty": 1,
+  "question": "Which service has the shorter journey?",
+  "answer": "Service B",
+  "timetable": {
+    "caption": "Train timetable",
+    "headers": ["Service", "Departs", "Arrives"],
+    "rows": [["A", "08:00", "08:45"], ["B", "08:10", "08:40"]]
+  },
+  "source": "curated"
+}
+```
+
+Timetables render with aligned headers and rows, sized to the question column.
+Each timetable question stays together with its choices. For readability, use
+one journey per row and keep tables to three columns where practical. Existing
+PDFs need to be regenerated to pick up this formatting.
+
 Add curated questions to `data/question_bank.json`:
 
 ```json

@@ -1,9 +1,45 @@
 from workbook_generator.models import Question, Worksheet
 from workbook_generator.renderers.latex import LatexRenderer
+from workbook_generator.question_bank import QuestionBank
 import unittest
 
 
 class LatexRendererTests(unittest.TestCase):
+    def test_imported_timetables_survive_loading_and_render_as_tables(self) -> None:
+        bank = QuestionBank()
+        questions = [q for q in bank._questions if "timetable" in q.meta]
+        self.assertEqual(len(questions), 6)
+        for columns in (1, 2, 3):
+            for show_choices in (True, False):
+                worksheet = Worksheet(
+                    title="Timetables", slug="timetables", questions=questions,
+                    seed=42, difficulty="year3",
+                )
+                latex = LatexRenderer(
+                    columns=columns, show_multiple_choice=show_choices,
+                ).render(worksheet)
+                self.assertEqual(latex.count(r"\begin{tabularx}{\linewidth}"), 6)
+                self.assertIn("8:28 AM & 9:01 AM", latex)
+                self.assertIn("08:49 & 09:43", latex)
+                self.assertIn("Weekdays & 06:40 & 08:15", latex)
+                if show_choices:
+                    self.assertIn(r"\item Service S, 13 minutes", latex)
+                else:
+                    self.assertNotIn(r"\begin{enumerate}[label=\Alph*.", latex)
+                    self.assertIn(r"\item Service S, 13 minutes", latex)
+
+    def test_timetable_escapes_cells_and_checks_row_lengths(self) -> None:
+        timetable = {
+            "caption": "A & B", "headers": ["Stop", "Time"],
+            "rows": [["Stop_1\nPlatform 2", "08:00"]],
+        }
+        latex = LatexRenderer._format_timetable(timetable)
+        self.assertIn(r"A \& B", latex)
+        self.assertIn(r"Stop\_1", latex)
+        self.assertIn(r"\newline Platform 2", latex)
+        with self.assertRaisesRegex(ValueError, "one cell per header"):
+            LatexRenderer._format_timetable({**timetable, "rows": [["Missing time"]]})
+
     def test_latex_renderer_includes_questions_and_answers(self) -> None:
         worksheet = Worksheet(
             title="Sample",

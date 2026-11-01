@@ -26,6 +26,14 @@ class LatexRenderer:
             rf"            \item {self._format_answer_text(question)}"
             for question in worksheet.questions
         )
+        has_timetables = any(question.meta.get("timetable") for question in worksheet.questions)
+        question_environment = "multicols*" if has_timetables else "multicols"
+        question_start = (
+            rf"\begin{{{question_environment}}}{{{self.columns}}}"
+            + (r"\raggedcolumns" if has_timetables else "")
+            if self.columns > 1 else ""
+        )
+        question_end = rf"\end{{{question_environment}}}" if self.columns > 1 else ""
 
         return dedent(
             rf"""
@@ -34,6 +42,7 @@ class LatexRenderer:
             \usepackage{{amsmath}}
             \usepackage{{multicol}}
             \usepackage{{enumitem}}
+            \usepackage{{tabularx}}
             \setlength{{\parindent}}{{0pt}}
             \setlist[enumerate]{{itemsep=0.7em, topsep=0.5em}}
 
@@ -44,11 +53,11 @@ class LatexRenderer:
             Difficulty: {self._escape(worksheet.difficulty)} \quad Seed: {worksheet.seed}
             \end{{center}}
 
-            \begin{{multicols}}{{{self.columns}}}
+            {question_start}
             \begin{{enumerate}}
 {question_rows}
             \end{{enumerate}}
-            \end{{multicols}}
+            {question_end}
 
             \newpage
             \begin{{center}}
@@ -79,6 +88,42 @@ class LatexRenderer:
         return value
 
     def _format_question_text(self, value: str, meta: dict) -> str:
+        body = self._format_question_body(value, meta)
+        if meta.get("timetable"):
+            # Keep the schedule, question and choices together across columns/pages.
+            return (
+                r"\begin{minipage}[t]{\linewidth}" + "\n"
+                + self._format_timetable(meta["timetable"]) + "\n" + body + "\n"
+                + r"\end{minipage}\par\smallskip"
+            )
+        return body
+
+    @classmethod
+    def _format_timetable(cls, timetable: dict) -> str:
+        headers = timetable["headers"]
+        rows = timetable["rows"]
+        if not headers or any(len(row) != len(headers) for row in rows):
+            raise ValueError("Timetable rows must have one cell per header.")
+
+        def cell(value: str) -> str:
+            return r"\newline ".join(cls._escape_plain_text(line) for line in str(value).split("\n"))
+
+        columns = r"@{}" + r">{\raggedright\arraybackslash}X" * len(headers) + r"@{}"
+        header = " & ".join(r"\textbf{" + cell(value) + "}" for value in headers)
+        body = "\n".join(" & ".join(cell(value) for value in row) + r" \\" for row in rows)
+        caption = cell(timetable.get("caption", "Timetable"))
+        return (
+            r"\begin{minipage}[t]{\linewidth}" + "\n"
+            r"\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.2}" + "\n"
+            r"\textbf{" + caption + r"}\par\smallskip" + "\n"
+            r"\begin{tabularx}{\linewidth}{" + columns + "}\n"
+            r"\hline" + "\n" + header + r" \\ \hline" + "\n"
+            + body + "\n" + r"\hline" + "\n"
+            r"\end{tabularx}" + "\n"
+            r"\end{minipage}\par\nopagebreak[4]\smallskip" + "\n"
+        )
+
+    def _format_question_body(self, value: str, meta: dict) -> str:
         parsed = self._parse_multiple_choice(value)
         if parsed:
             stem, options = parsed
